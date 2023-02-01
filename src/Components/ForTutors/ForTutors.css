@@ -1,0 +1,217 @@
+.For-tutors{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.For-tutors-how{
+    width: 80%;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.For-tutors-how-left{
+    gap: 3rem;
+    width: 50%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.For-tutors-how-left h1{
+    font-size: 2.8rem;
+}
+.For-tutors-how-left p{
+    color: #5E5252;
+    font-size: 0.9rem;
+}
+.For-tutors-how-left button{
+    width: 40%;
+    padding: 0.4rem;
+}
+
+.For-tutors-how-right{
+    width: 50%;
+}
+.For-tutors-how-right img{
+    width: 100%;
+}
+
+.For-tutors-heading{
+    font-size: 2.6rem;
+}
+.For-tutors-heading span{
+    color: #52ACFF;
+}
+
+
+
+.For-tutor-steps{
+    row-gap: 4rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 2rem 0rem;
+    justify-items: center;
+    margin-bottom: 14%;
+}
+
+.For-tutor-step{
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    position: relative;
+}
+.For-tutor-step div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.For-tutor-step div p{
+    color: #1D3146;
+}
+
+
+.Tdown{
+    transform: translateY(50%);
+}
+
+
+.For-tutor-apply{
+    margin: 4rem 0rem;
+    width: 12%;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid #52ACFF;
+    color: #52ACFF;
+}
+
+
+.For-Tutor-perks{
+    width: 100%;
+    display: flex;
+    padding: 4rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9
+}
+
+
+.Tutor-perks{
+    margin: 4rem 0rem;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+}
+
+.Tutor-perk{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 1.2rem;
+
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+/* /////////////////////////////////////////////// */
+.circle{    
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.c--1{
+    width: 4rem;
+    height: 4rem;
+    background-color: #A594EA;
+    top: -16%;
+    left: -38%;
+}
+.c--2{
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF946B;
+    top: 74%;
+    left: -16%;
+}
+.c--3{
+    width: 1rem;
+    height: 1rem;
+    background-color: #FF946B;
+    right: -16%;
+    top: -40%;
+}
+.c--4{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #A594EA;
+    right: -56%;
+}
+.c--5{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #87BCD5;
+    right: -54%;
+}
+.c--6{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #ABA1E9;
+    bottom: -8%;
+    left: -58%;
+ 
+}
+.c--7{
+    width: 2rem;
+    height: 2rem;
+    background-color: #DFF6D7;
+    right: -13%;
+}
+.c--8{
+    width: 3rem;
+    height: 3rem;
+    background-color: #DFF6D7;
+    right: 4%;
+    bottom: -22%;
+}
+.c--9{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #87BCD5;
+    left: 64%;
+    bottom: -30%;
+}
+.c--10{
+    width: 2rem;
+    height: 2rem;
+    background-color:  #FF946B;
+    bottom: -16%;
+    left: -7%;
+}
+
+

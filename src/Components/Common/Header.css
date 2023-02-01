@@ -1,0 +1,36 @@
+button{
+    cursor: pointer;
+}
+.Header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background-color: #52ACFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 1rem;
+    box-sizing: border-box;
+}
+
+.Header-options{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.Header-options a{
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.Header-Sign-in{
+    width: 12rem;
+    font-size: 1.2rem;
+    color: #52ACFF;
+    background-color: white;
+
+    border: none;
+    border-radius: 2rem;
+    padding: .4rem 0rem;
+}

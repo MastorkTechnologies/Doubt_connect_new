@@ -1,0 +1,75 @@
+h1{
+    font-size: 2.6rem;
+}
+
+.DcForSchools{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.DcForSchools-container{   
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    box-sizing: border-box;
+    gap: 6rem;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.DcForSchools-container div{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.DcForSchools-heading span{
+    color: #52ACFF;
+}
+
+
+.Offerings{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #9BCFF5;
+    padding: 2rem 0rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+.Offering{
+    width: 70%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: white;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.Lot-more-to-offer{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin: 6rem 0rem;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.DcForSchools-connect{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.DcForSchools-connect button{
+    width: 50%;
+    padding: 1rem;
+}
