@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.edef7de5.css",
+    "main.js": "/static/js/main.d2cd669e.js",
+    "static/media/testimonial.mp4": "/static/media/testimonial.ab348a231bfc228d3736.mp4",
+    "static/media/about1.svg": "/static/media/about1.848b64cb82aebd96448a144d010e45bb.svg",
+    "static/media/home.svg": "/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
+    "static/media/blog2.png": "/static/media/blog2.82037a2a3e1483f877fd.png",
+    "static/media/blog1.png": "/static/media/blog1.2a50655a17c719e3a871.png",
+    "static/media/aboutus3.png": "/static/media/aboutus3.0e60edd5ffe73a7d82a1.png",
+    "static/media/aboutus4.png": "/static/media/aboutus4.ee5fe89c5aca23b1a5f5.png",
+    "static/media/aboutus2.png": "/static/media/aboutus2.be667720a707fc006b44.png",
+    "static/media/dcforschools.png": "/static/media/dcforschools.151e10f5d6a1117f16ab.png",
+    "static/media/fortutors.png": "/static/media/fortutors.4fde287004f9aed7dc21.png",
+    "static/media/footer_logo_1.svg": "/static/media/footer_logo_1.9ce2107fc4f7ec1caa6380c4a30afc6b.svg",
+    "static/media/footer_logo_2.svg": "/static/media/footer_logo_2.e52b7a43da9e9b7e43813d0ab9e6e6fc.svg",
+    "static/media/blog3.png": "/static/media/blog3.d154342da5a2dbb3ca5e.png",
+    "static/media/floating_container_img2.svg": "/static/media/floating_container_img2.6ef8b4ef550c323de21f0b491b1352e7.svg",
+    "static/media/floating_container_img1.svg": "/static/media/floating_container_img1.1b81a874aee7e5f95508ab40a0c95456.svg",
+    "static/media/perk4.svg": "/static/media/perk4.5bc7815e5d15a57e28602634b01bd974.svg",
+    "static/media/perk5.svg": "/static/media/perk5.60912ebbc832c6cd112eda635fb8e2fa.svg",
+    "static/media/perk6.svg": "/static/media/perk6.fbadf85087e0728ffcde5337bc3f6fca.svg",
+    "static/media/perk1.svg": "/static/media/perk1.8e071bd5b8c174d079aed3f3c4c10909.svg",
+    "static/media/perk3.svg": "/static/media/perk3.ae78fa80884a2b36fbd1e0ab8f60345e.svg",
+    "static/media/perk2.svg": "/static/media/perk2.783d52c8a0430e4d6c2c14b78ac527b3.svg",
+    "index.html": "/index.html",
+    "main.edef7de5.css.map": "/static/css/main.edef7de5.css.map",
+    "main.d2cd669e.js.map": "/static/js/main.d2cd669e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edef7de5.css",
+    "static/js/main.d2cd669e.js"
+  ]
+}
