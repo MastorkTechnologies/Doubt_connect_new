@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 import img1 from '../../Assets/footer_logo_1.svg'
 import img2 from '../../Assets/footer_logo_2.svg'
 
@@ -27,6 +28,8 @@ function Footer() {
 
 
                     </div>
+                    <a href="https://doubtconnect.medium.com/">Blogs</a>
+                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/about-us">About us</Link>
                 </div>
                 <p> &copy; DoubtConnect 2023. All Rights Reserved</p>
             </div>
@@ -43,7 +46,7 @@ function Footer() {
 
         <div className='Footer-right'>
             <div className='Footer-right-1'>
-                <h2>Follow Us On</h2>
+                <h2>Resources</h2>
                 <div>
                     <p>Terms & Conditions</p>
                     <p>Blogs</p>

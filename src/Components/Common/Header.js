@@ -10,8 +10,6 @@ function Header() {
         <img src={logo}></img>
         <div className='Header-options'>
             <Link to="/">Home</Link>
-            <Link to="/about-us">About us</Link>
-            <a href="https://doubtconnect.medium.com/">Blogs</a>
             <Link to="/for-tutors">For Tutors</Link>
             <Link to="/dc-for-schools">DC For Schools</Link>
         </div>

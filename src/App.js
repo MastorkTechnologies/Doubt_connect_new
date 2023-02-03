@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Header from './Components/Common/Header';
 import Footer from './Components/Common/Footer';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
 import Blog from './Components/Blog/Blog';
@@ -20,6 +20,7 @@ function App() {
                 <Route path="/blogs" element={<Fragment><Header/><Blog/><Footer/></Fragment>} /> 
                 <Route path="/dc-for-schools" element={<Fragment><Header/><DcForSchools/><Footer/></Fragment>} /> 
                 <Route path="/for-tutors" element={<Fragment><Header/><ForTutors/><Footer/></Fragment>} /> 
+                <Route path='*' element={<Navigate to='/' />} />
             </Routes>
         </BrowserRouter>
     );

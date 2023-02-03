@@ -1,3 +1,4 @@
+
 .Footer{
     width: 100%;
     display: flex;
@@ -43,6 +44,11 @@
 }
 .Footer-left-1 p{
     font-size: 0.8rem;
+}
+
+.Footer-left-1-div a{
+    color: #5E5252;
+    font-size: 1rem;
 }
 
 
