@@ -44,12 +44,11 @@ function Footer() {
             <div className='Footer-right-1'>
                 <h2>Resources</h2>
                 <div>
-                    <p>Terms & Conditions</p>
-                    <p>Blogs</p>
+                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/about-us">About us</Link>
+                    <a href="https://doubtconnect.medium.com/">Blogs</a>
                     <p>Support</p>
                     <p>Privacy Policy</p>
-                    <a href="https://doubtconnect.medium.com/">Blogs</a>
-                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/about-us">About us</Link>
+                    <p>Terms & Conditions</p>
                 </div>
             </div>
 
