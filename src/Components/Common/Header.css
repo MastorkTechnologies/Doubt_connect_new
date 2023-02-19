@@ -3,7 +3,7 @@ button{
     outline: none;
 }
 .Header{
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     display: flex;
     background-color: #52ACFF;
@@ -12,6 +12,9 @@ button{
     padding: .2rem 1rem;
     box-sizing: border-box;
     
+}
+.Logo-1{
+    width: 18%;
 }
 
 .Header-menu-button{
