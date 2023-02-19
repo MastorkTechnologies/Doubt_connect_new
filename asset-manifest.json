@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.a23e266f.css",
-    "main.js": "/Doubt_connect_new/static/js/main.cd3e62dc.js",
+    "main.css": "/Doubt_connect_new/static/css/main.afce2e25.css",
+    "main.js": "/Doubt_connect_new/static/js/main.fd03d3cf.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/about1.png": "/Doubt_connect_new/static/media/about1.8db88d0e05197dabb2d9.png",
     "static/media/blog2.png": "/Doubt_connect_new/static/media/blog2.82037a2a3e1483f877fd.png",
@@ -20,20 +20,20 @@
     "static/media/whats3.png": "/Doubt_connect_new/static/media/whats3.a869631c8231d9c6931f.png",
     "static/media/footer_logo_4.svg": "/Doubt_connect_new/static/media/footer_logo_4.dd3cf34141f757e00a45fced9a912317.svg",
     "static/media/blog3.png": "/Doubt_connect_new/static/media/blog3.d154342da5a2dbb3ca5e.png",
-    "static/media/floating_container_img2.svg": "/Doubt_connect_new/static/media/floating_container_img2.6ef8b4ef550c323de21f0b491b1352e7.svg",
-    "static/media/floating_container_img1.svg": "/Doubt_connect_new/static/media/floating_container_img1.1b81a874aee7e5f95508ab40a0c95456.svg",
+    "static/media/fill_details.png": "/Doubt_connect_new/static/media/fill_details.eb0b19cefc6a0b84daf0.png",
     "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.5bc7815e5d15a57e28602634b01bd974.svg",
     "static/media/perk5.svg": "/Doubt_connect_new/static/media/perk5.60912ebbc832c6cd112eda635fb8e2fa.svg",
     "static/media/perk6.svg": "/Doubt_connect_new/static/media/perk6.fbadf85087e0728ffcde5337bc3f6fca.svg",
     "static/media/perk1.svg": "/Doubt_connect_new/static/media/perk1.8e071bd5b8c174d079aed3f3c4c10909.svg",
     "static/media/perk3.svg": "/Doubt_connect_new/static/media/perk3.ae78fa80884a2b36fbd1e0ab8f60345e.svg",
+    "static/media/flag.svg": "/Doubt_connect_new/static/media/flag.94a173fb3a479e6233a34d67e74e5878.svg",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.783d52c8a0430e4d6c2c14b78ac527b3.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.a23e266f.css.map": "/Doubt_connect_new/static/css/main.a23e266f.css.map",
-    "main.cd3e62dc.js.map": "/Doubt_connect_new/static/js/main.cd3e62dc.js.map"
+    "main.afce2e25.css.map": "/Doubt_connect_new/static/css/main.afce2e25.css.map",
+    "main.fd03d3cf.js.map": "/Doubt_connect_new/static/js/main.fd03d3cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.a23e266f.css",
-    "static/js/main.cd3e62dc.js"
+    "static/css/main.afce2e25.css",
+    "static/js/main.fd03d3cf.js"
   ]
 }
