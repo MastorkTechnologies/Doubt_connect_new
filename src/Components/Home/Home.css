@@ -10,10 +10,11 @@
 
 .Home-intro{
     width: 88%;
-    height: 100%;
+    height: 70vh;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .Home-intro img{
     width: 60%;
@@ -33,6 +34,11 @@
 }
 .Heading span{
     color: #52ACFF;
+}
+.Heading-2{
+    width: 80%;
+    text-align: center;
+
 }
 .Home-intro-left button{
     width: max-content;
@@ -54,6 +60,7 @@
     width: 90%;
     text-align: center;
     row-gap: 2rem;
+    margin-bottom: 3rem;
 }
 .whats-next div{
     width: 100%;
@@ -141,57 +148,206 @@
 
 
 
-.Testimonials{
-    width: 70%;
+.testimonials{
+    width: 88%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.testimonial{
+    display: flex;
+    gap: 2rem;
+    height: 16rem;
     align-items: center;
-    position: relative;
-}
-.Testimonials-components{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
-    overflow: hidden;
-}
-.Testimonials-wrapper{
-    display: flex;
-    gap: 4.8rem;
-    transition: all 1.3s;
-}
-.Testimonials-wrapper::after{
-    content: "";
-    width: 34rem;
-}
-.Testimonials button{
-    z-index: 100;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    top: 40%;
-    border: none;
-    background-color: inherit;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0px 0px 14px #ababab;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
 }
-.Testimonials-btn-left{
-    left: -3%;
+.testimonial span{
+    color: #52ACFF;
 }
-.Testimonials-btn-right{
-    right: -5%;
+.testimonial-1-comment{
+    width: 40%;
+    height: 100%;
+    
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #C9CDD4;
+
+    padding: 4rem;
 }
-.Testimonials button svg{
+.testimonial h4{
+    position: absolute;
+    bottom: 16%;
+    left: 6%;
+}
+.testimonial h5{
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    color: #979797;
+}
+.testimonial p{
+    color: #373737;
+    font-weight: 600;
+}
+
+.testimonial-1-vid{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 14px #969798;
+}
+.testimonial iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.quote{
+    position: absolute;
+    font-size: 4rem;
+    color: #52ACFF;
+    top: 10%;
+    left: 6%;
+}
+
+
+.testimonial-2-comment{
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #C9CDD4;
+
+    padding: 4rem 5rem;
+}
+.testimonial-2-vid{
+    height: 100%;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fill-details{
     display: flex;
-    width: 2rem;
-    height: 2rem;
-    scale: 0.9;
+    align-items: center;
+    width: 88%;
+    gap: 4rem;
+    position: relative;
+    box-shadow: 0px 0px 10px #C9CDD4;
+    padding: 2.2rem 3rem;
+    border-radius: 1rem;
+
+    margin-bottom: 3rem;
 }
+.fill-details-left{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+.fill-details h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.fill-details h3 span{
+    color: #52ACFF;
+}
+.fill-details img{
+    width: 40%;
+}
+.fill-input-container{
+    border: 2px double #C9CDD4;
+    padding: 1rem;
+    border-radius: .6rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.fill-input-container input{
+    outline: none;
+    border: none;
+    color: #686868;
+
+    font-size: 1rem;
+}
+.fill-input-container div{
+    display: flex;
+    gap: .6rem;
+}
+.fill-input-container img{
+    width: 2rem;
+}
+.fill-input-container p{
+    color: #686868;
+    font-weight: 600;
+}
+.dropdown-header{
+    border: 2px double #C9CDD4;
+    padding: 1rem;
+    border-radius: .6rem;
+    width: 48%;
+    display: flex;
+    gap: 1rem;
+    grid-column-end: 3;
+    grid-column-start: 1;
+
+    grid-row-start: 4;
+    grid-row-end: 9;
+    height: fit-content;
+    color: #686868;
+
+    cursor: pointer;
+
+}
+.dropdown-header ul{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    bottom: 6%;
+    left: 3.7%;
+    list-style: none;
+    padding: 1rem;
+    border-radius: .6rem;
+    width: 25.5%;
+
+    z-index: 11;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 4px #C9CDD4;
+}
+
+.fill-details-left li{
+    cursor: pointer;
+}
+
+.fill-details-left button{
+    height: 4rem;
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: #52ACFF;
+    color: white;
+    font-size: 1rem;
+    border-radius: .6rem;
+}
+
 
 
 
@@ -491,9 +647,6 @@
     .Metrics p{
         font-size: .8rem;
     }
-
-
-
 }
 
 
@@ -680,12 +833,13 @@
 @media screen and (max-width: 420px){
     .Home{
         margin: 3rem 1rem;
-        gap: 6rem;
+        gap: 3rem;
     }
     .Home-intro{
         gap:2.4rem;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10rem;
     }
     .Home-intro-left{
         width: 100%;
@@ -712,13 +866,15 @@
         height: 110%;
     }
     .Heading-2{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
 
     .whats-next{
         display: flex;
         flex-direction: column;
+        margin-bottom: 4rem;
+        gap: 1.6rem;
     }
     .whats-next div{
         gap: 2rem;
@@ -727,11 +883,12 @@
         width: 100%;
     }
     .whats-next p{
-        font-size: 1.2rem;
-        line-height: 1.6rem;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
     }
     .whats-next button{
-        margin-top: 1rem;
+        font-size: 1rem;
     }
     .left-svg-arrow{
         display: none;
@@ -742,7 +899,7 @@
 
     .Help-section{
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         gap: 1rem;
         display: flex;
         flex-direction: column;
@@ -750,8 +907,8 @@
         justify-content: end;
     }
     .Help-container{
-        padding: 3rem 1rem;
-        gap: 1rem;
+        padding: 2.2rem 1rem;
+        gap: 1.2rem;
         width: 100%;
     }
     .Help-container svg{
@@ -773,7 +930,7 @@
 
     .Floating-container{
         gap: 1rem;
-        padding: 0.4rem;
+        padding: 1rem;
         height: fit-content;
         display: block;
         position: relative;
@@ -791,40 +948,26 @@
     }
     .--1,.--2,.--3,.--4,.--5,.--6,.--7,.--8,.--9,.--10{
         display: none;
-
     }
 
     .--4--,.--1--,.--5--,.--6--,.--8--,.--2--,.--22--{
         display: flex;
+        align-items: center;
     }
     .--1--{
-        align-self: flex-start;
-        z-index: 11;
-    }
-    .--4--{
-        align-self: flex-end;
-        z-index: 11;
-        justify-content: space-between;
+        width: 80%;
+        align-self: end;
     }
     .--5--{
-        align-self: flex-end;
-        padding: 1rem;
-    }
-    .--6--{
+        width: 85%;
         align-self: flex-start;
-        padding: 1rem;
     }
     .--8--{
-        align-self: flex-end;
-    }
-    .--2--{
-        align-self: flex-end;
-        padding: 1rem;
+        width: 90%;
+        align-self: flex-start;
     }
     .--22--{
-        align-self: flex-start;
-        padding: 1rem;
-        z-index: 111;
+        align-self: flex-end;
     }
 
     .circle-11{
@@ -834,7 +977,10 @@
         top: -158%;
         right: 28%;
         z-index: -1;
+        display: none;
     }
+
+    /* 
     .circle-1{
         left: 2%;
         top: -27%;
@@ -867,7 +1013,7 @@
     }
     .circle-8{
         position: absolute;
-    }
+    } */
 
 
 
@@ -878,10 +1024,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateY(-20%);
+        margin-bottom: 4rem;
     }
     .Metrics div{
-        width: 70%;
+        width: 88%;
     }
     .Metrics h1{
         font-size: 2rem;
@@ -891,5 +1037,142 @@
         font-weight: 600;
         font-size: .8rem;
     }
+
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        margin-bottom: 3rem;
+        display: none;
+    }
+    /* .testimonial{
+        display: flex;
+        gap: .6rem;
+        height: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonial span{
+        color: #52ACFF;
+    }
+    .testimonial-1-comment{
+        width: 50%;
+        height: 100%;
+        
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px #C9CDD4;
+    
+        padding: .4rem;
+    }
+    .testimonial h4{
+        position: absolute;
+        bottom: 16%;
+        left: 6%;
+    }
+    .testimonial h5{
+        position: absolute;
+        bottom: 10%;
+        left: 6%;
+        color: #979797;
+    }
+    .testimonial p{
+        color: #373737;
+        font-weight: 600;
+    }
+    
+    .testimonial-1-vid{
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 14px #969798;
+    }
+    .testimonial iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    .quote{
+        position: absolute;
+        font-size: .2rem;
+        color: #52ACFF;
+        top: 10%;
+        left: 6%;
+    } */
+    
+    
+    /* .testimonial-2-comment{
+        width: 50%;
+        height: 100%;
+        
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px #C9CDD4;
+    
+        padding: 4rem 5rem;
+    }
+    .testimonial-2-vid{
+        height: 100%;
+        width: 30%;
+    } */
+
+
+    .fill-details{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;  
+        padding: 0;
+    }
+    .fill-details-left{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1.6rem;
+    }
+    .fill-details-left h3{
+        font-size: 0.9rem;
+    }
+    .fill-input-container{
+        padding: 0.6rem;
+        overflow: hidden;
+    }
+    .fill-input-container input{
+        font-size: 0.8rem;
+    }
+    .fill-input-container img{
+        width: 1.8rem;
+    }
+    .fill-input-container p{
+        font-size: 0.8rem;
+    }
+
+    .fill-details img{
+        width: 100%;
+    }
+
+    .dropdown-header{
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    .dropdown-header ul{
+        width: 90%;
+        bottom: 30%;
+        left: 5%;   
+    }
+
+
+
+    
+
+    .fill-details-left button{
+        width: 45%;
+        height: 3rem;
+        font-size: 0.8rem;
+        align-self: center;
+    } 
+
 }
 

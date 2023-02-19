@@ -1,49 +1,36 @@
-import React, { useState, useRef} from 'react'
+import React, { useState} from 'react'
 import './Home.css'
 
+import 'react-phone-number-input/style.css';
 import home from '../../Assets/home.svg'
-import img1 from '../../Assets/floating_container_img1.svg'
-import img2 from '../../Assets/floating_container_img2.svg'
+import flag from '../../Assets/flag.svg'
 import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
 import whats3 from '../../Assets/whats3.png'
+import fill_details from '../../Assets/fill_details.png'
 import { Link } from 'react-router-dom'
 
-// import VideoComponent from './VideoComponent'
-// import testimonial from '../../Assets/testimonial.mp4'
-// const testimonial_data = [
-//     testimonial,
-//     testimonial,
-//     testimonial,
-//     testimonial,
-//     testimonial,
-//     testimonial,
-//     testimonial,
-//     testimonial,
-// ] 
 
 function Home() {
 
-    const wrapperComponent = useRef();
-    const [counter, setCounter] = useState(0)
-    
+    const options = [
+        { value: 'teacher', label: 'Teacher' },
+        { value: 'admin', label: 'School Admin' },
+        { value: 'principal', label: 'Principal' },
+        { value: 'owner', label: 'School Owner' }
+    ];
+     
+    const [selectedOption, setSelectedOption] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const moveLeft = ()=>{
-        if(counter !== 0){
-            setCounter(counter + 13)
-        }
-
+    function toggleDropdown() {
+        setIsOpen(!isOpen);
     }
 
-    const moveRight = ()=>{
-        if(Math.abs(counter / 13) !== 5){
-            setCounter(counter - 13)
-        }
+    function handleOptionClick(option) {
+        setSelectedOption(option);
+        toggleDropdown();
     }
-
-    // useEffect(()=>{
-    //     wrapperComponent.current.style.transform = `translateX(${counter}%)`
-    // },[counter])
     
     return (
         <div className='Home'>
@@ -79,7 +66,7 @@ function Home() {
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
                 </svg>
 
-                <svg className='down-svg-arrow' width="35" height="47" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='down-svg-arrow' width="25" height="37" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.249999 29.5176L4.41875 25.4926L14.625 35.6988L14.625 0.767577L20.375 0.767577L20.375 35.6988L30.5812 25.4926L34.75 29.5176L17.5 46.7676L0.249999 29.5176Z" fill="#52ACFF"/>
                 </svg>
 
@@ -91,7 +78,7 @@ function Home() {
                 <svg className='left-svg-arrow' width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
                 </svg>
-                <svg className='down-svg-arrow' width="35" height="47" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='down-svg-arrow' width="25" height="37" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.249999 29.5176L4.41875 25.4926L14.625 35.6988L14.625 0.767577L20.375 0.767577L20.375 35.6988L30.5812 25.4926L34.75 29.5176L17.5 46.7676L0.249999 29.5176Z" fill="#52ACFF"/>
                 </svg>
                 <div>
@@ -111,8 +98,11 @@ function Home() {
             <div className='Help-section'>
 
                 <div className='Floating-container --4--'>
-                            <img src={img2}></img>
-                            <h1 className='Heading'><span>Vivek Sharma</span><br></br>Has a doubt</h1>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 14C9 11.5 9.875 9.375 11.625 7.625C13.375 5.875 15.5 5 18 5V7C16.05 7 14.396 7.679 13.038 9.037C11.6793 10.3957 11 12.05 11 14H9ZM13 14C13 12.6167 13.4877 11.4373 14.463 10.462C15.4377 9.48733 16.6167 9 18 9V11C17.1667 11 16.4583 11.2917 15.875 11.875C15.2917 12.4583 15 13.1667 15 14H13ZM5 6C4.45 6 3.979 5.804 3.587 5.412C3.19567 5.02067 3 4.55 3 4C3 3.45 3.19567 2.979 3.587 2.587C3.979 2.19567 4.45 2 5 2C5.55 2 6.02067 2.19567 6.412 2.587C6.804 2.979 7 3.45 7 4C7 4.55 6.804 5.02067 6.412 5.412C6.02067 5.804 5.55 6 5 6ZM2 11V8.5C2 8.08333 2.146 7.72933 2.438 7.438C2.72933 7.146 3.08333 7 3.5 7H6.5C7.25 7 7.896 6.76233 8.438 6.287C8.97933 5.81233 9.31667 5.21667 9.45 4.5H11.45C11.35 5.5 10.9833 6.38333 10.35 7.15C9.71667 7.91667 8.93333 8.45 8 8.75V11H2ZM19 17C18.45 17 17.979 16.8043 17.587 16.413C17.1957 16.021 17 15.55 17 15C17 14.45 17.1957 13.979 17.587 13.587C17.979 13.1957 18.45 13 19 13C19.55 13 20.021 13.1957 20.413 13.587C20.8043 13.979 21 14.45 21 15C21 15.55 20.8043 16.021 20.413 16.413C20.021 16.8043 19.55 17 19 17ZM16 22V19.75C15.0667 19.45 14.2833 18.9167 13.65 18.15C13.0167 17.3833 12.65 16.5 12.55 15.5H14.55C14.6833 16.2167 15.0207 16.8127 15.562 17.288C16.104 17.7627 16.75 18 17.5 18H20.5C20.9167 18 21.2707 18.146 21.562 18.438C21.854 18.7293 22 19.0833 22 19.5V22H16Z" fill="#52ACFF"/>
+                        </svg>
+
+                        <p>Connect with tutors instantly within 40 seconds.</p>
                 </div>
 
                 <div className='Help-container' style={{backgroundColor:"#F7F0E7"}}>
@@ -124,14 +114,6 @@ function Home() {
 
                         <p>Connect with tutors instantly within 40 seconds.</p>
                     </div>
-                    
-                    {/* <div className='Floating-container --2'>
-                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.2162 15.8948V14.2876C14.2162 13.4351 13.8775 12.6175 13.2747 12.0147C12.6719 11.4118 11.8543 11.0732 11.0017 11.0732H4.57284C3.72032 11.0732 2.90271 11.4118 2.29989 12.0147C1.69706 12.6175 1.3584 13.4351 1.3584 14.2876V15.8948" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.78769 7.85864C9.56297 7.85864 11.0021 6.41948 11.0021 4.64419C11.0021 2.8689 9.56297 1.42975 7.78769 1.42975C6.0124 1.42975 4.57324 2.8689 4.57324 4.64419C4.57324 6.41948 6.0124 7.85864 7.78769 7.85864Z" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>10k+ Students</p>
-                    </div> */}
 
                     <div className='circle-1'></div>
                     <div className='circle-2'></div>
@@ -145,17 +127,13 @@ function Home() {
                 </div>
 
                 <div className='Floating-container --1--'>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z" fill="#52ACFF"/>
-                            </svg>
-                            <p>Learning aid for students, teaching aid for teachers and tracking aid for schools</p>
+                <svg width="22" height="22" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.2197 5.86334H4.83496C4.05744 5.86334 3.31177 6.17221 2.76198 6.722C2.21219 7.27179 1.90332 8.01746 1.90332 8.79498V27.8506C1.90332 28.6282 2.21219 29.3738 2.76198 29.9236C3.31177 30.4734 4.05744 30.7823 4.83496 30.7823H31.2197C31.9972 30.7823 32.7429 30.4734 33.2927 29.9236C33.8425 29.3738 34.1514 28.6282 34.1514 27.8506V8.79498C34.1514 8.01746 33.8425 7.27179 33.2927 6.722C32.7429 6.17221 31.9972 5.86334 31.2197 5.86334ZM4.83496 27.8506V8.79498H16.5615V27.8506H4.83496ZM31.2197 27.8506H19.4932V8.79498H31.2197V27.8506ZM20.959 13.9254H29.7539V16.1241H20.959V13.9254ZM20.959 17.5899H29.7539V19.7886H20.959V17.5899ZM20.959 21.2545H29.7539V23.4532H20.959V21.2545Z" fill="#52ACFF"/>
+                        </svg>
+                        <p>150000+ hours of content.</p>
                 </div>
 
                 <div className='Help-container Tdown' style={{backgroundColor:"#EFE4FC"}}>
-
-                    {/* <div className='Floating-container --5'>
-                        <p>0 integration cost</p>
-                    </div> */}
 
                     <div className='Floating-container --6'>
                         <svg width="22" height="22" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,11 +141,6 @@ function Home() {
                         </svg>
                         <p>150000+ hours of content.</p>
                     </div>
-
-                    {/* <div className='Floating-container --4'>
-                        <img src={img2}></img>
-                        <h1 className='Heading'><span>Vivek Sharma</span><br></br>Has a doubt</h1>
-                    </div> */}
 
                     <div className='circle-9'></div>                    
                     <div className='circle-10'></div>                    
@@ -182,7 +155,10 @@ function Home() {
                 </div>
                 
                 <div className='Floating-container --5--'>
-                            <p>0 integration cost</p>
+                <svg g width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0234375 20L20.0234 0V11H18.0234V4.85L4.87344 18H11.1734V20H0.0234375ZM17.0234 23L16.7234 21.5C16.5234 21.4167 16.3361 21.3293 16.1614 21.238C15.9861 21.146 15.8068 21.0333 15.6234 20.9L14.1734 21.35L13.1734 19.65L14.3234 18.65C14.2901 18.45 14.2734 18.2333 14.2734 18C14.2734 17.7667 14.2901 17.55 14.3234 17.35L13.1734 16.35L14.1734 14.65L15.6234 15.1C15.8068 14.9667 15.9861 14.854 16.1614 14.762C16.3361 14.6707 16.5234 14.5833 16.7234 14.5L17.0234 13H19.0234L19.3234 14.5C19.5234 14.5833 19.7111 14.6707 19.8864 14.762C20.0611 14.854 20.2401 14.9667 20.4234 15.1L21.8734 14.65L22.8734 16.35L21.7234 17.35C21.7568 17.55 21.7734 17.7667 21.7734 18C21.7734 18.2333 21.7568 18.45 21.7234 18.65L22.8734 19.65L21.8734 21.35L20.4234 20.9C20.2401 21.0333 20.0611 21.146 19.8864 21.238C19.7111 21.3293 19.5234 21.4167 19.3234 21.5L19.0234 23H17.0234ZM18.0234 20C18.5734 20 19.0444 19.8043 19.4364 19.413C19.8278 19.021 20.0234 18.55 20.0234 18C20.0234 17.45 19.8278 16.979 19.4364 16.587C19.0444 16.1957 18.5734 16 18.0234 16C17.4734 16 17.0028 16.1957 16.6114 16.587C16.2194 16.979 16.0234 17.45 16.0234 18C16.0234 18.55 16.2194 19.021 16.6114 19.413C17.0028 19.8043 17.4734 20 18.0234 20Z" fill="#52ACFF"/>
+                        </svg>
+                        <p>Make data driven decisions for your students.</p>
                 </div>
 
                 <div className='Help-container' style={{backgroundColor:"#E7F0F0"}}>
@@ -196,11 +172,6 @@ function Home() {
 
                     <div className='circle-3'></div>
 
-                    {/* <div className='Floating-container --3'>
-                        <img src={img1}></img>
-                        <h1 className='Heading'><span>Vivek Sharma</span><br></br>Has a doubt</h1>
-                    </div> */}
-
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.582 6.17194C25.2189 6.17194 26.7888 6.82219 27.9462 7.97964C29.1037 9.13709 29.7539 10.7069 29.7539 12.3438C29.7539 13.9807 29.1037 15.5505 27.9462 16.708C26.7888 17.8654 25.2189 18.5157 23.582 18.5157C21.9451 18.5157 20.3753 17.8654 19.2179 16.708C18.0604 15.5505 17.4102 13.9807 17.4102 12.3438C17.4102 10.7069 18.0604 9.13709 19.2179 7.97964C20.3753 6.82219 21.9451 6.17194 23.582 6.17194ZM23.582 9.10358C22.7227 9.10358 21.8985 9.44496 21.2908 10.0526C20.6832 10.6603 20.3418 11.4844 20.3418 12.3438C20.3418 13.2032 20.6832 14.0273 21.2908 14.635C21.8985 15.2427 22.7227 15.584 23.582 15.584C24.4414 15.584 25.2656 15.2427 25.8732 14.635C26.4809 14.0273 26.8223 13.2032 26.8223 12.3438C26.8223 11.4844 26.4809 10.6603 25.8732 10.0526C25.2656 9.44496 24.4414 9.10358 23.582 9.10358ZM23.582 20.0587C27.7018 20.0587 35.9258 22.1108 35.9258 26.2305V30.8594H11.2383V26.2305C11.2383 22.1108 19.4623 20.0587 23.582 20.0587ZM23.582 22.9903C18.9531 22.9903 14.1699 25.243 14.1699 26.2305V27.9278H32.9941V26.2305C32.9941 25.243 28.1646 22.9903 23.582 22.9903ZM8.15234 20.4907L4.29492 22.7897L5.34414 18.454L1.98047 15.5532L6.40879 15.1674L8.15234 11.094L9.86504 15.1674L14.3242 15.5532L10.9297 18.454L11.9326 22.7897L8.15234 20.4907Z" fill="#52ACFF"/>
                     </svg>
@@ -209,10 +180,10 @@ function Home() {
                 </div>
 
                 <div className='Floating-container --6--'>
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.4171 3.82513H2.8753C2.41731 3.82513 1.97807 4.00707 1.65422 4.33092C1.33037 4.65477 1.14844 5.09401 1.14844 5.552V16.7766C1.14844 17.2346 1.33037 17.6738 1.65422 17.9977C1.97807 18.3215 2.41731 18.5035 2.8753 18.5035H18.4171C18.8751 18.5035 19.3143 18.3215 19.6382 17.9977C19.962 17.6738 20.1439 17.2346 20.1439 16.7766V5.552C20.1439 5.09401 19.962 4.65477 19.6382 4.33092C19.3143 4.00707 18.8751 3.82513 18.4171 3.82513ZM2.8753 16.7766V5.552H9.78276V16.7766H2.8753ZM18.4171 16.7766H11.5096V5.552H18.4171V16.7766ZM12.3731 8.57401H17.5536V9.86916H12.3731V8.57401ZM12.3731 10.7326H17.5536V12.0277H12.3731V10.7326ZM12.3731 12.8912H17.5536V14.1863H12.3731V12.8912Z" fill="#52ACFF"/>
-                        </svg>
-                        <p>Updated Digital Library</p>
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 0L0 6L4 8.18V14.18L11 18L18 14.18V8.18L20 7.09V14H22V6L11 0ZM17.82 6L11 9.72L4.18 6L11 2.28L17.82 6ZM16 12.99L11 15.72L6 12.99V9.27L11 12L16 9.27V12.99Z" fill="#52ACFF"/>
+                    </svg>
+                    <p>Career and academic guidance from top experts.</p>
                 </div>
 
                 <div className='Help-container Tdown' style={{backgroundColor:"#FBE8EC"}}>
@@ -234,10 +205,11 @@ function Home() {
                 </div>
 
                 <div className='Floating-container --8--'>
-                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3126 4.30027L9.82186 6.11119H0.649722L1.14738 4.30027H10.3126ZM5.70234 14.9999L0.863992 9.18009L0.85708 7.64564H3.24861C3.81999 7.64564 4.29692 7.55118 4.67938 7.36225C5.06645 7.16872 5.35905 6.89915 5.55719 6.55356C5.75994 6.20335 5.86132 5.79325 5.86132 5.32323C5.86132 4.61822 5.65396 4.05144 5.23924 3.6229C4.82453 3.19436 4.16098 2.98009 3.24861 2.98009H0.649722L1.18885 0.844302H3.24861C4.40981 0.844302 5.37057 1.02401 6.13088 1.38343C6.8958 1.73825 7.46719 2.24051 7.84504 2.89023C8.2275 3.53996 8.41873 4.30027 8.41873 5.17117C8.41873 5.9407 8.27819 6.62728 7.99711 7.23093C7.71602 7.83457 7.27366 8.32992 6.67001 8.71699C6.06637 9.10406 5.27611 9.36211 4.29922 9.49113L4.21628 9.51878L8.58462 14.8755V14.9999H5.70234ZM10.3264 0.844302L9.82186 2.68288L2.38462 2.65523L2.88919 0.844302H10.3264Z" fill="#52ACFF"/>
-                        </svg>
-                        <p>Pay only if there is increase in learning outcomes</p>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.2162 15.8948V14.2876C14.2162 13.4351 13.8775 12.6175 13.2747 12.0147C12.6719 11.4118 11.8543 11.0732 11.0017 11.0732H4.57284C3.72032 11.0732 2.90271 11.4118 2.29989 12.0147C1.69706 12.6175 1.3584 13.4351 1.3584 14.2876V15.8948" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.78769 7.85864C9.56297 7.85864 11.0021 6.41948 11.0021 4.64419C11.0021 2.8689 9.56297 1.42975 7.78769 1.42975C6.0124 1.42975 4.57324 2.8689 4.57324 4.64419C4.57324 6.41948 6.0124 7.85864 7.78769 7.85864Z" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Doubts solved by India's top tutors.</p>
                 </div>
 
                 <div className='Help-container' style={{backgroundColor:"#DFF6D7"}}>
@@ -262,11 +234,10 @@ function Home() {
                 </div>
 
                 <div className='Floating-container --22--'>
-                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.2162 15.8948V14.2876C14.2162 13.4351 13.8775 12.6175 13.2747 12.0147C12.6719 11.4118 11.8543 11.0732 11.0017 11.0732H4.57284C3.72032 11.0732 2.90271 11.4118 2.29989 12.0147C1.69706 12.6175 1.3584 13.4351 1.3584 14.2876V15.8948" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.78769 7.85864C9.56297 7.85864 11.0021 6.41948 11.0021 4.64419C11.0021 2.8689 9.56297 1.42975 7.78769 1.42975C6.0124 1.42975 4.57324 2.8689 4.57324 4.64419C4.57324 6.41948 6.0124 7.85864 7.78769 7.85864Z" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>10k+ Students</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.07 2.93L15.66 4.34C17.1586 5.84245 18.0001 7.87793 18 10C18 14.42 14.42 18 10 18C5.58 18 2 14.42 2 10C2 5.92 5.05 2.56 9 2.07V4.09C6.16 4.57 4 7.03 4 10C4 13.31 6.69 16 10 16C13.31 16 16 13.31 16 10C16 8.34 15.33 6.84 14.24 5.76L12.83 7.17C13.55 7.9 14 8.9 14 10C14 12.21 12.21 14 10 14C7.79 14 6 12.21 6 10C6 8.14 7.28 6.59 9 6.14V8.28C8.4 8.63 8 9.26 8 10C8 11.1 8.9 12 10 12C11.1 12 12 11.1 12 10C12 9.26 11.6 8.62 11 8.28V0H10C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 7.24 18.88 4.74 17.07 2.93Z" fill="#52ACFF"/>
+                    </svg>
+                    <p>Track your students learning outcomes.</p>
                 </div>
 
                 <div className='Help-container Tdown' style={{backgroundColor:"#FFEDD8"}}>
@@ -277,8 +248,6 @@ function Home() {
                         </svg>
                         <p>Track your students learning outcomes.</p>
                     </div>
-
-                    
 
                     <div className='circle-7'></div>
 
@@ -300,19 +269,12 @@ function Home() {
                 
 
                 </div>
-
-                <div className='Floating-container --2--'>
-                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.2162 15.8948V14.2876C14.2162 13.4351 13.8775 12.6175 13.2747 12.0147C12.6719 11.4118 11.8543 11.0732 11.0017 11.0732H4.57284C3.72032 11.0732 2.90271 11.4118 2.29989 12.0147C1.69706 12.6175 1.3584 13.4351 1.3584 14.2876V15.8948" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.78769 7.85864C9.56297 7.85864 11.0021 6.41948 11.0021 4.64419C11.0021 2.8689 9.56297 1.42975 7.78769 1.42975C6.0124 1.42975 4.57324 2.8689 4.57324 4.64419C4.57324 6.41948 6.0124 7.85864 7.78769 7.85864Z" stroke="#52ACFF" stroke-width="1.60722" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>5k New Students</p>
-                </div>
                 
             </div>
 
-            <h1 className='Heading Heading-2'>Our <span>Impact</span> & <span>Metrics</span></h1>
 
+            <h1 className='Heading Heading-2'>Our <span>Impact</span> & <span>Metrics</span></h1>
+            
             <div className='Metrics'>
                 <div>
                     <h1>20000+</h1>
@@ -327,15 +289,91 @@ function Home() {
                     <p>minutes of learning conducted with over <span style={{color:"black",fontWeight:"600"}}>60,000</span> doubts solved</p>
                 </div>
             </div>
+            
 
-
-            <h1 className='Heading'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <spans>schools</spans></h1>
-                
-            <div className=''>
-
+            <h1 className='Heading Heading-2'>Our <span>Testimonials</span></h1>
+            
+            <div className='testimonials'>
+                <div className='testimonial'>
+                    <div className='testimonial-1-comment'>
+                        <span className='quote'>&ldquo;</span>
+                        <p>
+                        I was perplexed with one of the topics in math for days, but the doubt session with the tutor cleared it out in minutes. The idea and the implementation are both <span>perfect</span>. Thank you so much <span>DC</span>!!
+                        </p>
+                        <h4>Hemansh Mohta</h4>
+                        <h5>12th Std student</h5>
+                    </div>
+                    <div className='testimonial-1-vid'>
+                        <iframe
+                            src="https://www.youtube.com/embed/Slqo8SHnFaU"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </div>
+                </div>
+                <div className='testimonial'>
+                    <div className='testimonial-2-vid'>
+                        <iframe
+                            src="https://www.youtube.com/embed/Slqo8SHnFaU"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </div>
+                    <div className='testimonial-2-comment'>
+                        <span className='quote'>&ldquo;</span>
+                        <p>
+                        It was a <span>great experience!</span> The tutor explained the sum very well and tackled the same problem in different methods which helped in my <span>understanding</span>. The interface is very easy to navigate for first time users also.
+                        </p>
+                        <h4>Amani Agarwal</h4>
+                        <h5>JEE Aspirant</h5>
+                    </div>
+                </div>
             </div>
 
-        
+            <h1 className='Heading Heading-2'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></h1>
+            
+            <div className='fill-details'>
+                <div className='fill-details-left'>
+                    <h3>Let us help you get <span>better learning</span> outcomes for your <span>School!</span></h3>
+                    <div className='fill-input-container'>
+                        <input placeholder='Enter your Full Name'></input>
+                    </div>
+                    <div className='fill-input-container'>
+                        <input placeholder='Enter your School Name'></input>
+                    </div>
+                    <div className='fill-input-container'>
+                        <div>
+                            <img src={flag}></img>
+                            <p>+91</p>
+                        </div>
+                        <input placeholder='Enter your Number'></input>
+                    </div>
+                    <div className='fill-input-container'>
+                        <input placeholder='Enter your Email ID'></input>
+                    </div>
+
+                    <div className="dropdown-header" onClick={toggleDropdown}>
+                        {selectedOption ? selectedOption.label : 'Select Role'}
+                        <span className="arrow-icon">&#9662;</span>
+                        {isOpen && (
+                            <ul>
+                            {options.map(option => (
+                                <li
+                                key={option.value}
+                                onClick={() => handleOptionClick(option)}
+                                >
+                                {option.label}
+                                </li>
+                            ))}
+                            </ul>
+                        )}
+                    </div>
+                    <button>Get Started</button>
+                </div>
+                <img src={fill_details}></img>
+            </div>
         </div>
     )
 }

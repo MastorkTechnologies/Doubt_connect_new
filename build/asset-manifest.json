@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.df1074aa.css",
-    "main.js": "/Doubt_connect_new/static/js/main.9ae31ea9.js",
-    "static/media/testimonial.mp4": "/Doubt_connect_new/static/media/testimonial.ab348a231bfc228d3736.mp4",
+    "main.css": "/Doubt_connect_new/static/css/main.a23e266f.css",
+    "main.js": "/Doubt_connect_new/static/js/main.cd3e62dc.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/about1.png": "/Doubt_connect_new/static/media/about1.8db88d0e05197dabb2d9.png",
     "static/media/blog2.png": "/Doubt_connect_new/static/media/blog2.82037a2a3e1483f877fd.png",
@@ -16,6 +15,9 @@
     "static/media/footer_logo_1.svg": "/Doubt_connect_new/static/media/footer_logo_1.1fa45bd1acf40d00c7313fbbe513e674.svg",
     "static/media/footer_logo_3.svg": "/Doubt_connect_new/static/media/footer_logo_3.a38eb5992424158b6e1533f2496607cb.svg",
     "static/media/logo2.svg": "/Doubt_connect_new/static/media/logo2.12e63b24aa4433a6c81125e3ea48b47d.svg",
+    "static/media/whats2.png": "/Doubt_connect_new/static/media/whats2.a4aa4b2ef7e2d1186461.png",
+    "static/media/whats1.png": "/Doubt_connect_new/static/media/whats1.04d40914a5b4848377b7.png",
+    "static/media/whats3.png": "/Doubt_connect_new/static/media/whats3.a869631c8231d9c6931f.png",
     "static/media/footer_logo_4.svg": "/Doubt_connect_new/static/media/footer_logo_4.dd3cf34141f757e00a45fced9a912317.svg",
     "static/media/blog3.png": "/Doubt_connect_new/static/media/blog3.d154342da5a2dbb3ca5e.png",
     "static/media/floating_container_img2.svg": "/Doubt_connect_new/static/media/floating_container_img2.6ef8b4ef550c323de21f0b491b1352e7.svg",
@@ -27,11 +29,11 @@
     "static/media/perk3.svg": "/Doubt_connect_new/static/media/perk3.ae78fa80884a2b36fbd1e0ab8f60345e.svg",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.783d52c8a0430e4d6c2c14b78ac527b3.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.df1074aa.css.map": "/Doubt_connect_new/static/css/main.df1074aa.css.map",
-    "main.9ae31ea9.js.map": "/Doubt_connect_new/static/js/main.9ae31ea9.js.map"
+    "main.a23e266f.css.map": "/Doubt_connect_new/static/css/main.a23e266f.css.map",
+    "main.cd3e62dc.js.map": "/Doubt_connect_new/static/js/main.cd3e62dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.df1074aa.css",
-    "static/js/main.9ae31ea9.js"
+    "static/css/main.a23e266f.css",
+    "static/js/main.cd3e62dc.js"
   ]
 }
