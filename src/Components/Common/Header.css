@@ -1,8 +1,9 @@
 button{
     cursor: pointer;
+    outline: none;
 }
 .Header{
-    height: 10vh;
+    height: 4rem;
     width: 100%;
     display: flex;
     background-color: #52ACFF;
@@ -10,11 +11,22 @@ button{
     align-items: center;
     padding: .2rem 1rem;
     box-sizing: border-box;
+    
 }
 
+.Header-menu-button{
+    width: 1rem;
+    height: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: inherit;
+    border: none;
+    display: none;
+}
 .Header-options{
     display: flex;
     gap: 1.6rem;
+    justify-content: center;
 }
 
 .Header-options a{
@@ -25,12 +37,128 @@ button{
 }
 
 .Header-Sign-in{
-    width: 12rem;
-    font-size: 1.2rem;
+    min-width: fit-content;
+    font-size: 1.1rem;
     color: #52ACFF;
     background-color: white;
 
     border: none;
     border-radius: 2rem;
-    padding: .4rem 0rem;
+    padding: .4rem .6rem;
+}
+
+.Logo-2{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .Header{
+        height: 3rem;
+        padding: .2rem .4rem;
+    }
+
+    .Header-options a{
+        font-size: 1rem;
+    }
+
+    .Header-options{
+        gap: 0.8rem;
+    }
+
+    .Logo-1{
+        width: 25%;
+    }
+    .Header-Sign-in{
+        font-size: 0.9rem;
+        padding: .2rem .4rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    .Header{
+        height:2rem;
+        padding: .15rem .3rem;
+    }
+
+    .Header-options a{
+        font-size: 0.6rem;
+    }
+
+    .Header-options{
+        gap: 0.4rem;
+    }
+
+    .Logo-1{
+        width: 25%;
+    }
+    .Header-Sign-in{
+        font-size: 0.66rem;
+        padding: .15rem .3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 420px){
+    
+    .Header{
+        padding: 0.4rem 0.6rem;
+        height: 3rem;
+        position: relative;
+        gap: 0.2rem;
+        align-items: center;
+    }
+    
+    .Logo-1{
+        display: none;
+    }
+    .Logo-2{
+        display: block;
+        width: 8%;
+    }
+
+    .Header-options{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        top: 100%;
+        right: 0;
+
+        align-items: flex-end;
+        justify-content: start;
+        padding: 1rem;
+        gap: 1rem;
+        transform: translateX(100%);
+        transition: all 0.4s;
+    }
+    .Menu-open{
+        transform: translateX(0%);
+    }
+    .Header-options a{
+        color: #1E2330;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        text-align: end;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .Header-menu-button{
+        display: block;
+        width: 1.8rem;
+    }
+
+    .Header-Sign-in{
+        max-width: 40%;
+        font-size: 1rem;
+        padding: .2rem .4rem;
+    }
 }

@@ -1,5 +1,4 @@
 .Home{
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -10,13 +9,14 @@
 }
 
 .Home-intro{
-    width: 90%;
+    width: 88%;
     height: 100%;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
 }
 .Home-intro img{
-    width: 55%;
+    width: 60%;
 }
 
 .Home-intro-left{
@@ -29,13 +29,13 @@
 
 .Heading{
     font-size: 2.6rem;
-    line-height: 3.2rem;
+    line-height: 3.4rem;
 }
 .Heading span{
     color: #52ACFF;
 }
 .Home-intro-left button{
-    width: 40%;
+    width: max-content;
     padding: 1rem;
 }
 .Home-intro-left a{
@@ -213,6 +213,9 @@
     right: -50%;
     top: 2%;
 }
+.--4--,.--1--,.--5--,.--6--,.--8--,.--2--,.--22--{
+    display: none;
+}
 
 
 /* //////////////////////////////////////////////////// */
@@ -311,4 +314,497 @@
 }
 
 
+
+
+@media screen and (max-width: 900px){
+    .Home{
+        margin: 3rem .5rem;
+        gap: 4rem;
+    }
+    .Heading{
+        line-height: 2.6rem;
+        font-size: 2.1rem;
+    }
+    .Home-intro{
+        width: 90%;
+        gap: 1rem;
+    }
+    .Home-intro-left{
+        gap: 1.5rem;
+    }
+    .Home-intro-left p{
+        font-size: .9rem;
+    }
+    .Home-intro-left button{
+        padding: .6rem;
+        font-size: 1rem;
+    }
+    .Home-intro-left a{
+        padding-left: 0.4rem;
+        font-size: 1rem;
+    }
+    .Home-intro img{
+        width: 70%;
+    }
+
+
+
+    .Help-section{
+        margin-bottom: 10rem;
+        row-gap: 3rem;
+    }
+    .Help-container{
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+    .Help-container svg{
+        height: 2rem;
+        width: 2rem;    
+    }
+    .Help-container h2{
+        font-size: 1rem;
+    }
+    .Help-container-para{
+        font-size: .7rem;
+    }
+
+
+    .Floating-container{
+        gap: 0.8rem;
+        padding: 0.4rem;
+        width: fit-content;
+    }
+    .Floating-container p{
+        font-size: 0.6rem;
+    }
+    .Floating-container h2{
+        font-size: 0.8rem;
+    }
+    .Floating-container svg{
+        width: 1rem;
+        height: 1rem;
+    }
+
+
+
+    .circle-3{
+        left: -30%;
+    }
+    .circle-2{
+        width: 1.6rem;
+        height: 1.6rem;
+        bottom: -18%;
+        left: -24%;
+    }
+    .circle-11 {
+        width: 2rem;
+        height: 2rem;
+        top: -20%;
+        right: 12%;
+    }
+
+    .--5{
+        width: 58%;
+    }
+    .--4,.--3{
+        justify-content: space-between;
+    }
+    .--4 h1,.--3 h1{
+        font-size: 0.7rem;
+        line-height: .9rem;
+    }
+    .--4 img,.--3 img{
+        width: 30%;
+    }
+    .--1{
+        top: -13%;
+        left: -52%;
+        width: 90%;
+    }
+    .--2{
+        bottom: 2%;
+        left: -37%;
+    }
+    .--8{
+        width: 80%; 
+    }
+    
+
+
+    .Metrics{
+        width: 85%;
+    }
+    .Metrics h1{
+        font-size: 1.8rem;
+    }
+    .Metrics p{
+        font-size: .8rem;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 700px){
+    .Home{
+        margin: 1.2rem .4rem;
+    }
+    .Heading{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .Home-intro-left p{
+        font-size: .7rem;
+    }
+    .Home-intro-left a{
+        padding-left: 0.2rem;
+        font-size: .8rem;
+    }
+    .Home-intro-left button{
+        padding: .4rem;
+        font-size: .8rem;
+    }
+    .Home-intro img{
+        /* width: 60%; */
+    }
+
+
+    
+    .Help-section{
+        margin-bottom: 8rem;
+        width: 80%;
+        row-gap: 1.5rem;
+        gap: 1rem;
+    }
+    .Help-container{
+        width: 90%;
+        padding: .8rem;
+        gap: 0.8rem;
+    }
+    .Help-container h2{
+        font-size: .7rem;
+    }
+    .Help-container-para{
+        font-size: .6rem;
+    }
+    .Help-container svg{
+        height: 1.6rem;
+        width: 1.6rem;    
+    }
+
+
+
+
+    .Floating-container{
+        gap: 0.4rem;
+        padding: 0.22rem;
+        width: fit-content;
+    }
+    .Floating-container p{
+        font-size: 0.4rem;
+    }
+    .Floating-container h1{
+        font-size: 0.8rem;
+    }
+    .Floating-container svg{
+        height: .8rem;
+        width: .8rem;    
+    }
+
+
+    .circle-1{
+        left: -28%;
+    }
+    .circle-4{
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background-color: #87BCD5;
+        border-radius: 50%;
+        bottom: 18%;
+        left: -13%;
+    }
+    .circle-3{
+        left: -24%;
+        top: 43%;
+        background-color: #FF946B;
+        display: none;
+    }
+    .circle-2{
+        display: none;
+    }
+    .circle-11 {
+        width: 1.2rem;
+        height: 1.2rem;
+        top: -25%;
+        right: 27%;
+    }
+    .circle-10{
+        width: 1.5rem;
+        height: 1.5rem;
+        right: -14%;
+        bottom: 42%;
+    }
+    .circle-9{
+        width: .8rem;
+        height: .8rem;
+        right: -7%;
+        bottom: -13%;
+    }
+    .circle-8{
+        right: -20%;
+    }
+    .circle-7{
+        width: 1.8rem;
+        height: 1.8rem;
+        right: -24%;
+        bottom: -16%;
+    }
+    .circle-6{
+        width: 1.6rem;
+        height: 1.6rem;
+        bottom: -24%;
+        left: 65%;
+        display: none;
+    }
+    .circle-10{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .--5{
+        min-width: 29%;
+        right: 18%;
+    }
+    .--4 h1,.--3 h1{
+        font-size: 0.6rem;
+        line-height: .8rem;
+    }
+    .--4 img,.--3 img{
+        width: 26%;
+    }
+    .--1{
+        top: -13%;
+        left: -16%;
+        min-width: 70%;
+    }
+    .--2{
+        bottom: -8%;
+        left: -20%;
+    }
+    .--8{
+        width: 56%;
+        right: -18%; 
+    }
+    .--6{
+        right: -10%;
+        top: -3%;
+    }
+    .--7{
+        width: 70%;
+        right: -11%;
+        top: 3%;
+    }
+    .--3{
+        bottom: -7%;
+        left: -32%;
+    }
+
+    .Metrics{
+        width: 90%;
+        gap: 2rem;
+    }
+    .Metrics h1{
+        font-size: 1.2rem;
+    }
+    .Metrics p{
+        font-size: .6rem;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .Home{
+        margin: 3rem 1rem;
+        gap: 6rem;
+    }
+    .Home-intro{
+        gap:2.4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Home-intro-left{
+        width: 100%;
+    }
+    .Heading{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .Home-intro-left p{
+        width: 80%;
+        font-size: .8rem;
+        line-height: 1.4rem;
+        color: #5E5252;
+    }
+    .Home-intro-left button{
+        padding: .5rem;
+        font-size: .8rem;
+    }
+    .Home-intro-left a{
+        display: none;
+    }
+    .Home-intro img{
+        width: 110%;
+        height: 110%;
+    }
+    .Heading-2{
+        font-size: 1.4rem;
+    }
+
+
+
+
+    .Help-section{
+        width: 100%;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+    .Help-container{
+        padding: 3rem 1rem;
+        gap: 1rem;
+        width: 100%;
+    }
+    .Help-container svg{
+        height: 2rem;
+        width: 2rem;    
+    }
+    .Help-container h2{
+        font-size: 1.4rem;
+    }
+    .Help-container-para{
+        font-size: .8rem;
+        color: #1D3146;
+    }
+
+    .Tdown{
+        transform: translateY(-50%);
+    }
+
+
+    .Floating-container{
+        gap: 1rem;
+        padding: 0.4rem;
+        height: fit-content;
+        display: block;
+        position: relative;
+    }
+    .Floating-container h1{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .Floating-container p{
+        font-size: 0.7rem;
+    }
+    .Floating-container svg{
+        height: 1.2rem;
+        width: 1.2rem;    
+    }
+    .--1,.--2,.--3,.--4,.--5,.--6,.--7,.--8,.--9,.--10{
+        display: none;
+
+    }
+
+    .--4--,.--1--,.--5--,.--6--,.--8--,.--2--,.--22--{
+        display: flex;
+    }
+    .--1--{
+        align-self: flex-start;
+        z-index: 11;
+    }
+    .--4--{
+        align-self: flex-end;
+        z-index: 11;
+        justify-content: space-between;
+    }
+    .--5--{
+        align-self: flex-end;
+        padding: 1rem;
+    }
+    .--6--{
+        align-self: flex-start;
+        padding: 1rem;
+    }
+    .--8--{
+        align-self: flex-end;
+    }
+    .--2--{
+        align-self: flex-end;
+        padding: 1rem;
+    }
+    .--22--{
+        align-self: flex-start;
+        padding: 1rem;
+        z-index: 111;
+    }
+
+    .circle-11{
+        position: absolute;
+        width: 1.3rem;
+        height: 1.3rem;
+        top: -158%;
+        right: 28%;
+        z-index: -1;
+    }
+    .circle-1{
+        left: 2%;
+        top: -27%;
+        width: .8rem;
+        height: 0.8rem;
+    }  
+    .circle-10{
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 10%;
+        top: -31%;
+        background-color: #87BCD5;
+        z-index: -111;
+    }  
+    .circle-9{
+        background-color: #FF946B;
+        width: 1.2rem;
+        height: 1.2rem;
+        right: 42%;
+        bottom: -4%;
+        z-index: -11;
+    }
+    .circle-7{
+        width: 1.8rem;
+        top: -10%;
+        left: 21%;
+        height: 1.8rem;
+        z-index: -111;
+        background-color: #FF946B;
+    }
+    .circle-8{
+        position: absolute;
+    }
+
+
+
+
+    .Metrics{
+        width: 90%;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-20%);
+    }
+}
 

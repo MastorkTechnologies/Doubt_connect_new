@@ -27,3 +27,7 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
+
+#root{
+    overflow-x: hidden;
+}

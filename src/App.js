@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useRef } from 'react';
 import Header from './Components/Common/Header';
 import Footer from './Components/Common/Footer';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -12,6 +12,7 @@ import DcForSchools from './Components/DcForSchools/DcForSchools';
 
 
 function App() {
+
     return (
         <BrowserRouter>
             <Routes>
