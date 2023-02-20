@@ -247,91 +247,6 @@
     color: #1D3146;
 }
 
-
-
-.testimonials{
-    width: 88%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 10rem;
-}
-.testimonial{
-    display: flex;
-    gap: 2rem;
-    height: 20rem;
-    align-items: center;
-    justify-content: center;
-}
-.testimonial span{
-    color: #52ACFF;
-}
-.testimonial-1-comment{
-    width: 40%;
-    height: 100%;
-    
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px #C9CDD4;
-
-    padding: 4rem;
-}
-.testimonial h4{
-    position: absolute;
-    bottom: 16%;
-    left: 6%;
-}
-.testimonial h5{
-    position: absolute;
-    bottom: 10%;
-    left: 6%;
-    color: #979797;
-}
-.testimonial p{
-    color: #373737;
-    font-weight: 600;
-}
-
-.testimonial-1-vid{
-    width: 45%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 14px #969798;
-}
-.testimonial iframe{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-}
-.quote{
-    position: absolute;
-    font-size: 4rem;
-    color: #52ACFF;
-    top: 10%;
-    left: 6%;
-}
-
-
-.testimonial-2-comment{
-    width: 50%;
-    height: 100%;
-    
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px #C9CDD4;
-
-    padding: 4rem 5rem;
-}
-.testimonial-2-vid{
-    height: 100%;
-    width: 35%;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 14px #969798;
-}
-
-
-
 .like-footer{
     position: relative;
     width: 100%;
@@ -379,10 +294,11 @@
 
     .ForStudents{
         gap: 4rem;
+        padding: 0rem 1rem;
     }
 
     .For-students-how{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -391,6 +307,7 @@
     .For-students-how h1{
         font-size: 1.8rem;
         line-height: 2.4rem;
+        text-align: left;
     }
     .For-students-how-left{
         width: 100%;
@@ -411,7 +328,6 @@
     }
 
     .For-students-heading{
-        width: 90%;
         font-size: 1.5rem;
         text-align: center;
     }

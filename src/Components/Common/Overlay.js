@@ -19,7 +19,7 @@ function Overlay({handleCloseMenu}) {
                 <Link to="/">Home</Link>
                 <a href="https://doubtconnect.medium.com/">Blogs</a>
                 <Link to="/for-tutors">For Tutors</Link>
-                <Link to="/dc-for-schools">DC For Schools</Link>
+                <Link to="/dc-for-students">DC For Students</Link>
             </div>
         </div>
         ,portal)
