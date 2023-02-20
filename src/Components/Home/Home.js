@@ -265,8 +265,6 @@ function Home() {
 
                     <h2>Weekly curated<br></br> assessments by top<br></br> subject matter experts</h2>
                     <p className='Help-container-para'>Weekly assessments on the platform to track every student's progress and award flags</p>
-                
-                
 
                 </div>
                 

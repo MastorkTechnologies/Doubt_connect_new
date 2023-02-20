@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-items: center;
 }
 
 
@@ -57,6 +58,17 @@
     color: #5E5252;
     font-size: 1rem;
 }
+
+.Footer-left-2 .Follow-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Footer-left-2 .Follow-images img{
+    width: 80%;
+    justify-items: center;
+}
+
+
 
 
 /* //////////////////////////////////////////////// */
