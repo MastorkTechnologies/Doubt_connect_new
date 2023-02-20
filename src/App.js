@@ -8,7 +8,8 @@ import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home'
 import AboutUs from './Components/AboutUs/AboutUs';
 import ForTutors from './Components/ForTutors/ForTutors';
-import DcForSchools from './Components/DcForSchools/DcForSchools';
+// import DcForSchools from './Components/DcForSchools/DcForSchools';
+import ForStudents from './ForStudents/ForStudents';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
                 <Route exact path="/" element={<Fragment><Header/><Home/><Footer/></Fragment>} /> 
                 <Route path="/about-us" element={<Fragment><Header/><AboutUs/><Footer/></Fragment>} /> 
                 <Route path="/blogs" element={<Fragment><Header/><Blog/><Footer/></Fragment>} /> 
-                <Route path="/dc-for-schools" element={<Fragment><Header/><DcForSchools/><Footer/></Fragment>} /> 
+                <Route path="/dc-for-students" element={<Fragment><Header/><ForStudents/><Footer/></Fragment>} /> 
                 <Route path="/for-tutors" element={<Fragment><Header/><ForTutors/><Footer/></Fragment>} /> 
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>

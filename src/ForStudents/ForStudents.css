@@ -1,0 +1,507 @@
+.ForStudents{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.For-students-how{
+    width: 80%;
+    gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.For-students-how-left{
+    gap: 3rem;
+    width: 50%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.For-students-how-left h1{
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+}
+.For-students-how-left p{
+    color: #5E5252;
+    font-size: 0.9rem;
+}
+.For-students-how-left button{
+    width: 38%;
+    padding: 0.8rem;
+}
+
+.For-students-how-right{
+    width: 50%;
+}
+.For-students-how-right iframe{
+    height: 22rem;
+    width: 38rem;
+}
+
+.For-students-heading{
+    font-size: 2.6rem;
+}
+.For-students-heading span{
+    color: #52ACFF;
+}
+
+.how-we-work{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: 1fr .2fr;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    text-align: center;
+    column-gap: 1rem;
+    row-gap: 3rem;
+    margin-bottom: 3rem;
+}
+.how-we-work div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.how-we-work img{
+    height: 50%;
+    width: fit-content;
+}
+.how-we-work p{
+    width: fit-content;
+    height: fit-content;
+    color:#1D3146;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.how-we-work button{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border: none;
+    background-color: inherit;
+    color: #52ACFF;
+
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.down-svg-arrow{
+    display: none;
+}
+
+
+.For-student-steps{
+    row-gap: 4rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0rem;
+    justify-items: center;
+    margin-bottom: 3rem;
+}
+
+.For-student-step{
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    position: relative;
+}
+.For-student-step div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.For-student-step div p{
+    color: #1D3146;
+}
+
+
+.Tdown{
+    transform: translateY(50%);
+}
+
+
+.For-tutor-apply{
+    margin: 4rem 0rem;
+    width: 12%;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid #52ACFF;
+    color: #52ACFF;
+}
+
+
+
+/* /////////////////////////////////////////////// */
+.circle{    
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.c--1{
+    width: 4rem;
+    height: 4rem;
+    background-color: #A594EA;
+    top: -16%;
+    left: -38%;
+}
+.c--2{
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF946B;
+    top: 74%;
+    left: -16%;
+}
+.c--3{
+    width: 1rem;
+    height: 1rem;
+    background-color: #FF946B;
+    right: -16%;
+    top: -40%;
+}
+.c--4{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #A594EA;
+    right: -56%;
+}
+.c--5{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #87BCD5;
+    right: -54%;
+}
+.c--6{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #ABA1E9;
+    bottom: -8%;
+    left: -58%;
+ 
+}
+.c--7{
+    width: 2rem;
+    height: 2rem;
+    background-color: #DFF6D7;
+    right: -13%;
+}
+.c--8{
+    width: 3rem;
+    height: 3rem;
+    background-color: #DFF6D7;
+    right: 4%;
+    bottom: -22%;
+}
+.c--9{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #87BCD5;
+    left: 64%;
+    bottom: -30%;
+}
+.c--10{
+    width: 2rem;
+    height: 2rem;
+    background-color:  #FF946B;
+    bottom: -16%;
+    left: -7%;
+}
+
+
+.Metrics{
+    display: flex;
+    gap: 4rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+.Metrics div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Metrics h1{
+    color:#52ACFF;
+}
+.Metrics p{
+    color: #1D3146;
+}
+
+
+
+.testimonials{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+.testimonial{
+    display: flex;
+    gap: 2rem;
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial span{
+    color: #52ACFF;
+}
+.testimonial-1-comment{
+    width: 40%;
+    height: 100%;
+    
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #C9CDD4;
+
+    padding: 4rem;
+}
+.testimonial h4{
+    position: absolute;
+    bottom: 16%;
+    left: 6%;
+}
+.testimonial h5{
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    color: #979797;
+}
+.testimonial p{
+    color: #373737;
+    font-weight: 600;
+}
+
+.testimonial-1-vid{
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 14px #969798;
+}
+.testimonial iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.quote{
+    position: absolute;
+    font-size: 4rem;
+    color: #52ACFF;
+    top: 10%;
+    left: 6%;
+}
+
+
+.testimonial-2-comment{
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #C9CDD4;
+
+    padding: 4rem 5rem;
+}
+.testimonial-2-vid{
+    height: 100%;
+    width: 35%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 14px #969798;
+}
+
+
+
+.like-footer{
+    position: relative;
+    width: 100%;
+    height: 28rem;
+    background-color: #52ACFF;
+    padding: 4rem 10rem;
+}
+.like-footer div{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 4rem;
+}
+.like-footer h1{
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+.like-footer span{
+    color: white;
+}
+.like-footer div img{
+    width: 40%;
+}
+
+.mobile-app{
+    position: absolute;
+    top: -34%;
+    right: 18%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px){
+
+
+    .For-tutors{
+        gap: 4rem;
+    }
+
+    .For-tutors-how{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .For-tutors-how h1{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .For-tutors-how-left{
+        width: 100%;
+        margin-top: 2rem;
+        height: 100%;
+        gap: 2rem;
+    }
+    .For-tutors-how-left button{
+        width: 50%;
+        font-size: .8rem;
+    }
+    .For-tutors-how-right {
+        width: 100%;
+    }
+
+    .For-tutors-heading{
+        font-size: 1.5rem;
+    }
+
+    .For-tutor-steps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 3rem;
+        padding-bottom: 0;
+    }
+    .For-tutor-step{
+        padding: 2.2rem 1.8rem;
+        gap: 1.2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .For-tutor-step div h3{
+        font-size: 1.2rem;
+    }
+    .For-tutor-step div h2{
+        font-size: 1.4rem;
+    }
+    .For-tutor-step div p{
+        font-size: .8rem;
+        color: #1D3146;
+    }
+
+    .Tdown{
+        transform: translateY(0%);
+    }
+
+    .For-tutor-apply{
+        margin: 0;
+        width: 50%;
+    }
+
+
+    .circle{
+        z-index: -1;
+    }
+    .c--9{
+            bottom: -48%;
+    }
+    .c--2{
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 98%;
+        left: 10%;
+    }
+    .c--3{
+            width: 1rem;
+            height: 1rem;
+            background-color: #f597e7;
+            right: 15%;
+            top: -9%;
+    }
+    .c--5{
+        width: 2rem;
+        height: 2rem;
+        background-color: #87BCD5;
+        right: 15%;
+        bottom: -17%;
+    }
+    .c--6{
+        left: 0%;
+    }
+    .c--10{
+        width: 1rem;
+        height: 1rem;
+        left: 2%;
+    }
+
+
+    .For-Tutor-perks{
+        margin: 0;
+        padding: 1rem;
+    }
+    .For-Tutor-perks h1{
+        text-align: center;
+    }
+    .Tutor-perks{
+        display: flex;
+        flex-direction: column;
+    }
+    .Tutor-perks h2{
+        font-size: 1.4rem;
+    }
+    .Tutor-perks p{
+        font-size: .8rem;
+    }
+}
