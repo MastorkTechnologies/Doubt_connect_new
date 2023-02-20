@@ -374,47 +374,87 @@
 
 
 
-
-
-
-
-
 @media screen and (max-width: 420px){
 
 
-    .For-tutors{
+    .ForStudents{
         gap: 4rem;
     }
 
-    .For-tutors-how{
+    .For-students-how{
         width: 90%;
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        margin-bottom: 2rem;
     }
-    .For-tutors-how h1{
+    .For-students-how h1{
         font-size: 1.8rem;
         line-height: 2.4rem;
     }
-    .For-tutors-how-left{
+    .For-students-how-left{
         width: 100%;
         margin-top: 2rem;
         height: 100%;
         gap: 2rem;
     }
-    .For-tutors-how-left button{
+    .For-students-how-left button{
         width: 50%;
         font-size: .8rem;
     }
-    .For-tutors-how-right {
+    .For-students-how-right {
         width: 100%;
     }
-
-    .For-tutors-heading{
-        font-size: 1.5rem;
+    .For-students-how-right iframe{
+        width: 100%;
+        height: 50%;
     }
 
-    .For-tutor-steps{
+    .For-students-heading{
+        width: 90%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+
+
+    .how-we-work{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        gap: 1.6rem;
+    }
+    .how-we-work div{
+        gap: 2rem;
+    }
+    .how-we-work img{
+        width: 100%;
+    }
+    .how-we-work p{
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+    .how-we-work button{
+        font-size: 1rem;
+    }
+    .left-svg-arrow{
+        display: none;
+    }
+    .down-svg-arrow{
+        display: unset;
+    }
+
+
+
+
+
+
+
+
+
+    .For-student-steps{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -422,21 +462,22 @@
         margin: 0;
         gap: 3rem;
         padding-bottom: 0;
+        padding-top: 0;
     }
-    .For-tutor-step{
+    .For-student-step{
         padding: 2.2rem 1.8rem;
         gap: 1.2rem;
         width: 100%;
         height: 100%;
     }
 
-    .For-tutor-step div h3{
+    .For-student-step div h3{
         font-size: 1.2rem;
     }
-    .For-tutor-step div h2{
+    .For-student-step div h2{
         font-size: 1.4rem;
     }
-    .For-tutor-step div p{
+    .For-student-step div p{
         font-size: .8rem;
         color: #1D3146;
     }

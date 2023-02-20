@@ -14,7 +14,7 @@ function ForStudents() {
             <div className='For-students-how'>
                 <div className='For-students-how-left'>
                     <div>
-                        <h1 className='For-tutors-heading'><span>DoubtConnect</span> a day. Keeps all your<br/><span>Doubts away!</span></h1>
+                        <h1 className='For-students-heading'><span>DoubtConnect</span> a day. Keeps all your<br/><span>Doubts away!</span></h1>
                     </div>
                     <p>Get your doubts solved now on a 1-1 live session by getting connected with a tutor instantly! (psst.. just within 40 seconds)</p>
 
@@ -191,7 +191,6 @@ function ForStudents() {
             </div>
 
 
-
             <div className='like-footer'>
                 <div>
                     <h1>Still here? Looks like you definitely have some doubts.<br/><span>Download the app now.</span></h1>
@@ -199,8 +198,6 @@ function ForStudents() {
                 </div>
                 <img className='mobile-app' src={mobile}></img>
             </div>
-
-
 
         </div>
     )

@@ -1046,7 +1046,6 @@
         flex-direction: column;
         gap: .6rem;
         margin-bottom: 3rem;
-        display: none;
     }
     /* .testimonial{
         display: flex;
