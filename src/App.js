@@ -1,4 +1,4 @@
-import { Fragment, useRef } from 'react';
+import { Fragment } from 'react';
 import Header from './Components/Common/Header';
 import Footer from './Components/Common/Footer';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -14,14 +14,14 @@ import DcForSchools from './Components/DcForSchools/DcForSchools';
 function App() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/'>
             <Routes>
-                <Route path="/" element={<Fragment><Header/><Home/><Footer/></Fragment>} /> 
+                <Route exact path="/" element={<Fragment><Header/><Home/><Footer/></Fragment>} /> 
                 <Route path="/about-us" element={<Fragment><Header/><AboutUs/><Footer/></Fragment>} /> 
                 <Route path="/blogs" element={<Fragment><Header/><Blog/><Footer/></Fragment>} /> 
                 <Route path="/dc-for-schools" element={<Fragment><Header/><DcForSchools/><Footer/></Fragment>} /> 
                 <Route path="/for-tutors" element={<Fragment><Header/><ForTutors/><Footer/></Fragment>} /> 
-                <Route path='*' element={<Navigate to='/' />} />
+                <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </BrowserRouter>
     );

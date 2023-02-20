@@ -130,9 +130,8 @@ button{
         position: absolute;
         flex-direction: column;
         background-color: white;
-        width: 100vw;
+        width: 80vw;
         height: 100vh;
-        top: 100%;
         right: 0;
 
         align-items: flex-end;
@@ -140,7 +139,8 @@ button{
         padding: 1rem;
         gap: 1rem;
         transform: translateX(100%);
-        transition: all 0.4s;
+        transition: all 0.5s;
+        z-index: 12;
     }
     .Menu-open{
         transform: translateX(0%);

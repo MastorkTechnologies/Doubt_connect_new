@@ -1,7 +1,6 @@
-import React, { useState} from 'react'
+import React, { Fragment, useState} from 'react'
 import './Home.css'
 
-import 'react-phone-number-input/style.css';
 import home from '../../Assets/home.svg'
 import flag from '../../Assets/flag.svg'
 import whats1 from '../../Assets/whats1.png'
@@ -33,7 +32,9 @@ function Home() {
     }
     
     return (
-        <div className='Home'>
+        <Fragment>
+
+            <div className='Home'>
 
             <div className='Home-intro'>
 
@@ -373,6 +374,7 @@ function Home() {
                 <img src={fill_details}></img>
             </div>
         </div>
+    </Fragment>
     )
 }
 
