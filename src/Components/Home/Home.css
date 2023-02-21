@@ -1201,6 +1201,7 @@
 
     .fill-details img{
         width: 100%;
+        display: none;
     }
 
     .dropdown-header{

@@ -300,16 +300,16 @@ function Home() {
                     <div className='testimonial-1-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
-                        I was perplexed with one of the topics in math for days, but the doubt session with the tutor cleared it out in minutes. The idea and the implementation are both <span>perfect</span>. Thank you so much <span>DC</span>!!
+                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate and the tutor assigned to me was very good and I could understand the solution clearly and easily.
                         </p>
                         <p className='testimonial-small'>
-                        It was wonderful. His instruction was simple to understand, and the teacher was extremely kind. I would recommend this app to all family and friends as well.
+                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate and the tutor assigned to me was very good and I could understand the solution clearly and easily.
                         </p>
-                        <h4 className='testimonial-big'>Hemansh Mohta</h4>
-                        <h5 className='testimonial-big'>12th Std Student</h5>
+                        <h4 className='testimonial-big'>Sushanth K</h4>
+                        <h5 className='testimonial-big'>9th Std Student</h5>
                         
-                        <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
-                        <h5 className='testimonial-small'>10th Std Student</h5>
+                        <h4 className='testimonial-small'>Sushanth K</h4>
+                        <h5 className='testimonial-small'>9th Std Student</h5>                        
                     </div>
                     <div className='testimonial-1-vid'>
                         <iframe
@@ -332,15 +332,15 @@ function Home() {
                     <div className='testimonial-2-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
-                        It was a <span>great experience!</span> The tutor explained the sum very well and tackled the same problem in different methods which helped in my <span>understanding</span>. The interface is very easy to navigate for first time users also.
+                        It was fantastic! My session was just awesome. All my doubts were resolved by the tutor's excellent explanation of the concept.
                         </p>
                         <p className='testimonial-small'>
-                        It was a wonderful and easy session. The instructor thoroughly discussed the subject and answered all my questions about it.
+                        It was fantastic! My session was just awesome. All my doubts were resolved by the tutor's excellent explanation of the concept.
                         </p>
-                        <h4 className='testimonial-big'>Amani Agarwal</h4>
-                        <h4 className='testimonial-small'>Taif Ali</h4>
+                        <h4 className='testimonial-big'>Isha Dhanaji Sawant</h4>
+                        <h4 className='testimonial-small'>Isha Dhanaji Sawant</h4>
                         
-                        <h5>JEE aspirant</h5>
+                        <h5>10th Std Student</h5>
                     </div>
                 </div>
             </div>
