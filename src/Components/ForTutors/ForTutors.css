@@ -88,6 +88,18 @@
 }
 
 
+.Apply-now{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: #52ACFF;
+    font-size: 1.2rem;
+}
+
 .For-tutor-apply{
     margin: 4rem 0rem;
     width: 12%;
@@ -242,7 +254,6 @@
         gap: 2rem;
     }
     .For-tutors-how-left button{
-        width: 50%;
         font-size: .8rem;
     }
     .For-tutors-how-right {
@@ -284,6 +295,10 @@
         transform: translateY(0%);
     }
 
+    .Apply-now{
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+    }
     .For-tutor-apply{
         margin: 0;
         width: 50%;

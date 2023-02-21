@@ -42,15 +42,12 @@ function Home() {
                         <h1 className='Heading'>Your after school<br></br> <span>learning partner!</span></h1>
                         <p>Plug and Play with Schools - Easy SDK/API integration with School's Learning Management Systems.</p>
                         <button className='Button-with-arrow'>
-                            <div>
                                 Get Started
-                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="14" height="12" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 8.10388H13.9545" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M7.47754 1.62659L13.9548 8.10385L7.47754 14.5811" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                            </div>
                         </button>
-                        <Link to="https://play.google.com/store/apps/details?id=com.aaratech.doubtconnect&hl=en_IN&gl=US">Download Our App</Link>
                     </div>
                     
                     <img src={home}></img>
@@ -89,7 +86,7 @@ function Home() {
 
                 <button>Book your free demo
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
+                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
                 </svg>
                 </button>
             </div>
@@ -269,6 +266,12 @@ function Home() {
 
                 </div>
                 
+                <button>Learn More
+                <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
+                </svg>
+                </button>
+                
             </div>
 
 
@@ -304,7 +307,7 @@ function Home() {
                     </div>
                     <div className='testimonial-1-vid'>
                         <iframe
-                            src="https://www.youtube.com/embed/Slqo8SHnFaU"
+                            src="https://www.youtube.com/embed/WA61tUNIZwM"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -314,7 +317,7 @@ function Home() {
                 <div className='testimonial'>
                     <div className='testimonial-2-vid'>
                         <iframe
-                            src="https://www.youtube.com/embed/Slqo8SHnFaU"
+                            src="https://www.youtube.com/embed/G-Wbqx7sQgQ"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
