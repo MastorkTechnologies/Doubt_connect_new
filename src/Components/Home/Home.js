@@ -7,10 +7,9 @@ import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
 import whats3 from '../../Assets/whats3.png'
 import fill_details from '../../Assets/fill_details.png'
-import { Link } from 'react-router-dom'
 
 
-function Home() {
+function Home() {    
 
     const options = [
         { value: 'teacher', label: 'Teacher' },
@@ -300,10 +299,10 @@ function Home() {
                     <div className='testimonial-1-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
-                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate and the tutor assigned to me was very good and I could understand the solution clearly and easily.
+                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate. Tutor assigned to me was very good. I could understand the solution clearly and easily.
                         </p>
                         <p className='testimonial-small'>
-                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate and the tutor assigned to me was very good and I could understand the solution clearly and easily.
+                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate. Tutor assigned to me was very good. I could understand the solution clearly and easily.
                         </p>
                         <h4 className='testimonial-big'>Sushanth K</h4>
                         <h5 className='testimonial-big'>9th Std Student</h5>

@@ -5,9 +5,17 @@ import how2 from '../Assets/how2.png'
 import how3 from '../Assets/how3.png'
 import mobile from '../Assets/mobile.png'
 import playstore from '../Assets/playstore.png'
+// import { useHistory } from 'react-router-dom';
 
 
 function ForStudents() {
+    
+    // const history = useHistory();
+    
+    // const handleClick = () => {
+    //     history.push('https://forms.gle/YuMS2ajC7TZcAN6d9');
+    // };
+
     return (
         <div className='ForStudents'>
             

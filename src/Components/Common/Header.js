@@ -34,7 +34,7 @@ function Header() {
                 !openMenu && 
                 <div className='Header-options'>
                     <Link to="/">Home</Link>
-                    <a href="https://doubtconnect.medium.com/">Blogs</a>
+                    <a href="https://doubtconnect.medium.com/" target="_blank">Blogs</a>
                     <Link to="/for-tutors">For Tutors</Link>
                     <Link to="/dc-for-students">DC For Students</Link>
                 </div>
