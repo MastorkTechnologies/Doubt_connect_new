@@ -1,0 +1,21 @@
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    /* width: 80vw; */
+}
+
+.carousel-item{
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+}
+
+.carousel-item>iframe{
+    border-radius: 15px;
+}
+
+.carousel .control-dots .dot  {
+    background: #52ACFF !important; 
+    width: 50px;
+    border-radius: 5px;
+}
