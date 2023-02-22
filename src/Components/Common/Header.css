@@ -112,9 +112,10 @@ button{
     .Header{
         padding: 0.4rem 0.6rem;
         height: 3rem;
-        position: relative;
+        position: fixed;
         gap: 0.2rem;
         align-items: center;
+        z-index: 10;
     }
     
     .Logo-1{
@@ -131,9 +132,8 @@ button{
         flex-direction: column;
         background-color: white;
         width: 80vw;
-        height: 100vh;
+        height: 93vh;
         right: 0;
-
         align-items: flex-end;
         justify-content: start;
         padding: 1rem;
@@ -141,6 +141,7 @@ button{
         transform: translateX(100%);
         transition: all 0.5s;
         z-index: 12;
+        bottom: 0;
     }
     .Menu-open{
         transform: translateX(0%);

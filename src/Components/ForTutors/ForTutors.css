@@ -235,6 +235,7 @@
 
     .For-tutors{
         gap: 4rem;
+        margin-top: 2rem;
     }
 
     .For-tutors-how{
@@ -255,6 +256,10 @@
     }
     .For-tutors-how-left button{
         font-size: .8rem;
+        display: flex;
+        gap: 0.4rem;
+        width: fit-content;
+        align-items: center;
     }
     .For-tutors-how-right {
         width: 100%;
@@ -339,6 +344,8 @@
         height: 1rem;
         left: 2%;
     }
+
+    
 
 
     .For-Tutor-perks{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './ForStudents.css'
 import how1 from '../Assets/how1.png'
 import how2 from '../Assets/how2.png'
@@ -13,6 +13,11 @@ function ForStudents() {
         window.location.href = 'https://forms.gle/YuMS2ajC7TZcAN6d9';
     }
 
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div className='ForStudents'>
             

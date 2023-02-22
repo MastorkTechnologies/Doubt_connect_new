@@ -864,6 +864,7 @@
     .Home{
         margin: 3rem 1rem;
         gap: 3rem;
+        margin-top: 5rem;
     }
     .Home-intro{
         gap:2.4rem;
@@ -1211,7 +1212,7 @@
     }
     .dropdown-header ul{
         width: 90%;
-        bottom: 30%;
+        bottom: -16%;
         left: 5%;   
     }
 
