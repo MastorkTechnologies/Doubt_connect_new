@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from './Slider'
 import './ForTutors.css'
 import fortutors from '../../Assets/fortutors.png'
 import perk1 from '../../Assets/perk1.svg'
@@ -152,6 +153,7 @@ function ForTutors() {
                 </div>
 
             </div>
+            <Slider/>
 
         </div>
     )
