@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.2446d2c4.css",
-    "main.js": "/Doubt_connect_new/static/js/main.b8ad65ba.js",
+    "main.css": "/Doubt_connect_new/static/css/main.325a0641.css",
+    "main.js": "/Doubt_connect_new/static/js/main.3adc44e8.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
     "static/media/about1.png": "/Doubt_connect_new/static/media/about1.8db88d0e05197dabb2d9.png",
@@ -12,31 +12,31 @@
     "static/media/blog2.png": "/Doubt_connect_new/static/media/blog2.82037a2a3e1483f877fd.png",
     "static/media/blog1.png": "/Doubt_connect_new/static/media/blog1.2a50655a17c719e3a871.png",
     "static/media/aboutus3.png": "/Doubt_connect_new/static/media/aboutus3.0e60edd5ffe73a7d82a1.png",
+    "static/media/how3.png": "/Doubt_connect_new/static/media/how3.51b764e3ba78aa7e146d.png",
     "static/media/aboutus4.png": "/Doubt_connect_new/static/media/aboutus4.ee5fe89c5aca23b1a5f5.png",
     "static/media/aboutus2.png": "/Doubt_connect_new/static/media/aboutus2.be667720a707fc006b44.png",
+    "static/media/how2.png": "/Doubt_connect_new/static/media/how2.39b3adcfff9989345f93.png",
     "static/media/perk5.svg": "/Doubt_connect_new/static/media/perk5.ecfa6084b3e05d067fddb758e3a9957e.svg",
     "static/media/footer_logo_2.svg": "/Doubt_connect_new/static/media/footer_logo_2.a8eb02a88cce321af8c5699c46b4d4a8.svg",
     "static/media/footer_logo_1.svg": "/Doubt_connect_new/static/media/footer_logo_1.1fa45bd1acf40d00c7313fbbe513e674.svg",
     "static/media/mobile.png": "/Doubt_connect_new/static/media/mobile.f06458dfceee3b61d4af.png",
     "static/media/footer_logo_3.svg": "/Doubt_connect_new/static/media/footer_logo_3.a38eb5992424158b6e1533f2496607cb.svg",
     "static/media/logo2.svg": "/Doubt_connect_new/static/media/logo2.12e63b24aa4433a6c81125e3ea48b47d.svg",
-    "static/media/how3.png": "/Doubt_connect_new/static/media/how3.b679157d5bf429a9e697.png",
     "static/media/whats2.png": "/Doubt_connect_new/static/media/whats2.a4aa4b2ef7e2d1186461.png",
     "static/media/whats1.png": "/Doubt_connect_new/static/media/whats1.04d40914a5b4848377b7.png",
     "static/media/fortutors.png": "/Doubt_connect_new/static/media/fortutors.0f21068bbfca08d0e4a0.png",
     "static/media/whats3.png": "/Doubt_connect_new/static/media/whats3.a869631c8231d9c6931f.png",
     "static/media/footer_logo_4.svg": "/Doubt_connect_new/static/media/footer_logo_4.dd3cf34141f757e00a45fced9a912317.svg",
-    "static/media/how2.png": "/Doubt_connect_new/static/media/how2.d8f7249a065c568e4dc4.png",
     "static/media/blog3.png": "/Doubt_connect_new/static/media/blog3.d154342da5a2dbb3ca5e.png",
     "static/media/how1.png": "/Doubt_connect_new/static/media/how1.7abde808ada1be6b5414.png",
     "static/media/fill_details.png": "/Doubt_connect_new/static/media/fill_details.eb0b19cefc6a0b84daf0.png",
     "static/media/flag.svg": "/Doubt_connect_new/static/media/flag.94a173fb3a479e6233a34d67e74e5878.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.2446d2c4.css.map": "/Doubt_connect_new/static/css/main.2446d2c4.css.map",
-    "main.b8ad65ba.js.map": "/Doubt_connect_new/static/js/main.b8ad65ba.js.map"
+    "main.325a0641.css.map": "/Doubt_connect_new/static/css/main.325a0641.css.map",
+    "main.3adc44e8.js.map": "/Doubt_connect_new/static/js/main.3adc44e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.2446d2c4.css",
-    "static/js/main.b8ad65ba.js"
+    "static/css/main.325a0641.css",
+    "static/js/main.3adc44e8.js"
   ]
 }
