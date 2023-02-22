@@ -11,6 +11,10 @@ import fill_details from '../../Assets/fill_details.png'
 
 function Home() {    
 
+    const handleClick = () => {
+        window.location.href = 'https://forms.gle/kbQsnDHQHBQgPB5m7';
+    };
+
     const options = [
         { value: 'teacher', label: 'Teacher' },
         { value: 'admin', label: 'School Admin' },

@@ -12,6 +12,11 @@ import perk6 from '../../Assets/perk6.svg'
 
 
 function ForTutors() {
+
+    const handleClick = () => {
+        window.location.href = 'https://forms.gle/kbQsnDHQHBQgPB5m7';
+    };
+
     return (
         <div className='For-tutors'>
             
@@ -22,7 +27,7 @@ function ForTutors() {
                     </div>
                     <p>Becoming a tutor at DoubtConnect means you believe in our vision of democratizing education amongst the masses</p>
 
-                    <button className='Button-with-arrow'>
+                    <button onClick={handleClick} className='Button-with-arrow'>
                     <div>
                         Apply Now  
                         <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +111,7 @@ function ForTutors() {
             </div>
 
 
-            <button className='Apply-now'>
+            <button className='Apply-now' onClick={handleClick}>
                 Learn More 
                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.10388H13.9545" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
@@ -154,10 +159,6 @@ function ForTutors() {
 
             </div>
             <Slider/>
-
-
-            
-
         </div>
     )
 }

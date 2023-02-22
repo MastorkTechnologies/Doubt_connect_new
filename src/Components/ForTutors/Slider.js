@@ -5,11 +5,11 @@ import "./slider.css";
 
 const Slider = () => {
   return (
-    <div style={{ width: "80vw" }}>
+    <div className="Slider">
       <Carousel
         showThumbs={false}
         showStatus={false}
-        autoPlay={true}
+        autoPlay={false}
         showArrows={false}
         infiniteLoop={true}
       >
@@ -22,6 +22,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -30,6 +34,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -38,6 +46,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
         </div>
 
@@ -51,6 +63,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -59,6 +75,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -67,6 +87,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
         </div>
 
@@ -79,6 +103,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -87,6 +115,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
           <div className="carousel-item">
             <iframe
@@ -95,6 +127,10 @@ const Slider = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            <div className="info">
+                <span>Shalini Sinha</span>
+                <p>Professor at IIT Bombay</p>
+            </div>
           </div>
         </div>
       </Carousel>
