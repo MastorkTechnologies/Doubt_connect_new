@@ -78,6 +78,7 @@ function Footer() {
                         <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/about-us">About us</Link>
                         <p>Support</p>
                         <p>Privacy Policy</p>
+                        <p>Our Achievements</p>
                         <p>Terms & Conditions</p>
                     </div>
                 </div>

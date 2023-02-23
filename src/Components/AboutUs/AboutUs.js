@@ -5,6 +5,7 @@ import about2 from '../../Assets/aboutus2.png'
 import about3 from '../../Assets/aboutus3.png'
 import about4 from '../../Assets/aboutus4.png'
 import founders from '../../Assets/founders.png'
+import founders2 from '../../Assets/founders2.png'
 
 function AboutUs() {
 
@@ -32,11 +33,12 @@ function AboutUs() {
         </div>
 
         <div className='AboutUs-container'>
-                <img src={about3}></img>
+                <img src={about3} className="big-img"></img>
                 <div>
                     <h1 className='AboutUs-heading'>Our  <span>Mission</span></h1>
                     <p>To build a platform that closes gaps in education and enables students and schools to unleash their potential through technology and data</p>
                 </div>
+                <img src={about3} className="small-img"></img>
         </div>
 
         <div className='AboutUs-container'>
@@ -49,7 +51,8 @@ function AboutUs() {
 
         <div className='founders'>
             <h1 className='AboutUs-heading'>Our <span>Founders</span></h1>
-            <img src={founders}></img>
+            <img src={founders} className="big-img"></img>
+            <img src={founders2} className="small-img"></img>
             <div>
                 <p><span>Raghav Mishra</span><br/>Founder & CEO</p>
                 <p><span>Vaibhav Lal</span><br/>Co-Founder & CMO</p>
