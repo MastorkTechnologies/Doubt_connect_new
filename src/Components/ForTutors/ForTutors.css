@@ -29,8 +29,16 @@
     font-size: 0.9rem;
 }
 .For-tutors-how-left button{
-    width: 38%;
-    padding: 0.8rem;
+    width: fit-content;
+    gap: 0.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    background-color: #52ACFF;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .For-tutors-how-right{
@@ -257,7 +265,7 @@
     .For-tutors-how-left button{
         font-size: .8rem;
         display: flex;
-        gap: 0.4rem;
+        gap: 0.6rem;
         width: fit-content;
         align-items: center;
     }

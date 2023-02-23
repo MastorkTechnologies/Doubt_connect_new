@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.9dfa213f.css",
-    "main.js": "/Doubt_connect_new/static/js/main.64dba628.js",
+    "main.css": "/Doubt_connect_new/static/css/main.97613d35.css",
+    "main.js": "/Doubt_connect_new/static/js/main.51052ac6.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
+    "static/media/founders.png": "/Doubt_connect_new/static/media/founders.707d5525bab45c63bb74.png",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
-    "static/media/about1.png": "/Doubt_connect_new/static/media/about1.8db88d0e05197dabb2d9.png",
+    "static/media/founders2.png": "/Doubt_connect_new/static/media/founders2.e454b406cb0e423070c5.png",
     "static/media/perk3.svg": "/Doubt_connect_new/static/media/perk3.0509762a3b8d27093e246f361f1e276e.svg",
     "static/media/perk1.svg": "/Doubt_connect_new/static/media/perk1.83e85e8ea1e6b8fbc2aca104cba115da.svg",
     "static/media/perk6.svg": "/Doubt_connect_new/static/media/perk6.1ec1cb167756cf85fb03d7ae9655ad00.svg",
     "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.640cb12eaa0f9ac8c371ab39a181c066.svg",
     "static/media/blog2.png": "/Doubt_connect_new/static/media/blog2.82037a2a3e1483f877fd.png",
     "static/media/blog1.png": "/Doubt_connect_new/static/media/blog1.2a50655a17c719e3a871.png",
-    "static/media/aboutus3.png": "/Doubt_connect_new/static/media/aboutus3.0e60edd5ffe73a7d82a1.png",
     "static/media/how3.png": "/Doubt_connect_new/static/media/how3.51b764e3ba78aa7e146d.png",
-    "static/media/aboutus4.png": "/Doubt_connect_new/static/media/aboutus4.ee5fe89c5aca23b1a5f5.png",
-    "static/media/aboutus2.png": "/Doubt_connect_new/static/media/aboutus2.be667720a707fc006b44.png",
+    "static/media/aboutus2.png": "/Doubt_connect_new/static/media/aboutus2.54bdcc883e86c9f3e648.png",
+    "static/media/about1.svg": "/Doubt_connect_new/static/media/about1.68e35c45ca0194cb86a9470905d7c954.svg",
     "static/media/how2.png": "/Doubt_connect_new/static/media/how2.39b3adcfff9989345f93.png",
     "static/media/perk5.svg": "/Doubt_connect_new/static/media/perk5.ecfa6084b3e05d067fddb758e3a9957e.svg",
+    "static/media/aboutus4.png": "/Doubt_connect_new/static/media/aboutus4.2fa74e939b715171928e.png",
     "static/media/footer_logo_2.svg": "/Doubt_connect_new/static/media/footer_logo_2.a8eb02a88cce321af8c5699c46b4d4a8.svg",
+    "static/media/aboutus3.png": "/Doubt_connect_new/static/media/aboutus3.f2b0daed6f8f241561a1.png",
     "static/media/footer_logo_1.svg": "/Doubt_connect_new/static/media/footer_logo_1.1fa45bd1acf40d00c7313fbbe513e674.svg",
     "static/media/mobile.png": "/Doubt_connect_new/static/media/mobile.f06458dfceee3b61d4af.png",
     "static/media/footer_logo_3.svg": "/Doubt_connect_new/static/media/footer_logo_3.a38eb5992424158b6e1533f2496607cb.svg",
@@ -33,11 +35,11 @@
     "static/media/flag.svg": "/Doubt_connect_new/static/media/flag.94a173fb3a479e6233a34d67e74e5878.svg",
     "static/media/stars.svg": "/Doubt_connect_new/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.9dfa213f.css.map": "/Doubt_connect_new/static/css/main.9dfa213f.css.map",
-    "main.64dba628.js.map": "/Doubt_connect_new/static/js/main.64dba628.js.map"
+    "main.97613d35.css.map": "/Doubt_connect_new/static/css/main.97613d35.css.map",
+    "main.51052ac6.js.map": "/Doubt_connect_new/static/js/main.51052ac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dfa213f.css",
-    "static/js/main.64dba628.js"
+    "static/css/main.97613d35.css",
+    "static/js/main.51052ac6.js"
   ]
 }
