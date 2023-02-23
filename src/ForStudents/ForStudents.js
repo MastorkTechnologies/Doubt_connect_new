@@ -5,7 +5,7 @@ import how2 from '../Assets/how2.png'
 import how3 from '../Assets/how3.png'
 import mobile from '../Assets/mobile.png'
 import playstore from '../Assets/playstore.png'
-
+import stars from '../Assets/stars.svg'
 
 function ForStudents() {
     
@@ -211,8 +211,39 @@ function ForStudents() {
                         </p>
                         <h4 className='testimonial-big'>Amani Agarwal</h4>
                         <h4 className='testimonial-small'>Taif Ali</h4>
-                        
                         <h5>JEE aspirant</h5>
+                    </div>
+                </div>
+                <div className='testimonial'>
+                    <div className='rating'>
+                        <div className='rating-d1'>
+                            <img src={stars}></img>
+                            <p>4.9 Rating</p>
+                        </div>
+                        <div className='rating-d2'>
+                            <h4>Siddharth Rathore</h4>
+                            <h5>Neet Aspirant</h5>
+                        </div>
+                    </div>
+                    <div className='testimonial-3-vid'>
+                        <iframe
+                            src="https://www.youtube.com/embed/FMHpRVCbrVk"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </div>
+                    <div className='testimonial-3-comment'>
+                        <span className='quote'>&ldquo;</span>
+                        <p className='testimonial-big'>
+                        I had a doubt with algebra . My friend had suggested this app.... It proved to be really helpful.
+                        </p>
+                        <p className='testimonial-small'>
+                        I had a doubt with algebra . My friend had suggested this app.... It proved to be really helpful.
+                        </p>
+                        <h4 className='testimonial-big'>Samiyah Naaz</h4>
+                        <h4 className='testimonial-small'>Samiyah Naaz</h4>
+                        <h5>JEE Aspirant</h5>
                     </div>
                 </div>
             </div>
