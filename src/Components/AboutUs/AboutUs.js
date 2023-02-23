@@ -1,14 +1,20 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './AboutUs.css'
-import about1 from '../../Assets/about1.png'
+import about1 from '../../Assets/about1.svg'
 import about2 from '../../Assets/aboutus2.png'
 import about3 from '../../Assets/aboutus3.png'
 import about4 from '../../Assets/aboutus4.png'
+import founders from '../../Assets/founders.png'
 
 function AboutUs() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   return (
     <div className='AboutUs'>
         
+        <h1 className='AboutUs-heading'>About <span>us</span></h1>
         <div className='AboutUs-container AboutUs-container-1'>
                 <img src={about1}></img>
                 <div>
@@ -41,6 +47,15 @@ function AboutUs() {
             <img src={about4}></img>
         </div>
 
+        <div className='founders'>
+            <h1 className='AboutUs-heading'>Our <span>Founders</span></h1>
+            <img src={founders}></img>
+            <div>
+                <p><span>Raghav Mishra</span><br/>Founder & CEO</p>
+                <p><span>Vaibhav Lal</span><br/>Co-Founder & CMO</p>
+                <p><span>Suraj Sharma</span><br/>Co-Founder & COO</p>
+            </div>
+        </div>
     </div>
   )
 }
