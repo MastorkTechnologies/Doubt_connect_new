@@ -33,10 +33,10 @@ function Header() {
             {
                 !openMenu && 
                 <div className='Header-options'>
-                    <Link to="/">Home</Link>
+                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/">Home</Link>
                     <a href="https://doubtconnect.medium.com/" target="_blank">Blogs</a>
-                    <Link to="/for-tutors">For Tutors</Link>
-                    <Link to="/dc-for-students">DC For Students</Link>
+                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/for-tutors">For Tutors</Link>
+                    <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/dc-for-students">DC For Students</Link>
                 </div>
             }
             <button className='Header-Sign-in'>Sign In/ Sign Up</button>

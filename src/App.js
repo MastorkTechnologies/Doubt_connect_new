@@ -8,6 +8,7 @@ import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home'
 import AboutUs from './Components/AboutUs/AboutUs';
 import ForTutors from './Components/ForTutors/ForTutors';
+import Achievements from './Components/AboutUs/Achievements';
 // import DcForSchools from './Components/DcForSchools/DcForSchools';
 import ForStudents from './ForStudents/ForStudents';
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/blogs" element={<Fragment><Header/><Blog/><Footer/></Fragment>} /> 
                 <Route path="/dc-for-students" element={<Fragment><Header/><ForStudents/><Footer/></Fragment>} /> 
                 <Route path="/for-tutors" element={<Fragment><Header/><ForTutors/><Footer/></Fragment>} /> 
+                <Route path="/achievements" element={<Fragment><Header/><Achievements/><Footer/></Fragment>} /> 
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </BrowserRouter>

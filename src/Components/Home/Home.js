@@ -7,11 +7,13 @@ import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
 import whats3 from '../../Assets/whats3.png'
 import fill_details from '../../Assets/fill_details.png'
+import VideoOverlay from '../VideoOverlay/VideoOverlay'
 
 
 function Home() {    
 
     const form = useRef(null);
+    const portal = document.getElementById('portal-2')
 
     const options = [
         { value: 'teacher', label: 'Teacher' },
@@ -32,12 +34,33 @@ function Home() {
         toggleDropdown();
     }
 
+
+    const [data,setData] = useState({})
+    const [displayVideoOverlay,setDisplayVideoOverlay] = useState(false)
+    const [zIndex, setZIndex] = useState(-1)
+    const handleDisplayVideoOverlay = (e) => {
+          setData({ data: e.target.getBoundingClientRect(), vid: e.target.value });
+          setZIndex(11); 
+          setDisplayVideoOverlay(true);
+          document.body.style.overflow = "hidden"
+      };
+    const handleCloseVideoOverlay = () => {
+        setZIndex(-1); 
+        setDisplayVideoOverlay(false);
+        document.body.style.overflow = "scroll"
+    };
+
+
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+        portal.style.zIndex = zIndex
+    }, [zIndex]);
     
     return (
         <Fragment>
+            
+            {
+                displayVideoOverlay && <VideoOverlay zIndex={zIndex} handleCloseVideoOverlay={handleCloseVideoOverlay} data={data}></VideoOverlay>
+            }
 
             <div className='Home'>
 
@@ -323,6 +346,7 @@ function Home() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
+                        <button className='play-button' value={"WA61tUNIZwM"} onClick={handleDisplayVideoOverlay}></button>
                     </div>
                 </div>
                 <div className='testimonial'>
@@ -344,7 +368,6 @@ function Home() {
                         </p>
                         <h4 className='testimonial-big'>Isha Dhanaji Sawant</h4>
                         <h4 className='testimonial-small'>Isha Dhanaji Sawant</h4>
-                        
                         <h5>10th Std Student</h5>
                     </div>
                 </div>

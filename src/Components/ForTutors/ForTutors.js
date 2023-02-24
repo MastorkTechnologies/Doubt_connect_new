@@ -15,13 +15,7 @@ function ForTutors() {
 
     const handleClick = () => {
         window.location.href = 'https://forms.gle/kbQsnDHQHBQgPB5m7';
-    };
-
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-    
+    };    
 
     return (
         <div className='For-tutors'>
