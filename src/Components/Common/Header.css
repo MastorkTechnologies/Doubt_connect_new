@@ -11,10 +11,16 @@ button{
     align-items: center;
     padding: .2rem 1rem;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 11;
     
 }
-.Logo-1{
+.Logo{
     width: 18%;
+    display: flex;
+}
+.Logo-1{
+    width: 100%;
 }
 
 .Header-menu-button{
@@ -121,9 +127,11 @@ button{
     .Logo-1{
         display: none;
     }
+    .Logo{
+        width: 8%;
+    }
     .Logo-2{
         display: block;
-        width: 8%;
     }
 
     .Header-options{

@@ -17,8 +17,11 @@
 }
 
 .overlay-iframe{
+    position: absolute;
+    height: 26%;
     width: 90%;
-    height: 29%;
     left: 50%;
     transform: translateX(-50%);
+    border: none;
+    bottom: 10%;
 }

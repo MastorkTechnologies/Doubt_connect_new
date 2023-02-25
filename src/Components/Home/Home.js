@@ -7,6 +7,8 @@ import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
 import whats3 from '../../Assets/whats3.png'
 import fill_details from '../../Assets/fill_details.png'
+import home_testi_1 from '../../Assets/home_testi_1.png'
+import home_testi_1_mobile from '../../Assets/home_testi_1_mobile.png'
 import VideoOverlay from '../VideoOverlay/VideoOverlay'
 
 
@@ -325,7 +327,7 @@ function Home() {
             
             <div className='testimonials'>
                 <div className='testimonial'>
-                    <div className='testimonial-1-comment'>
+                    <div className='testimonial-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
                         I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate. Tutor assigned to me was very good. I could understand the solution clearly and easily.
@@ -339,26 +341,18 @@ function Home() {
                         <h4 className='testimonial-small'>Sushanth K</h4>
                         <h5 className='testimonial-small'>9th Std Student</h5>                        
                     </div>
-                    <div className='testimonial-1-vid'>
-                        <iframe
-                            src="https://www.youtube.com/embed/WA61tUNIZwM"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <div className='testimonial-img-container'>
+                        <img src={home_testi_1}></img>
                         <button className='play-button' value={"WA61tUNIZwM"} onClick={handleDisplayVideoOverlay}></button>
                     </div>
                 </div>
                 <div className='testimonial'>
-                    <div className='testimonial-2-vid'>
-                        <iframe
-                            src="https://www.youtube.com/embed/G-Wbqx7sQgQ"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <div className='testimonial-img-container'>
+                        <img className='testimonial-big' src={home_testi_1}></img>
+                        <img className='testimonial-small' src={home_testi_1_mobile}></img>
+                        <button className='play-button' value={"G-Wbqx7sQgQ"} onClick={handleDisplayVideoOverlay}></button>
                     </div>
-                    <div className='testimonial-2-comment'>
+                    <div className='testimonial-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
                         It was fantastic! My session was just awesome. All my doubts were resolved by the tutor's excellent explanation of the concept.

@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.97613d35.css",
-    "main.js": "/Doubt_connect_new/static/js/main.51052ac6.js",
+    "main.css": "/Doubt_connect_new/static/css/main.2c1f4ef4.css",
+    "main.js": "/Doubt_connect_new/static/js/main.22ebe821.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/founders.png": "/Doubt_connect_new/static/media/founders.707d5525bab45c63bb74.png",
+    "static/media/achievements2.png": "/Doubt_connect_new/static/media/achievements2.650c8301b6fb37e2a2bf.png",
+    "static/media/forstudents_testi_1.png": "/Doubt_connect_new/static/media/forstudents_testi_1.d5d07cbde1154454f77d.png",
+    "static/media/home_testi_1.png": "/Doubt_connect_new/static/media/home_testi_1.38aed2f84a274eb54fdc.png",
+    "static/media/home_testi_1_mobile.png": "/Doubt_connect_new/static/media/home_testi_1_mobile.9e71a840225807d60bf6.png",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
     "static/media/founders2.png": "/Doubt_connect_new/static/media/founders2.e454b406cb0e423070c5.png",
     "static/media/perk3.svg": "/Doubt_connect_new/static/media/perk3.0509762a3b8d27093e246f361f1e276e.svg",
     "static/media/perk1.svg": "/Doubt_connect_new/static/media/perk1.83e85e8ea1e6b8fbc2aca104cba115da.svg",
     "static/media/perk6.svg": "/Doubt_connect_new/static/media/perk6.1ec1cb167756cf85fb03d7ae9655ad00.svg",
-    "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.640cb12eaa0f9ac8c371ab39a181c066.svg",
     "static/media/blog2.png": "/Doubt_connect_new/static/media/blog2.82037a2a3e1483f877fd.png",
     "static/media/blog1.png": "/Doubt_connect_new/static/media/blog1.2a50655a17c719e3a871.png",
     "static/media/how3.png": "/Doubt_connect_new/static/media/how3.51b764e3ba78aa7e146d.png",
@@ -18,14 +21,18 @@
     "static/media/how2.png": "/Doubt_connect_new/static/media/how2.39b3adcfff9989345f93.png",
     "static/media/perk5.svg": "/Doubt_connect_new/static/media/perk5.ecfa6084b3e05d067fddb758e3a9957e.svg",
     "static/media/aboutus4.png": "/Doubt_connect_new/static/media/aboutus4.2fa74e939b715171928e.png",
+    "static/media/achievements1.png": "/Doubt_connect_new/static/media/achievements1.79c56f3758c5a550d76f.png",
     "static/media/footer_logo_2.svg": "/Doubt_connect_new/static/media/footer_logo_2.a8eb02a88cce321af8c5699c46b4d4a8.svg",
     "static/media/aboutus3.png": "/Doubt_connect_new/static/media/aboutus3.f2b0daed6f8f241561a1.png",
+    "static/media/forstudents_testi_3_mobile.png": "/Doubt_connect_new/static/media/forstudents_testi_3_mobile.6aebf047430e5de354aa.png",
     "static/media/footer_logo_1.svg": "/Doubt_connect_new/static/media/footer_logo_1.1fa45bd1acf40d00c7313fbbe513e674.svg",
+    "static/media/forstudents_testi_2_mobile.png": "/Doubt_connect_new/static/media/forstudents_testi_2_mobile.40a0d6cf67a2b4f8a0d9.png",
     "static/media/mobile.png": "/Doubt_connect_new/static/media/mobile.f06458dfceee3b61d4af.png",
     "static/media/footer_logo_3.svg": "/Doubt_connect_new/static/media/footer_logo_3.a38eb5992424158b6e1533f2496607cb.svg",
     "static/media/logo2.svg": "/Doubt_connect_new/static/media/logo2.12e63b24aa4433a6c81125e3ea48b47d.svg",
     "static/media/whats2.png": "/Doubt_connect_new/static/media/whats2.a4aa4b2ef7e2d1186461.png",
     "static/media/whats1.png": "/Doubt_connect_new/static/media/whats1.04d40914a5b4848377b7.png",
+    "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.cf743123323daf44ba80169f14188421.svg",
     "static/media/fortutors.png": "/Doubt_connect_new/static/media/fortutors.0f21068bbfca08d0e4a0.png",
     "static/media/whats3.png": "/Doubt_connect_new/static/media/whats3.a869631c8231d9c6931f.png",
     "static/media/footer_logo_4.svg": "/Doubt_connect_new/static/media/footer_logo_4.dd3cf34141f757e00a45fced9a912317.svg",
@@ -35,11 +42,11 @@
     "static/media/flag.svg": "/Doubt_connect_new/static/media/flag.94a173fb3a479e6233a34d67e74e5878.svg",
     "static/media/stars.svg": "/Doubt_connect_new/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.97613d35.css.map": "/Doubt_connect_new/static/css/main.97613d35.css.map",
-    "main.51052ac6.js.map": "/Doubt_connect_new/static/js/main.51052ac6.js.map"
+    "main.2c1f4ef4.css.map": "/Doubt_connect_new/static/css/main.2c1f4ef4.css.map",
+    "main.22ebe821.js.map": "/Doubt_connect_new/static/js/main.22ebe821.js.map"
   },
   "entrypoints": [
-    "static/css/main.97613d35.css",
-    "static/js/main.51052ac6.js"
+    "static/css/main.2c1f4ef4.css",
+    "static/js/main.22ebe821.js"
   ]
 }

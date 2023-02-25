@@ -28,8 +28,10 @@ function Header() {
             }
 
 
-            <img className='Logo-2' src={logo2}></img>
-            <img className='Logo-1' src={logo}></img>
+            <Link className='logos' onClick={()=>{window.scrollTo({top: 0})}} to="/">
+                <img className='Logo-2' src={logo2}></img>
+                <img className='Logo-1' src={logo}></img>
+            </Link>
             {
                 !openMenu && 
                 <div className='Header-options'>

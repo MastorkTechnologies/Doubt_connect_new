@@ -1,21 +1,51 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import './ForStudents.css'
 import how1 from '../Assets/how1.png'
 import how2 from '../Assets/how2.png'
 import how3 from '../Assets/how3.png'
 import mobile from '../Assets/mobile.png'
 import playstore from '../Assets/playstore.png'
-import stars from '../Assets/stars.svg'
+import stars from '../Assets/stars.svg' 
+import forstudents_testi_1 from '../Assets/forstudents_testi_1.png'
+import forstudents_testi_2_mobile from '../Assets/forstudents_testi_2_mobile.png'
+import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.png'
+
+import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
+
 
 function ForStudents() {
     
+    const [vId,setVid] = useState({})
+    const [zIndex, setZIndex] = useState(-1)
+    const portal = document.getElementById('portal-2')
+    const [displayVideoOverlay,setDisplayVideoOverlay] = useState(false)
+    const handleDisplayVideoOverlay = (id) => {
+          setVid(id);
+          setZIndex(11); 
+          setDisplayVideoOverlay(true);
+          document.body.style.overflow = "hidden"
+      };
+    const handleCloseVideoOverlay = () => {
+        setZIndex(-1); 
+        setDisplayVideoOverlay(false);
+        document.body.style.overflow = "scroll"
+    };
+
+
     const handleClick = ()=>{
         window.location.href = 'https://forms.gle/YuMS2ajC7TZcAN6d9';
     }
 
+    useEffect(() => {
+        portal.style.zIndex = zIndex
+    }, [zIndex]);
     
     return (
         <div className='ForStudents'>
+
+            {
+                displayVideoOverlay && <VideoOverlay handleCloseVideoOverlay={handleCloseVideoOverlay} vId={vId}></VideoOverlay>
+            }
             
             <div className='For-students-how'>
                 <div className='For-students-how-left'>
@@ -27,12 +57,13 @@ function ForStudents() {
                     <button onClick={handleClick} className='Button-with-arrow'>Download Now !</button>
                 </div>
                 <div className='For-students-how-right'>
-                    <iframe 
-                            src="https://www.youtube.com/embed/WA61tUNIZwM"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <img src={forstudents_testi_1}></img>
+                    <button className='play-button' onClick={()=>handleDisplayVideoOverlay("G-Wbqx7sQgQ")}>
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="17.905" cy="17.9045" rx="17.905" ry="17.9045" fill="white" fill-opacity="0.88"/>
+                        <path d="M24.572 17.2454C25.1338 17.5697 25.1338 18.3804 24.572 18.7047L15.0929 24.1774C14.5312 24.5017 13.8291 24.0963 13.8291 23.4477L13.8291 12.5024C13.8291 11.8538 14.5312 11.4484 15.0929 11.7727L24.572 17.2454Z" fill="#52ACFF"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -165,7 +196,7 @@ function ForStudents() {
             <h1 className='For-students-heading'>What do our <span>Users</span> say ?</h1>
             <div className='testimonials'>
                 <div className='testimonial'>
-                    <div className='testimonial-1-comment'>
+                    <div className='testimonial-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
                         I was perplexed with one of the topics in math for days, but the doubt session with the tutor cleared it out in minutes. The idea and the implementation are both <span>perfect</span>. Thank you so much <span>DC</span>!!
@@ -179,25 +210,28 @@ function ForStudents() {
                         <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
                         <h5 className='testimonial-small'>10th Std Student</h5>
                     </div>
-                    <div className='testimonial-1-vid'>
-                        <iframe
-                            src="https://www.youtube.com/embed/MUPuZXmrLy8"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <div className='testimonial-img-container'>
+                        <img className='testimonial-big' src={forstudents_testi_1}></img>
+                        <img className='testimonial-small' src={forstudents_testi_2_mobile}></img>
+                        <button className='play-button' onClick={()=>handleDisplayVideoOverlay("MUPuZXmrLy8")}>
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="17.905" cy="17.9045" rx="17.905" ry="17.9045" fill="white" fill-opacity="0.88"/>
+                            <path d="M24.572 17.2454C25.1338 17.5697 25.1338 18.3804 24.572 18.7047L15.0929 24.1774C14.5312 24.5017 13.8291 24.0963 13.8291 23.4477L13.8291 12.5024C13.8291 11.8538 14.5312 11.4484 15.0929 11.7727L24.572 17.2454Z" fill="#52ACFF"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div className='testimonial'>
-                    <div className='testimonial-2-vid'>
-                        <iframe
-                            src="https://www.youtube.com/embed/FMHpRVCbrVk"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <div className='testimonial-img-container'>
+                        <img className='testimonial-small' src={forstudents_testi_3_mobile}></img>
+                        <button className='play-button' onClick={()=>handleDisplayVideoOverlay("AAoWmAPUg4E")}>
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.905" cy="17.9045" rx="17.905" ry="17.9045" fill="white" fill-opacity="0.88"/>
+                                <path d="M24.572 17.2454C25.1338 17.5697 25.1338 18.3804 24.572 18.7047L15.0929 24.1774C14.5312 24.5017 13.8291 24.0963 13.8291 23.4477L13.8291 12.5024C13.8291 11.8538 14.5312 11.4484 15.0929 11.7727L24.572 17.2454Z" fill="#52ACFF"/>
+                            </svg>
+                        </button>
                     </div>
-                    <div className='testimonial-2-comment'>
+                    <div className='testimonial-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
                         It was a <span>great experience!</span> The tutor explained the sum very well and tackled the same problem in different methods which helped in my <span>understanding</span>. The interface is very easy to navigate for first time users also.

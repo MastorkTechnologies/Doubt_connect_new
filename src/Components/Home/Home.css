@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5rem 0rem;
+    margin: 10rem 0rem;
     align-items: center;
     gap: 6rem;
 }
@@ -186,7 +186,7 @@
 .testimonial span{
     color: #52ACFF;
 }
-.testimonial-1-comment{
+.testimonial-comment{
     width: 40%;
     height: 100%;
     
@@ -212,12 +212,13 @@
     font-weight: 600;
 }
 
-.testimonial-1-vid{
+.testimonial-img-container{
     width: 45%;
     height: 100%;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0px 0px 14px #969798;
+    position: relative;
 }
 .play-button{
     position: absolute;
@@ -226,12 +227,27 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
+    border: none;
+    border-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.testimonial iframe{
+.play-button svg{
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: all 0.3s;
+}
+.play-button svg:hover{
+    scale: 1.1;
+}
+.testimonial img{
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+    object-fit: cover;
+    filter: brightness(0.8);
 }
 .quote{
     position: absolute;
@@ -239,24 +255,6 @@
     color: #52ACFF;
     top: 10%;
     left: 6%;
-}
-
-
-.testimonial-2-comment{
-    width: 50%;
-    height: 100%;
-    
-    position: relative;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px #C9CDD4;
-
-    padding: 4rem 5rem;
-}
-.testimonial-2-vid{
-    height: 100%;
-    width: 35%;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 14px #969798;
 }
 
 .testimonial-big{
@@ -1097,14 +1095,14 @@
     .testimonial{
         display: flex;
         gap: .6rem;
-        height: 12rem;
+        height: 10rem;
         align-items: center;
         justify-content: center;
     }
     .testimonial span{
         color: #52ACFF;
     }
-    .testimonial-1-comment{
+    .testimonial-comment{
         width: 50%;
         height: 100%;
         
@@ -1119,37 +1117,34 @@
         flex-direction: column;
     }
     .testimonial h4{
-        margin-top: .4rem;
+        margin-top: .3rem;
         font-size: 0.5rem;
         position: unset;
     }
     .testimonial h5{
         position: unset;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         color: #979797;
     }
     .testimonial p{
-        font-size: 0.55rem;
+        font-size: 0.5rem;
         color: #373737;
         margin-bottom: .2rem;
     }
     
-    .testimonial-1-vid{
-        width: 70%;
+    .testimonial img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .testimonial-img-container{
+        width: 60%;
         height: 100%;
         overflow: hidden;
         border-radius: 1rem;
         box-shadow: 0px 0px 14px #969798;
         position: relative;
-    }
-
-    .play-button{
-        display: block;
-    }
-    .testimonial iframe{
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
     }
     .quote{
         display: none;
@@ -1157,25 +1152,7 @@
         font-size: .2rem;
         color: #52ACFF;
     } 
-    
-    
-    .testimonial-2-comment{
-        width: 50%;
-        height: 100%;
-        
-        position: relative;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 10px #C9CDD4;
-    
-        padding: 1rem;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .testimonial-2-vid{
-        height: 100%;
-        width: 70%;
-    }
+
     .testimonial-big{
         display: none;
     }
