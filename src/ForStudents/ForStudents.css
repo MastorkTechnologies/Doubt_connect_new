@@ -595,6 +595,9 @@
         width: 100%;
         text-align: left;
     }
+    .testimonial-3{
+        display: none;
+    }
 
 
     .like-footer{
