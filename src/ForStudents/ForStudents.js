@@ -8,7 +8,10 @@ import playstore from '../Assets/playstore.png'
 import stars from '../Assets/stars.svg' 
 import forstudents_testi_1 from '../Assets/forstudents_testi_1.png'
 import forstudents_testi_2_mobile from '../Assets/forstudents_testi_2_mobile.png'
+import forstudents_testi_2 from '../Assets/forstudents_testi_2.png'
+import forstudents_testi_3 from '../Assets/forstudents_testi_3.png'
 import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.png'
+import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.png'
 
 import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
 
@@ -211,7 +214,7 @@ function ForStudents() {
                         <h5 className='testimonial-small'>10th Std Student</h5>
                     </div>
                     <div className='testimonial-img-container'>
-                        <img className='testimonial-big' src={forstudents_testi_1}></img>
+                        <img className='testimonial-big' src={forstudents_testi_2}></img>
                         <img className='testimonial-small' src={forstudents_testi_2_mobile}></img>
                         <button className='play-button' onClick={()=>handleDisplayVideoOverlay("MUPuZXmrLy8")}>
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,6 +227,7 @@ function ForStudents() {
                 <div className='testimonial'>
                     <div className='testimonial-img-container'>
                         <img className='testimonial-small' src={forstudents_testi_3_mobile}></img>
+                        <img className='testimonial-big' src={forstudents_testi_3}></img>
                         <button className='play-button' onClick={()=>handleDisplayVideoOverlay("AAoWmAPUg4E")}>
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse cx="17.905" cy="17.9045" rx="17.905" ry="17.9045" fill="white" fill-opacity="0.88"/>
@@ -244,7 +248,7 @@ function ForStudents() {
                         <h5>JEE aspirant</h5>
                     </div>
                 </div>
-                <div className='testimonial'>
+                <div className='testimonial' style={{alignItems:"unset"}}>
                     <div className='rating'>
                         <div className='rating-d1'>
                             <img src={stars}></img>
@@ -255,13 +259,14 @@ function ForStudents() {
                             <h5>Neet Aspirant</h5>
                         </div>
                     </div>
-                    <div className='testimonial-3-vid'>
-                        <iframe
-                            src="https://www.youtube.com/embed/FMHpRVCbrVk"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
+                    <div className='testimonial-3'>
+                        <img className='testimonial-big' src={forstudents_testi_4_mobile}></img>
+                        <button className='play-button' onClick={()=>handleDisplayVideoOverlay("_46MZa2LhGs")}>
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.905" cy="17.9045" rx="17.905" ry="17.9045" fill="white" fill-opacity="0.88"/>
+                                <path d="M24.572 17.2454C25.1338 17.5697 25.1338 18.3804 24.572 18.7047L15.0929 24.1774C14.5312 24.5017 13.8291 24.0963 13.8291 23.4477L13.8291 12.5024C13.8291 11.8538 14.5312 11.4484 15.0929 11.7727L24.572 17.2454Z" fill="#52ACFF"/>
+                            </svg>
+                        </button>
                     </div>
                     <div className='testimonial-3-comment'>
                         <span className='quote'>&ldquo;</span>
