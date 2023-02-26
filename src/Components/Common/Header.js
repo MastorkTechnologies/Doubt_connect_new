@@ -12,12 +12,12 @@ function Header() {
 
     const handleShowMenu = () => {
         toggleOpenMenu(true)
-        document.body.style.overflow = "hidden"
+        document.body.style.overflowY = "hidden"
     }
 
     const handleCloseMenu = () => {
         toggleOpenMenu(false)
-        document.body.style.overflow = "scroll"
+        document.body.style.overflowY = "scroll"
     }
 
     return (

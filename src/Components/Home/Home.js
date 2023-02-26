@@ -37,19 +37,19 @@ function Home() {
     }
 
 
-    const [data,setData] = useState({})
-    const [displayVideoOverlay,setDisplayVideoOverlay] = useState(false)
+    const [vId,setVid] = useState({})
     const [zIndex, setZIndex] = useState(-1)
-    const handleDisplayVideoOverlay = (e) => {
-          setData({ data: e.target.getBoundingClientRect(), vid: e.target.value });
+    const [displayVideoOverlay,setDisplayVideoOverlay] = useState(false)
+    const handleDisplayVideoOverlay = (id) => {
+          setVid(id);
           setZIndex(11); 
           setDisplayVideoOverlay(true);
-          document.body.style.overflow = "hidden"
+          document.body.style.overflowY = "hidden"
       };
     const handleCloseVideoOverlay = () => {
         setZIndex(-1); 
         setDisplayVideoOverlay(false);
-        document.body.style.overflow = "scroll"
+        document.body.style.overflowY = "scroll"
     };
 
 
@@ -59,12 +59,12 @@ function Home() {
     
     return (
         <Fragment>
-            
+                        
             {
-                displayVideoOverlay && <VideoOverlay zIndex={zIndex} handleCloseVideoOverlay={handleCloseVideoOverlay} data={data}></VideoOverlay>
+                displayVideoOverlay && <VideoOverlay handleCloseVideoOverlay={handleCloseVideoOverlay} vId={vId}></VideoOverlay>
             }
 
-            <div className='Home'>
+            <div className='Home' onClick={()=>{ if(isOpen){setIsOpen(false)}}}>
 
             <div className='Home-intro'>
 

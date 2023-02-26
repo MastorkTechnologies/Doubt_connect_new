@@ -11,6 +11,7 @@ import ForTutors from './Components/ForTutors/ForTutors';
 import Achievements from './Components/AboutUs/Achievements';
 // import DcForSchools from './Components/DcForSchools/DcForSchools';
 import ForStudents from './ForStudents/ForStudents';
+import Support from './Components/Home/Support';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/dc-for-students" element={<Fragment><Header/><ForStudents/><Footer/></Fragment>} /> 
                 <Route path="/for-tutors" element={<Fragment><Header/><ForTutors/><Footer/></Fragment>} /> 
                 <Route path="/achievements" element={<Fragment><Header/><Achievements/><Footer/></Fragment>} /> 
+                <Route path="/support" element={<Fragment><Header/><Support/><Footer/></Fragment>} /> 
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </BrowserRouter>

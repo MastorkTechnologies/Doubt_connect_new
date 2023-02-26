@@ -18,10 +18,10 @@
 
 .overlay-iframe{
     position: absolute;
-    height: 26%;
+    height: 28%;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
     border: none;
-    bottom: 10%;
+    bottom: 35%;
 }

@@ -545,6 +545,7 @@
     .rating-d1 img{
         width: 70%;
         object-fit: contain;
+        filter: none;
     }
     .rating{
         width: 60%;

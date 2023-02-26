@@ -15,7 +15,7 @@ button{
     z-index: 11;
     
 }
-.Logo{
+.logos{
     width: 18%;
     display: flex;
 }
@@ -140,7 +140,7 @@ button{
         flex-direction: column;
         background-color: white;
         width: 80vw;
-        height: 93vh;
+        height: 100vh;
         right: 0;
         align-items: flex-end;
         justify-content: start;
@@ -150,6 +150,7 @@ button{
         transition: all 0.5s;
         z-index: 12;
         bottom: 0;
+        padding-top: 4rem;
     }
     .Menu-open{
         transform: translateX(0%);
