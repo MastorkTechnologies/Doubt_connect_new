@@ -893,11 +893,12 @@
         color: #5E5252;
     }
     .Home-intro-left button{
-        padding: .5rem;
+        padding: .6rem;
         font-size: .8rem;
         display: flex;
         align-items: center;
         gap: .6rem;
+        width: fit-content;
     }
     .Home-intro-left a{
         display: none;

@@ -6,6 +6,7 @@ import about3 from '../../Assets/aboutus3.png'
 import about4 from '../../Assets/aboutus4.png'
 import founders from '../../Assets/founders.png'
 import founders2 from '../../Assets/founders2.png'
+import { Link } from 'react-router-dom'
 
 function AboutUs() {
 
@@ -55,9 +56,9 @@ function AboutUs() {
             <img src={founders} className="big-img"></img>
             <img src={founders2} className="small-img"></img>
             <div>
-                <p><span>Raghav Mishra</span><br/>Founder & CEO</p>
-                <p><span>Vaibhav Lal</span><br/>Co-Founder & CMO</p>
-                <p><span>Suraj Sharma</span><br/>Co-Founder & COO</p>
+                <p><Link to="https://www.linkedin.com/in/raghav-mishra-303803171" target="_blank">Raghav Mishra</Link><br/>Founder & CEO</p>
+                <p><Link to="https://www.linkedin.com/in/vaibhav-lal-a70b68166" target="_blank">Vaibhav Lal</Link><br/>Co-Founder & CMO</p>
+                <p><Link to="https://www.linkedin.com/in/surajsharma-1671" target="_blank">Suraj Sharma</Link><br/>Co-Founder & COO</p>
             </div>
         </div>
     </div>

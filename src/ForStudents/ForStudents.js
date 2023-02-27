@@ -70,7 +70,7 @@ function ForStudents() {
                 </div>
             </div>
 
-            <h1 className='For-students-heading'>How <span>DoubtConnect</span> works</h1>
+            <h1 className='For-students-heading'>How <span>DoubtConnect</span> works?</h1>
             <div className="how-we-work">
                 <div>
                     <img src={how1}></img>
