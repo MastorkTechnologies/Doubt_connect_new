@@ -265,18 +265,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .fill-details{
     display: flex;
     align-items: center;
@@ -1027,44 +1015,6 @@
         display: none;
     }
 
-    /* 
-    .circle-1{
-        left: 2%;
-        top: -27%;
-        width: .8rem;
-        height: 0.8rem;
-    }  
-    .circle-10{
-        width: 1.5rem;
-        height: 1.5rem;
-        right: 10%;
-        top: -31%;
-        background-color: #87BCD5;
-        z-index: -111;
-    }  
-    .circle-9{
-        background-color: #FF946B;
-        width: 1.2rem;
-        height: 1.2rem;
-        right: 42%;
-        bottom: -4%;
-        z-index: -11;
-    }
-    .circle-7{
-        width: 1.8rem;
-        top: -10%;
-        left: 21%;
-        height: 1.8rem;
-        z-index: -111;
-        background-color: #FF946B;
-    }
-    .circle-8{
-        position: absolute;
-    } */
-
-
-
-
     .Metrics{
         width: 90%;
         gap: 2rem;
@@ -1213,6 +1163,5 @@
         font-size: 0.8rem;
         align-self: center;
     } 
-
 }
 
