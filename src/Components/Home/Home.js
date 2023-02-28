@@ -3,8 +3,7 @@ import './Home.css'
 
 import home from '../../Assets/home.svg'
 import flag from '../../Assets/flag.svg'
-import 
-s1 from '../../Assets/whats1.png'
+import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
 import whats3 from '../../Assets/whats3.png'
 import fill_details from '../../Assets/fill_details.png'

@@ -52,15 +52,25 @@
 
     .Slider{
         width: 100%;
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
+        padding-top: 0;
     }
 
     .dontshow{
         display: none;
     }
 
+    .carousel-item{
+        width: 18rem;
+        height: 18rem;
+    }
+
     .slider-wrapper{
         display: flex;
         gap: 1rem;
+    }
+
+    .carousel .control-dots .dot {
+        width: 2.8rem;
     }
 }
