@@ -82,7 +82,7 @@ p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 6rem;
+        gap: 4rem;
         margin: 4rem 0rem;
     }
     
@@ -99,6 +99,7 @@ p{
     .AboutUs-container-1{
         width: 90%;
         transform: translateY(0%);
+        margin-bottom: 1rem;
     }
     .AboutUs-container img{
         width: 100%;

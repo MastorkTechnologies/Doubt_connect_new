@@ -12,7 +12,7 @@ p{
         margin: 7rem 0rem;
 }
 
-.thisImg1{
+.thisImg2{
     display: none;
 }
 
@@ -81,9 +81,9 @@ p{
     }  
     
     .thisImg1{
-        display: unset;
+        display: none;
     }
     .thisImg2{
-        display: none;
+        display: unset;
     }
 }
