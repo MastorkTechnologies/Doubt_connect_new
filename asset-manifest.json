@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.145f83ee.css",
-    "main.js": "/Doubt_connect_new/static/js/main.e0037115.js",
+    "main.css": "/Doubt_connect_new/static/css/main.f4eebf3a.css",
+    "main.js": "/Doubt_connect_new/static/js/main.93038202.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/founders.png": "/Doubt_connect_new/static/media/founders.707d5525bab45c63bb74.png",
     "static/media/achievements2.png": "/Doubt_connect_new/static/media/achievements2.650c8301b6fb37e2a2bf.png",
@@ -50,11 +50,11 @@
     "static/media/flag.svg": "/Doubt_connect_new/static/media/flag.94a173fb3a479e6233a34d67e74e5878.svg",
     "static/media/stars.svg": "/Doubt_connect_new/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.145f83ee.css.map": "/Doubt_connect_new/static/css/main.145f83ee.css.map",
-    "main.e0037115.js.map": "/Doubt_connect_new/static/js/main.e0037115.js.map"
+    "main.f4eebf3a.css.map": "/Doubt_connect_new/static/css/main.f4eebf3a.css.map",
+    "main.93038202.js.map": "/Doubt_connect_new/static/js/main.93038202.js.map"
   },
   "entrypoints": [
-    "static/css/main.145f83ee.css",
-    "static/js/main.e0037115.js"
+    "static/css/main.f4eebf3a.css",
+    "static/js/main.93038202.js"
   ]
 }
