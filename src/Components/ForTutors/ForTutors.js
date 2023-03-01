@@ -8,14 +8,11 @@ import perk3 from '../../Assets/perk3.svg'
 import perk4 from '../../Assets/perk4.svg'
 import perk5 from '../../Assets/perk5.svg'
 import perk6 from '../../Assets/perk6.svg'
+import { Link } from 'react-router-dom'
     
 
 
-function ForTutors() {
-
-    const handleClick = () => {
-        window.location.href = 'https://forms.gle/kbQsnDHQHBQgPB5m7';
-    };    
+function ForTutors() {  
 
     return (
         <div className='For-tutors'>
@@ -27,13 +24,13 @@ function ForTutors() {
                     </div>
                     <p>Becoming a tutor at DoubtConnect means you believe in our vision of democratizing education amongst the masses</p>
 
-                    <button onClick={handleClick} className='Button-with-arrow'>
+                    <Link to="https://forms.gle/kbQsnDHQHBQgPB5m7" target="_blank">
                         Apply Now  
                         <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 8.10388H13.9545" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7.47656 1.62659L13.9538 8.10385L7.47656 14.5811" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </button>
+                    </Link>
                 </div>
                 <div className='For-tutors-how-right'>
                     <img src={fortutors}></img>
@@ -109,13 +106,13 @@ function ForTutors() {
             </div>
 
 
-            <button className='Apply-now' onClick={handleClick}>
+            <a className='Apply-now' href="https://forms.gle/kbQsnDHQHBQgPB5m7" target="_blank">
                 Learn More 
                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.10388H13.9545" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.47656 1.62659L13.9538 8.10385L7.47656 14.5811" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </button>
+            </a>
 
 
             <div className='For-Tutor-perks'>

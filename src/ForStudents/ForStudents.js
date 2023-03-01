@@ -14,6 +14,7 @@ import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.png
 import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.png'
 
 import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
+import { Link } from 'react-router-dom'
 
 
 function ForStudents() {
@@ -34,11 +35,6 @@ function ForStudents() {
         document.body.style.overflowY = "scroll"
     };
 
-
-    const handleClick = ()=>{
-        window.location.href = 'https://forms.gle/YuMS2ajC7TZcAN6d9';
-    }
-
     useEffect(() => {
         portal.style.zIndex = zIndex
     }, [zIndex]);
@@ -57,7 +53,7 @@ function ForStudents() {
                     </div>
                     <p>Get your doubts solved now on a 1-1 live session by getting connected with a tutor instantly! (psst.. just within 40 seconds)</p>
 
-                    <button onClick={handleClick} className='Button-with-arrow'>Download Now !</button>
+                    <Link to='https://forms.gle/YuMS2ajC7TZcAN6d9' target="_blank">Download Now !</Link>
                 </div>
                 <div className='For-students-how-right'>
                     <img src={forstudents_testi_1}></img>
@@ -100,11 +96,11 @@ function ForStudents() {
                     <p>Pick your preferred tutor and get instantly connected with them, in 40 seconds for a 1-1 live sesh :)</p>
                 </div>
 
-                <button onClick={handleClick}>Get Started
+                <Link to='https://forms.gle/YuMS2ajC7TZcAN6d9' target="_blank">Get Started
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
                 </svg>
-                </button>
+                </Link>
             </div>
 
 
@@ -170,11 +166,11 @@ function ForStudents() {
 
                 <div className='circle c--11'></div>
 
-                <button onClick={handleClick}> Put an end to all your doubts NOW!
+                <Link to='https://forms.gle/YuMS2ajC7TZcAN6d9' target="_blank"> Put an end to all your doubts NOW!
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
                 </svg>
-                </button>
+                </Link>
 
             </div>
 

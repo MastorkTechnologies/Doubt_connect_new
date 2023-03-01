@@ -30,9 +30,17 @@
     color: #5E5252;
     font-size: 0.9rem;
 }
-.For-students-how-left button{
-    width: 38%;
-    padding: 0.8rem;
+.For-students-how-left a{
+    width: fit-content;
+    gap: 0.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    background-color: #52ACFF;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .For-students-how-right{
@@ -82,7 +90,7 @@
     font-size: 1.3rem;
     font-weight: 600;
 }
-.how-we-work button{
+.how-we-work a{
 
     display: flex;
     grid-column-start: 1;
@@ -136,7 +144,7 @@
 .For-student-step div p{
     color: #1D3146;
 }
-.For-student-steps button{
+.For-student-steps a{
 
     grid-row-start: 4;
     grid-row-end: 5;
@@ -388,9 +396,13 @@
         height: 100%;
         gap: 2rem;
     }
-    .For-students-how-left button{
+    .For-students-how-left a{
+        display: flex;
+        gap: 0.6rem;
         width: fit-content;
-        font-size: .8rem;
+        align-items: center;
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
     }
     .For-students-how-right {
         width: 100%;
@@ -425,7 +437,7 @@
         font-weight: 700;
         line-height: 1.5rem;
     }
-    .how-we-work button{
+    .how-we-work a{
         font-size: .8rem;
         padding: 0.6rem;
     }
@@ -467,7 +479,7 @@
         font-size: .8rem;
         color: #1D3146;
     }
-    .For-student-steps button{
+    .For-student-steps a{
         font-size: .8rem;
         padding: 0.6rem;
     }

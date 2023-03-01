@@ -56,7 +56,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_2}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("MrP_0yAqk8A")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_3}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("tBX301uvkmE")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_1}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("jCMFplua9zQ")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_3}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("tBX301uvkmE")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_1}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("jCMFplua9zQ")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@ const Slider = () => {
                     </svg>
                 </button>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item dontshow">
                 <img src={fortutors_2}></img>
                 <button className='play-button' onClick={()=>handleDisplayVideoOverlay("MrP_0yAqk8A")}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
