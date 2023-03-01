@@ -76,7 +76,7 @@ function Footer() {
                     <h2>Contact Us</h2>
                     <div>
                         <p>+91 7977749056</p>
-                        <p>customercare@doubtconnect.in</p>
+                        <p>business@doubtconnect.in</p>
                     </div>
                 </div>
             </div>
