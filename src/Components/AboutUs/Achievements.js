@@ -15,9 +15,9 @@ function Achievements() {
         
         <h1 className='Achievements-heading'>Our <span>Achievements</span></h1>
         <div className='Achievements-container'>
-                <img src={achievement1} className="dontshow"></img>
+                <img src={achievement1} className="thisImg1"></img>
                 <h1 className='Achievements-heading'>Winners at <br/><span>BITS Pilani's APOGEE 2022</span></h1>
-                <img src={achievement1}></img>
+                <img src={achievement1} className="thisImg2"></img>
         </div>
 
         <div className='Achievements-container'>

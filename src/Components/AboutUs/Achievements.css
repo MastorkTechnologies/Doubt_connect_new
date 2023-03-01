@@ -12,6 +12,9 @@ p{
         margin: 7rem 0rem;
 }
 
+.thisImg1{
+    display: none;
+}
 
 .Achievements-container{
     width: 80%;
@@ -75,5 +78,12 @@ p{
     .Achievements-heading span{
         color: #52ACFF;
         font-size: 1.8rem;
-    }   
+    }  
+    
+    .thisImg1{
+        display: unset;
+    }
+    .thisImg2{
+        display: none;
+    }
 }

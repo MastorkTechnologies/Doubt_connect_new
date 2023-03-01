@@ -86,7 +86,7 @@ function Home() {
                 
             </div>
 
-            <p className='Heading Heading-2'>What's <span>Next ?</span></p>
+            <h1 className='Heading Heading-2'>What's <span>Next ?</span></h1>
             <div className="whats-next">
                 <div>
                     <img src={whats1}></img>
@@ -116,7 +116,7 @@ function Home() {
                     <p>Pay only if there's an<br/> increase in learning<br/> outcomes</p>
                 </div>
 
-                <button onClick={() => form.current.scrollIntoView({ behavior: "smooth" })} >Book your free demo
+                <button onClick={() => form.current.scrollIntoView({ behavior: "smooth", block: 'center',inline: 'nearest'})} >Book your free demo
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
                 </svg>
@@ -380,9 +380,9 @@ function Home() {
                 </div>
             </div>
 
-            <h1 ref={form} className='Heading Heading-2 heading-big'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></h1>
+            <h1 className='Heading Heading-2 heading-big'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></h1>
 
-            <div className='fill-details'>
+            <div  ref={form}  className='fill-details'>
                 <div className='fill-details-left'>
                     <h3>Let us help you get <span>better learning</span> outcomes for your <span>School!</span></h3>
                     <div className='fill-input-container'>
