@@ -73,7 +73,7 @@ function Home() {
                     <div className='Home-intro-left'>
                         <h1 className='Heading'>Your after school<br></br> <span>learning partner!</span></h1>
                         <p>Plug and Play with Schools - Easy SDK/API integration with School's Learning Management Systems.</p>
-                        <button className='Button-with-arrow' onClick={() => form.current.scrollIntoView({ behavior: "smooth" })}>
+                        <button className='Button-with-arrow' onClick={() => form.current.scrollIntoView({ behavior: "smooth", block: 'center',inline: 'nearest'})}>
                                 Get Started
                                 <svg width="14" height="12" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 8.10388H13.9545" stroke="white" stroke-width="1.85065" stroke-linecap="round" stroke-linejoin="round"/>
@@ -298,7 +298,7 @@ function Home() {
 
                 </div>
                 
-                <button onClick={() => form.current.scrollIntoView({ behavior: "smooth" })}>Learn More
+                <button onClick={() => form.current.scrollIntoView({ behavior: "smooth", block: 'center',inline: 'nearest'})}>Learn More
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="white"/>
                 </svg>
