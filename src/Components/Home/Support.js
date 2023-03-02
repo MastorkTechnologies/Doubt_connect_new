@@ -1,10 +1,15 @@
+import axios from 'axios'
 import React,{useState} from 'react'
 import './Support.css'
 
 function Support() {
 
     const [formData,setFormData] = useState({fname:"",lname:"",number:"",email:"",message:""})
-
+    function submitFormData(){
+        axios.get(`https://ycsaqjbvebcwene2ipny2pn35m0pwopw.lambda-url.ap-south-1.on.aws?type=SUPPORT&full_name=${(formData.fname + formData.lname)}&email=${formData.email}&message=${formData.message}&phone_number=${formData.number}`)
+        .then(res=>console.log(alert("Message sent. We will contact soon")))
+        .catch(err=>{console.log(err);alert("Failed to send the message")})
+    }
 
     return (
         <div className='support'>
@@ -41,7 +46,7 @@ function Support() {
                             value={formData.message}
                         ></textarea>
                     </div>
-                    <button onClick={()=>console.log(formData)}>Submit</button>
+                    <button onClick={()=>submitFormData()}>Submit</button>
                 </div>
             </div>
         </div>

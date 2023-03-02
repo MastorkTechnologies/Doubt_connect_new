@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useRef, useEffect} from 'react'
 import './Home.css'
-
 import home from '../../Assets/home.svg'
 import flag from '../../Assets/flag.svg'
 import whats1 from '../../Assets/whats1.png'
@@ -12,6 +11,7 @@ import home_testi_2 from '../../Assets/home_testi_2.png'
 import home_testi_1_mobile from '../../Assets/home_testi_1_mobile.png'
 import home_testi_2_mobile from '../../Assets/home_testi_2_mobile.png'
 import VideoOverlay from '../VideoOverlay/VideoOverlay'
+import axios from 'axios'
 
 
 function Home() {    
@@ -34,11 +34,16 @@ function Home() {
     function toggleDropdown() {
         setIsOpen(!isOpen);
     }
-
+    
     function handleOptionClick(option) {
         setSelectedOption(option);
         setFormData({...formData,role:option.value})
         toggleDropdown();
+    }
+    function submitFormData(){
+        axios.get(`https://ycsaqjbvebcwene2ipny2pn35m0pwopw.lambda-url.ap-south-1.on.aws?type=SCHOOL_REQUEST&full_name=${formData.name}&school_name=${formData.school}&email=${formData.email}&role=${formData.role}&phone_number=${formData.number}`)
+        .then(res=>console.log(alert("Message sent. We will contact soon")))
+        .catch(err=>{console.log(err);alert("Failed to send the message")})
     }
 
 
@@ -433,7 +438,7 @@ function Home() {
                             </ul>
                         )}
                     </div>
-                    <button onClick={()=>console.log(formData)}>Get Started</button>
+                    <button onClick={()=>submitFormData()}>Get Started</button>
                 </div>
                 <img src={fill_details}></img>
             </div>
