@@ -25,6 +25,8 @@ function Home() {
         { value: 'principal', label: 'Principal' },
         { value: 'owner', label: 'School Owner' }
     ];
+
+    const [formData,setFormData] = useState({name:"",school:"",number:"",email:"",role:""})
      
     const [selectedOption, setSelectedOption] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +37,7 @@ function Home() {
 
     function handleOptionClick(option) {
         setSelectedOption(option);
+        setFormData({...formData,role:option.value})
         toggleDropdown();
     }
 
@@ -386,20 +389,32 @@ function Home() {
                 <div className='fill-details-left'>
                     <h3>Let us help you get <span>better learning</span> outcomes for your <span>School!</span></h3>
                     <div className='fill-input-container'>
-                        <input placeholder='Enter your Full Name'></input>
+                        <input  placeholder='Enter your Full Name'
+                                onChange={(e)=>setFormData({...formData,name:e.target.value})} 
+                                value={formData.name}
+                        ></input>
                     </div>
                     <div className='fill-input-container'>
-                        <input placeholder='Enter your School Name'></input>
+                        <input
+                        onChange={(e)=>setFormData({...formData,school:e.target.value})} 
+                        value={formData.school} 
+                        placeholder='Enter your School Name'></input>
                     </div>
                     <div className='fill-input-container'>
                         <div>
                             <img src={flag}></img>
                             <p>+91</p>
                         </div>
-                        <input placeholder='Enter your Number'></input>
+                        <input
+                        onChange={(e)=>setFormData({...formData,number:e.target.value})} 
+                        value={formData.number} 
+                        placeholder='Enter your Number'></input>
                     </div>
                     <div className='fill-input-container'>
-                        <input placeholder='Enter your Email ID'></input>
+                        <input onChange={(e)=>setFormData({...formData,email:e.target.value})} 
+                               value={formData.email}
+                               placeholder='Enter your Email ID' 
+                               ></input>
                     </div>
 
                     <div className="dropdown-header" onClick={toggleDropdown}>
@@ -418,7 +433,7 @@ function Home() {
                             </ul>
                         )}
                     </div>
-                    <button>Get Started</button>
+                    <button onClick={()=>console.log(formData)}>Get Started</button>
                 </div>
                 <img src={fill_details}></img>
             </div>
