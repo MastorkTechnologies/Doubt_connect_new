@@ -94,7 +94,7 @@ function Home() {
                 
             </div>
 
-            <p className='Heading Heading-2'>What's <span>Next ?</span></p>
+            <h1 className='Heading Heading-2'>What's <span>Next ?</span></h1>
             <div className="whats-next">
                 <div>
                     <img src={whats1}></img>
