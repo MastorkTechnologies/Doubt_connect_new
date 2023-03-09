@@ -79,7 +79,7 @@ function Home() {
             <div className='Home-intro'>
 
                     <div className='Home-intro-left'>
-                        <h1 className='Heading'>Your after school<br></br> <span>learning partner!</span></h1>
+                        <h1 className='Heading'>Your after school<br></br> <span>learning partnern - Doubt Connect</span></h1>
                         <p>Plug and Play with Schools - Easy SDK/API integration with School's Learning Management Systems.</p>
                         <button className='Button-with-arrow' onClick={() => form.current.scrollIntoView({ behavior: "smooth", block: 'center',inline: 'nearest'})}>
                                 Get Started
@@ -94,7 +94,7 @@ function Home() {
                 
             </div>
 
-            <h1 className='Heading Heading-2'>What's <span>Next ?</span></h1>
+            <b><span className='Heading Heading-2'>What's <span>Next ?</span></span></b>
             <div className="whats-next">
                 <div>
                     <img src={whats1}></img>
@@ -131,7 +131,7 @@ function Home() {
                 </button>
             </div>
 
-            <h1 className='Heading Heading-2'>How will we <span>help</span> you?</h1>
+            <b><span className='Heading Heading-2'>How will we <span>help</span> you?</span></b>
 
             <div className='Help-section'>
 
@@ -315,25 +315,25 @@ function Home() {
             </div>
 
 
-            <h1 className='Heading Heading-2'>Our <span>Impact</span> & <span>Metrics</span></h1>
+            <b><span className='Heading Heading-2'>Our <span>Impact</span> & <span>Metrics</span></span></b>
             
             <div className='Metrics'>
                 <div>
-                    <h1>20000+</h1>
+                    <b><span class="Heading Heading-2"><span>20000+</span></span></b>
                     <p>Users have used the platform to solve their doubts since the launch</p>
                 </div>
                 <div>
-                    <h1>4.8/5</h1>
+                    <b><span class="Heading Heading-2"><span>4.8/5</span></span></b>
                     <p>The avg rating given to every session by a student</p>
                 </div>
                 <div>
-                    <h1>100,000</h1>
+                    <b><span class="Heading Heading-2"><span>100,000</span></span></b>
                     <p>minutes of learning conducted with over <span style={{color:"black",fontWeight:"600"}}>60,000</span> doubts solved</p>
                 </div>
             </div>
             
 
-            <h1 className='Heading Heading-2'>Our <span>Testimonials</span></h1>
+            <b><span className='Heading Heading-2'>Our <span>Testimonials</span></span></b>
             
             <div className='testimonials'>
                 <div className='testimonial'>
@@ -388,7 +388,7 @@ function Home() {
                 </div>
             </div>
 
-            <h1 className='Heading Heading-2 heading-big'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></h1>
+            <b><span className='Heading Heading-2 heading-big'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></span></b>
 
             <div  ref={form}  className='fill-details'>
                 <div className='fill-details-left'>
