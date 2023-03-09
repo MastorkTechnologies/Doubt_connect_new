@@ -37,7 +37,7 @@ function ForTutors() {
                 </div>
             </div>
 
-            <h1 className='For-tutors-heading'>Follow the <span>steps</span> below!</h1>
+            <b><span className='For-tutors-heading'>Follow the <span>steps</span> below!</span></b>
 
 
             <div className='For-tutor-steps'>
@@ -117,7 +117,7 @@ function ForTutors() {
 
             <div className='For-Tutor-perks'>
                 
-                <h1 className='For-tutors-heading'>What we offer to our <span>tutors?</span></h1>
+                <b><span className='For-tutors-heading'>What we offer to our <span>tutors?</span></span></b>
 
                 <div className='Tutor-perks'>
                     <div className='Tutor-perk'>
