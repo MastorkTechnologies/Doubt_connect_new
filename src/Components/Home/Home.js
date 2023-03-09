@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useRef, useEffect} from 'react'
 import './Home.css'
-import home from '../../Assets/home.svg'
+import home from '../../Assets/home.webp'
 import flag from '../../Assets/flag.svg'
 import whats1 from '../../Assets/whats1.png'
 import whats2 from '../../Assets/whats2.png'
