@@ -674,6 +674,7 @@
 }
 
 
+
 @media screen and (max-width: 700px){
     .Home{
         margin: 1.2rem .4rem;
@@ -854,7 +855,7 @@
 }
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .Home{
         margin: 3rem 1rem;
         gap: 3rem;
@@ -958,7 +959,7 @@
     }
 
     .Tdown{
-        transform: translateY(-50%);
+        transform: translateY(0%);
     }
 
 
