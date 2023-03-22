@@ -5,7 +5,7 @@ import img1 from '../../Assets/footer_logo_1.svg'
 import img2 from '../../Assets/footer_logo_2.svg'
 import img3 from '../../Assets/footer_logo_3.svg'
 import img4 from '../../Assets/footer_logo_4.svg'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.webp'
 
 function Footer() {
 
