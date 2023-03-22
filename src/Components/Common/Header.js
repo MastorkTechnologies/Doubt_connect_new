@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Header.css'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.webp'
 import { Link } from "react-router-dom";
 import logo2 from '../../Assets/logo2.svg'
 import Overlay from './Overlay';
