@@ -1,8 +1,8 @@
 import React from 'react'
 import './Blog.css'
-import blog1 from '../../Assets/blog1.png'
-import blog2 from '../../Assets/blog2.png'
-import blog3 from '../../Assets/blog3.png'
+import blog1 from '../../Assets/blog1.webp'
+import blog2 from '../../Assets/blog2.webp'
+import blog3 from '../../Assets/blog3.webp'
 
 
 function Blog() {
