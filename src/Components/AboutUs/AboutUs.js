@@ -1,11 +1,11 @@
 import React,{useEffect} from 'react'
 import './AboutUs.css'
 import about1 from '../../Assets/about1.svg'
-import about2 from '../../Assets/aboutus2.png'
-import about3 from '../../Assets/aboutus3.png'
-import about4 from '../../Assets/aboutus4.png'
-import founders from '../../Assets/founders.png'
-import founders2 from '../../Assets/founders2.png'
+import about2 from '../../Assets/aboutus2.webp'
+import about3 from '../../Assets/aboutus3.webp'
+import about4 from '../../Assets/aboutus4.webp'
+import founders from '../../Assets/founders.webp'
+import founders2 from '../../Assets/founders2.webp'
 import { Link } from 'react-router-dom'
 
 function AboutUs() {

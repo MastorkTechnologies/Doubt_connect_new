@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
-import achievement1 from '../../Assets/achievements1.png'
-import achievements2 from '../../Assets/achievements2.png'
+import achievement1 from '../../Assets/achievements1.webp'
+import achievements2 from '../../Assets/achievements2.webp'
 import './Achievements.css'
 
 

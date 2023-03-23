@@ -1,6 +1,6 @@
 import React from 'react'
 import './DcForSchools.css'
-import dcforSchools from '../../Assets/dcforschools.png'
+import dcforSchools from '../../Assets/dcforschools.webp'
 
 function DcForSchools() {
   return (
