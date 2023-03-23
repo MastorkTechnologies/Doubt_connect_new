@@ -33,4 +33,5 @@ button:hover{
 }
 body{
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch
 }
