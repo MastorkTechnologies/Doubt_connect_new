@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.a1d1effd.css",
+    "main.css": "/Doubt_connect_new/static/css/main.c2a65521.css",
     "main.js": "/Doubt_connect_new/static/js/main.06ac8e6c.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
@@ -52,11 +52,11 @@
     "static/media/playstore.webp": "/Doubt_connect_new/static/media/playstore.a860a8c8e3f0c1c142f9.webp",
     "static/media/stars.svg": "/Doubt_connect_new/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.a1d1effd.css.map": "/Doubt_connect_new/static/css/main.a1d1effd.css.map",
+    "main.c2a65521.css.map": "/Doubt_connect_new/static/css/main.c2a65521.css.map",
     "main.06ac8e6c.js.map": "/Doubt_connect_new/static/js/main.06ac8e6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1d1effd.css",
+    "static/css/main.c2a65521.css",
     "static/js/main.06ac8e6c.js"
   ]
 }
