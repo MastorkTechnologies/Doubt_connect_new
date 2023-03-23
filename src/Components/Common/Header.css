@@ -62,7 +62,7 @@ button{
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 920px){
 
     .Header{
         height: 3rem;
@@ -77,9 +77,6 @@ button{
         gap: 0.8rem;
     }
 
-    .Logo-1{
-        width: 25%;
-    }
     .Header-Sign-in{
         font-size: 0.9rem;
         padding: .2rem .4rem;

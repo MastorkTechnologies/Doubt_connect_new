@@ -96,33 +96,39 @@ function Home() {
 
             <h1 className='Heading Heading-2'>What's <span>Next ?</span></h1>
             <div className="whats-next">
-                <div>
-                    <img src={whats1}></img>
-                    <p>Book your free demo <br/> with us by just filling up<br/> a few details</p>
-                </div>
-                <svg className='left-svg-arrow' width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
-                </svg>
+                
+                <img src={whats1} style={{gridColumnStart: '1',gridColumnEnd: '3'}}></img>
+                <p className='whats-small'>Book your free demo<br/> with us by just filling <br/>up a few details</p>
 
                 <svg className='down-svg-arrow' width="25" height="37" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.249999 29.5176L4.41875 25.4926L14.625 35.6988L14.625 0.767577L20.375 0.767577L20.375 35.6988L30.5812 25.4926L34.75 29.5176L17.5 46.7676L0.249999 29.5176Z" fill="#52ACFF"/>
                 </svg>
 
 
-                <div>
-                    <img src={whats2}></img>
-                    <p>Experience the product 40<br/> days for free, at 0<br/> integration cost.</p>
-                </div>
-                <svg className='left-svg-arrow' width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
-                </svg>
+                
+                <img src={whats2} style={{gridColumnStart: '3',gridColumnEnd: '5'}}></img>
+                <p className='whats-small'>Experience the product <br/>40 days for free, at<br/> 0 integration cost.</p>
+                
+
                 <svg className='down-svg-arrow' width="25" height="37" viewBox="0 0 35 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.249999 29.5176L4.41875 25.4926L14.625 35.6988L14.625 0.767577L20.375 0.767577L20.375 35.6988L30.5812 25.4926L34.75 29.5176L17.5 46.7676L0.249999 29.5176Z" fill="#52ACFF"/>
                 </svg>
-                <div>
-                    <img src={whats3}></img>
-                    <p>Pay only if there's an<br/> increase in learning<br/> outcomes</p>
-                </div>
+                
+                <img src={whats3}></img>
+                <p className='whats-small'>Pay only if there's<br/> an increase in<br/> learning outcomes</p>
+                
+                
+                <p className='whats-big'>Book your free demo<br/> with us by just filling <br/>up a few details</p>
+                <svg className='left-svg-arrow' width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
+                </svg>
+                
+                <p className='whats-big'>Experience the product <br/>40 days for free, at<br/> 0 integration cost.</p>
+                <svg className='left-svg-arrow' width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5846 36.75L25.7263 33.7896L32.9742 26.5417H8.16797V22.4583H32.9742L25.7263 15.2104L28.5846 12.25L40.8346 24.5L28.5846 36.75Z" fill="#52ACFF"/>
+                </svg>
+                
+                <p className='whats-big'>Pay only if there's<br/> an increase in<br/> learning outcomes</p>
 
                 <button onClick={() => form.current.scrollIntoView({ behavior: "smooth", block: 'center',inline: 'nearest'})} >Book your free demo
                 <svg width="22" height="22" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,16 +346,18 @@ function Home() {
                     <div className='testimonial-comment'>
                         <span className='quote'>&ldquo;</span>
                         <p className='testimonial-big'>
-                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate. Tutor assigned to me was very good. I could understand the solution clearly and easily.
+                        I was able to get my doubt solved within minutes. Interface was student friendly & easy to navigate. I understood the solution clearly and easily.
                         </p>
                         <p className='testimonial-small'>
-                        I was able to get my doubt solved within minutes. The interface was student friendly and easy to navigate. Tutor assigned to me was very good. I could understand the solution clearly and easily.
+                        I was able to get my doubt solved within minutes. The interface was student friendly & easy to navigate. Tutor assigned to me was very good. I understood the solution clearly and easily.
                         </p>
-                        <h4 className='testimonial-big'>Sushanth K</h4>
-                        <h5 className='testimonial-big'>9th Std Student</h5>
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Sushanth K</h4>
+                            <h5 className='testimonial-big'>9th Std Student</h5>
+                            <h4 className='testimonial-small'>Sushanth K</h4>
+                            <h5 className='testimonial-small'>9th Std Student</h5>                        
+                        </div>
                         
-                        <h4 className='testimonial-small'>Sushanth K</h4>
-                        <h5 className='testimonial-small'>9th Std Student</h5>                        
                     </div>
                     <div className='testimonial-img-container'>
                         <img className='testimonial-big' src={home_testi_1}></img>
@@ -381,9 +389,11 @@ function Home() {
                         <p className='testimonial-small'>
                         It was fantastic! My session was just awesome. All my doubts were resolved by the tutor's excellent explanation of the concept.
                         </p>
-                        <h4 className='testimonial-big'>Isha Dhanaji Sawant</h4>
-                        <h4 className='testimonial-small'>Isha Dhanaji Sawant</h4>
-                        <h5>10th Std Student</h5>
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Isha Dhanaji Sawant</h4>
+                            <h4 className='testimonial-small'>Isha Dhanaji Sawant</h4>
+                            <h5>10th Std Student</h5>
+                        </div>
                     </div>
                 </div>
             </div>

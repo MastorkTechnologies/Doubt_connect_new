@@ -203,11 +203,14 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         It was wonderful. His instruction was simple to understand, and the teacher was extremely kind. I would recommend this app to all family and friends as well.
                         </p>
-                        <h4 className='testimonial-big'>Hemansh Mohta</h4>
-                        <h5 className='testimonial-big'>12th Std Student</h5>
-                        
-                        <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
-                        <h5 className='testimonial-small'>10th Std Student</h5>
+
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Hemansh Mohta</h4>
+                            <h5 className='testimonial-big'>12th Std Student</h5>
+                            
+                            <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
+                            <h5 className='testimonial-small'>10th Std Student</h5>
+                        </div>
                     </div>
                     <div className='testimonial-img-container'>
                         <img className='testimonial-big' src={forstudents_testi_2}></img>
@@ -239,9 +242,11 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         It was a wonderful and easy session. The instructor thoroughly discussed the subject and answered all my questions about it.
                         </p>
-                        <h4 className='testimonial-big'>Amani Agarwal</h4>
-                        <h4 className='testimonial-small'>Taif Ali</h4>
-                        <h5>JEE aspirant</h5>
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Amani Agarwal</h4>
+                            <h4 className='testimonial-small'>Taif Ali</h4>
+                            <h5>JEE aspirant</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='testimonial' style={{alignItems:"unset"}}>
@@ -272,9 +277,12 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         I had a doubt with algebra . My friend had suggested this app.... It proved to be really helpful.
                         </p>
-                        <h4 className='testimonial-big'>Samiyah Naaz</h4>
-                        <h4 className='testimonial-small'>Samiyah Naaz</h4>
-                        <h5>JEE Aspirant</h5>
+
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Samiyah Naaz</h4>
+                            <h4 className='testimonial-small'>Samiyah Naaz</h4>
+                            <h5>JEE Aspirant</h5>
+                        </div>
                     </div>
                 </div>
             </div>
