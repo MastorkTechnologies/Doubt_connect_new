@@ -282,7 +282,7 @@ function ForStudents() {
 
             <div className='like-footer'>
                 <div>
-                    <b><span class="Heading Heading-2"><span style="color:black; font-size: 2.3rem;">Still here? Looks like you definitely have some doubts.<span><br><span>Download the app now.</span></span></span></span></b>
+                    <b><span class="Heading Heading-2"><span style="color:black; font-size: 2.3rem;">Still here? Looks like you definitely have some doubts.<span><br/><span>Download the app now.</span></span></span></span></b>
                     <img src={playstore}></img>
                 </div>
                 <img className='mobile-app' src={mobile}></img>
