@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Doubt_connect_new/static/css/main.c2a65521.css",
-    "main.js": "/Doubt_connect_new/static/js/main.06ac8e6c.js",
+    "main.css": "/Doubt_connect_new/static/css/main.a1d1effd.css",
+    "main.js": "/Doubt_connect_new/static/js/main.10c43bc7.js",
     "static/media/home.svg": "/Doubt_connect_new/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/perk2.svg": "/Doubt_connect_new/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
     "static/media/perk3.svg": "/Doubt_connect_new/static/media/perk3.0509762a3b8d27093e246f361f1e276e.svg",
@@ -18,8 +18,8 @@
     "static/media/logo2.svg": "/Doubt_connect_new/static/media/logo2.12e63b24aa4433a6c81125e3ea48b47d.svg",
     "static/media/how2.webp": "/Doubt_connect_new/static/media/how2.a3120ab01dc18591b455.webp",
     "static/media/aboutus4.webp": "/Doubt_connect_new/static/media/aboutus4.6599bf723ef936b7b796.webp",
-    "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.cf743123323daf44ba80169f14188421.svg",
     "static/media/aboutus2.webp": "/Doubt_connect_new/static/media/aboutus2.d8f8cead5e9f1518f883.webp",
+    "static/media/perk4.svg": "/Doubt_connect_new/static/media/perk4.4d7c204a113b87bdb8f63c5ef315e944.svg",
     "static/media/founders2.webp": "/Doubt_connect_new/static/media/founders2.a67833faf46decf51be8.webp",
     "static/media/footer_logo_4.svg": "/Doubt_connect_new/static/media/footer_logo_4.dd3cf34141f757e00a45fced9a912317.svg",
     "static/media/forstudents_testi_3.webp": "/Doubt_connect_new/static/media/forstudents_testi_3.b0efbd3c43f2369c442a.webp",
@@ -52,11 +52,11 @@
     "static/media/playstore.webp": "/Doubt_connect_new/static/media/playstore.a860a8c8e3f0c1c142f9.webp",
     "static/media/stars.svg": "/Doubt_connect_new/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
     "index.html": "/Doubt_connect_new/index.html",
-    "main.c2a65521.css.map": "/Doubt_connect_new/static/css/main.c2a65521.css.map",
-    "main.06ac8e6c.js.map": "/Doubt_connect_new/static/js/main.06ac8e6c.js.map"
+    "main.a1d1effd.css.map": "/Doubt_connect_new/static/css/main.a1d1effd.css.map",
+    "main.10c43bc7.js.map": "/Doubt_connect_new/static/js/main.10c43bc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2a65521.css",
-    "static/js/main.06ac8e6c.js"
+    "static/css/main.a1d1effd.css",
+    "static/js/main.10c43bc7.js"
   ]
 }
