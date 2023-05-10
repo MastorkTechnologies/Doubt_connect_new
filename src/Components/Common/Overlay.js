@@ -16,10 +16,12 @@ function Overlay({handleCloseMenu}) {
     return reactDom.createPortal(
         <div onClick={()=>handleCloseMenu()} className='overlay-wrapper'>
             <div onClick={()=>handleCloseMenu()} className='Header-options'>
+                <Link onClick={()=>{window.scrollTo({top: 0})}} >Sign In/ Sign Up</Link>
                 <Link onClick={()=>{window.scrollTo({top: 0})}} to="/">Home</Link>
                 <a href="https://doubtconnect.medium.com/" target="_blank">Blogs</a>
                 <Link onClick={()=>{window.scrollTo({top: 0})}} to="/for-tutors">For Tutors</Link>
                 <Link onClick={()=>{window.scrollTo({top: 0})}} to="/dc-for-students">DC For Students</Link>
+
             </div>
         </div>
         ,portal)
