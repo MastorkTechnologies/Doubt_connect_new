@@ -15,6 +15,14 @@ button{
     z-index: 11;
     
 }
+.wrapper {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1rem;
+
+  }
+  
+
 .logos{
     width: 18%;
     display: flex;
@@ -46,6 +54,12 @@ button{
 }
 
 .Header-Sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
     min-width: fit-content;
     font-size: 1.1rem;
     color: #52ACFF;
@@ -54,6 +68,9 @@ button{
     border: none;
     border-radius: 2rem;
     padding: .4rem .6rem;
+
+    
+
 }
 
 .Logo-2{
@@ -62,7 +79,7 @@ button{
 
 
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 900px){
 
     .Header{
         height: 3rem;
@@ -77,6 +94,9 @@ button{
         gap: 0.8rem;
     }
 
+    .Logo-1{
+        width: 25%;
+    }
     .Header-Sign-in{
         font-size: 0.9rem;
         padding: .2rem .4rem;
@@ -100,7 +120,7 @@ button{
     }
 
     .Logo-1{
-        width: 100%;
+        width: 25%;
     }
     .Header-Sign-in{
         font-size: 0.66rem;
@@ -110,7 +130,7 @@ button{
 
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 420px){
     
     .Header{
         padding: 0.4rem 0.6rem;

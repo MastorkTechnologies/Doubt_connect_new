@@ -12,7 +12,7 @@ import home_testi_1_mobile from '../../Assets/home_testi_1_mobile.webp'
 import home_testi_2_mobile from '../../Assets/home_testi_2_mobile.webp'
 import VideoOverlay from '../VideoOverlay/VideoOverlay'
 import axios from 'axios'
-
+import HomeModel from './HomeModel'
 
 function Home() {    
 
@@ -66,14 +66,27 @@ function Home() {
     useEffect(() => {
         portal.style.zIndex = zIndex
     }, [zIndex]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          // call your model or function here
+        }, 5000);
+        return () => clearTimeout(timer);
+      }, []);
     
+    const [showModel, setModel] = useState(false)
+    useEffect(() => {
+        const timeout = setTimeout(() => setModel(true), 5000);
+    
+        return () => clearTimeout(timeout);
+      }, []);
     return (
         <Fragment>
                         
             {
                 displayVideoOverlay && <VideoOverlay handleCloseVideoOverlay={handleCloseVideoOverlay} vId={vId}></VideoOverlay>
             }
-
+            
             <div className='Home' onClick={()=>{ if(isOpen){setIsOpen(false)}}}>
 
             <div className='Home-intro'>
@@ -93,7 +106,8 @@ function Home() {
                     <img src={home}></img>
                 
             </div>
-
+            <HomeModel setModel={setModel} showModel={showModel} />
+            
             <h1 className='Heading Heading-2'>What's <span>Next ?</span></h1>
             <div className="whats-next">
                 
