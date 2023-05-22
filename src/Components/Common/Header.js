@@ -42,9 +42,17 @@ function Header() {
             >
               Home
             </Link>
-            <a href="https://doubtconnect.medium.com/" target="_blank">
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              to="/blogs"
+            >
               Blogs
-            </a>
+            </Link>
+            {/* <a href="https://doubtconnect.medium.com/" target="_blank">
+              Blogs
+            </a> */}
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeModal.css";
 import offer from "../../Assets/Offerlogo.png";
 
-function HomeModal({ setModel , showModel}) {
-    
-  return showModel?(
+function HomeModal({ setModel, showModel }) {
+  const [showURl, setURL] = useState(false);
+  const dicordURL = "https://discord.gg/43Cegs9uBf";
+
+  return showModel ? (
     <div className="modal-container">
       <div className="modal-content">
         <div className="topPanel">
@@ -23,24 +25,35 @@ function HomeModal({ setModel , showModel}) {
           X
         </button> */}
         <div className="bottomPanel">
-          <div className="input-container">
-            <input type="text" placeholder="Enter your email/phone"  />
-            <button>Continue</button>
-          </div>
+          {showURl ? (
+            <>
+              <p>Join our Discord community for discussions and updates:</p>
+              <a href={dicordURL} target="_blank" rel="noopener noreferrer">
+                {dicordURL}
+              </a>
+            </>
+          ) : (
+            <div className="input-container">
+              <input type="text" placeholder="Enter your email/phone" />
+              <button onClick={() => setURL(true)}>Continue</button>
+            </div>
+          )}
           <div className="innerbottomPanel">
             <p style={{ color: "#70bafd", fontSize: 12 }}>We never spam 🤜🏼🤛🏼</p>
-         
-            <p style={{ color: "#70bafd", fontSize: 12, cursor:"pointer" }} onClick={() => setModel(false)}>
+
+            <p
+              style={{ color: "#70bafd", fontSize: 12, cursor: "pointer" }}
+              onClick={() => setModel(false)}
+            >
               24/7 doubt-solving, no thanks
             </p>
-         
           </div>
         </div>
 
         {/* <h1>Home Modal</h1> */}
       </div>
     </div>
-  ):null
+  ) : null;
 }
 
 export default HomeModal;

@@ -13,6 +13,8 @@ import home_testi_2_mobile from '../../Assets/home_testi_2_mobile.webp'
 import VideoOverlay from '../VideoOverlay/VideoOverlay'
 import axios from 'axios'
 import HomeModel from './HomeModel'
+import ReactGA from 'react-ga';
+
 
 function Home() {    
 
@@ -80,6 +82,11 @@ function Home() {
     
         return () => clearTimeout(timeout);
       }, []);
+
+
+      useEffect(()=>{
+        ReactGA.pageview(window.location.pathname);
+      },[])
     return (
         <Fragment>
                         

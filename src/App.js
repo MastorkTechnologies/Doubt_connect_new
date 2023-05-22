@@ -12,7 +12,10 @@ import Achievements from './Components/AboutUs/Achievements';
 // import DcForSchools from './Components/DcForSchools/DcForSchools';
 import ForStudents from './ForStudents/ForStudents';
 import Support from './Components/Home/Support';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-Z5CXQD446E";
 
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 
