@@ -1,11 +1,14 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import './Header.css'
 import logo from '../../Assets/logo.webp'
 import { Link } from "react-router-dom";
 import logo2 from '../../Assets/logo2.svg'
 import Overlay from './Overlay';
+import { useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 function Header() {
+  const location = useLocation();
     const [openMenu, toggleOpenMenu] = useState(false);
   
     const handleShowMenu = () => {
@@ -17,6 +20,13 @@ function Header() {
       toggleOpenMenu(false);
       document.body.style.overflowY = "scroll";
     };
+    
+    useEffect(() => {
+      // console.log("location- ",location.pathname + location.search)
+
+      ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+  
   
     return (
       <div className="Header">

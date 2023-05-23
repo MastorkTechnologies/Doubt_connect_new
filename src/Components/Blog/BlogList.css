@@ -1,0 +1,22 @@
+/* BlogList.css */
+.blog-list {
+    width: 70%;
+    margin-left: 20%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+  }
+  
+  .blog-list::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  .blog-list::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+  }
+  
+  .blog-list::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color of the thumb */
+  }
+  
