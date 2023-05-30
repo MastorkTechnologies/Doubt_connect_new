@@ -1,11 +1,12 @@
 /* BlogList.css */
 .blog-list {
-    width: 70%;
-    margin-left: 20%;
+    width: 100%;
+    /* margin-left: 10%; */
     height: 100vh;
     overflow-y: scroll;
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: transparent transparent; /* For Firefox */
+    text-align: -webkit-center;
   }
   
   .blog-list::-webkit-scrollbar {

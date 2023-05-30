@@ -2,6 +2,7 @@ a {
     text-decoration: none;
     color: #52ACFF;
     font-size: 1.2rem;
+    
 }
 
 .Blog {
@@ -58,6 +59,7 @@ a {
     flex-direction: column;
     box-sizing: border-box;
     padding: 1rem 0rem;
+    text-align: justify;
 }
 
 .Blog-breif p {
@@ -71,10 +73,25 @@ a {
 
 
 .Blogs {
-    width: 82%;
+    width: 80%;
     gap: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 4rem;
+    margin-top: 6rem;
+
+}
+
+@media screen and (max-width: 420px) {
+    .Blogs {
+        width: 80%;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    
+    }
 }

@@ -1,0 +1,54 @@
+.Sblog-container {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+
+ .Sblog-info{
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: justify;
+    
+  }
+  .Sblog-cate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .Sblog-title{
+    margin-top: 20px;
+  }
+
+  .Sblog-content{
+    margin-top: 20px;
+  }
+
+  .Sblog-image{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    margin-right: 20px;
+
+  }
+  @media screen and (max-width: 420px){
+    .Sblog-info{
+        padding-left: 8%;
+        padding-right: 8%;
+        
+      }
+
+      .Sblog-image{
+        width: 100%;
+        height: 224px;
+        object-fit: cover;
+        
+        
+      }
+    
+  }
+

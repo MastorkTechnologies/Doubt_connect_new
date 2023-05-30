@@ -1,10 +1,61 @@
-.sidebar {
-    width: 30%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f1f1f1;
-    overflow-y: scroll;
-    z-index: 0;
+.sidebar_content {
+
+  position: relative;
+  left: 50px;
+  top: 190px;
+  padding-right: 10px;
+
+}
+
+.sidebar_ul {
+  list-style: none;
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar_content {
+    border-right: 1px solid #000;
   }
+}
+
+@media screen and (max-width: 420px) {
+
+
+  .sidebar_content {
+    position: relative;
+    left: 50px;
+    top: 3rem;
+    padding-right: 10px;
+    overflow-y: scroll; /* Use "scroll" instead of "auto" */
+    max-height: 200px; /* Adjust the height as needed */
+  }
+  
+  /* Customize the scrollbar */
+  .sidebar_content::-webkit-scrollbar {
+    width: 1px; /* Adjust the width as needed */
+    height: 1px;
+  }
+  
+  
+  
+  .sidebar_content::-webkit-scrollbar-thumb {
+    background: #888; /* Change the thumb color */
+  }
+  
+  .sidebar_ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    align-items: center;
+  }
+  
+  .sidebar_ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}

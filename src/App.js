@@ -1,8 +1,8 @@
-import React, { Fragment, useState, useRef, useEffect }from "react";
+import React, { Fragment, useState, useRef, useEffect } from "react";
 import Header from "./Components/Common/Header";
 import Footer from "./Components/Common/Footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Blog from "./Components/Blog/Blog";
+import Blogs from "./Components/Blog/Blogs";
 import Home from "./Components/Home/Home";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ForTutors from "./Components/ForTutors/ForTutors";
@@ -11,6 +11,7 @@ import Achievements from "./Components/AboutUs/Achievements";
 import ForStudents from "./ForStudents/ForStudents";
 import Support from "./Components/Home/Support";
 import ReactGA from "react-ga";
+import BlogPost from "./Components/Blog/Blog";
 const TRACKING_ID = "G-Z5CXQD446E";
 
 ReactGA.initialize(TRACKING_ID);
@@ -19,7 +20,7 @@ function App() {
   return (
     <BrowserRouter basename="/">
       <Routes>
-        <Route  
+        <Route
           exact
           path="/"
           element={
@@ -45,7 +46,17 @@ function App() {
           element={
             <Fragment>
               <Header />
-              <Blog />
+              <Blogs />
+              <Footer />
+            </Fragment>
+          }
+        />
+        <Route
+          path="/:category/:title"
+          element={
+            <Fragment>
+              <Header />
+              <BlogPost />
               <Footer />
             </Fragment>
           }
@@ -90,6 +101,7 @@ function App() {
             </Fragment>
           }
         />
+
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

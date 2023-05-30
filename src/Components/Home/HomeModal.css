@@ -1,3 +1,5 @@
+
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -52,6 +54,7 @@
   border-right: 18px solid transparent;
   border-top: 18px solid #53abfc;
 }
+
 #Modeltitle {
   font-family: 'Gilroy Heavy', sans-serif;
   font-size: 33px;
@@ -59,20 +62,21 @@
   color: white;
   margin-bottom: 17px;
   text-shadow: 2px 2px 0.5px #2c5a83;
-  
-}
-#OfferText{
-    font-size: 20px;
-    /* font-family: 'Arquitecta Office Regular', sans-serif; */
 
 }
 
-.OfferLogo{
+#OfferText {
+  font-size: 20px;
+  /* font-family: 'Arquitecta Office Regular', sans-serif; */
+
+}
+
+.OfferLogo {
   width: 90px;
   height: 90px;
 }
 
-.OfferLine{
+.OfferLine {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -112,7 +116,7 @@
   border: 5px solid yellow;
   border-radius: 5px;
   overflow: hidden;
-  
+
 }
 
 .input-container input[type="text"],
@@ -125,7 +129,7 @@
   font-size: 16px;
   background-color: transparent;
   flex: 1;
-  
+
 }
 
 .input-container input[type="text"] {
@@ -146,35 +150,69 @@
 .input-container button:hover {
   background-color: #f0e68c;
 }
-.innerbottomPanel{
+
+.innerbottomPanel {
   text-align: center;
   padding-top: 10px;
   font-size: 15px;
   margin-top: 10px;
 }
+
 /* For screens with a maximum width of 900px */
 @media screen and (max-width: 900px) {
-  .modal-content {
+  /* .modal-content {
     padding: 120px 240px;
+  } */
+
+  #Modeltitle {
+    font-family: 'Gilroy Heavy', sans-serif;
+    font-size: 33px;
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 17px;
+    text-shadow: 2px 2px 0.5px #2c5a83;
+  
+  }
+  #OfferText {
+    font-size: 18px;
+    /* font-family: 'Arquitecta Office Regular', sans-serif; */
+  
   }
 }
 
 
-@media screen and (max-width: 700px){
-  .modal-content {
+@media screen and (max-width: 700px) {
+  /* .modal-content {
     padding: 120px 200px;
+  } */
+  #Modeltitle {
+    font-family: 'Gilroy Heavy', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 17px;
+    text-shadow: 2px 2px 0.5px #2c5a83;
+  
   }
+  #OfferText {
+    font-size: 17px;
+    /* font-family: 'Arquitecta Office Regular', sans-serif; */
+  
+  }
+
   .topPanel {
     height: 50%;
     border-radius: 5px 5px 0 0;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
   }
+
   .topPanel::after {
     border-left: 14px solid transparent;
     border-right: 16px solid transparent;
     border-top: 16px solid #53abfc;
   }
+
   .bottomPanel {
     top: 50%;
     height: 50%;
@@ -183,32 +221,56 @@
 
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 420px) {
   .modal-content {
     padding: 180px 200px;
   }
+
   .topPanel {
     height: 60%;
     border-radius: 5px 5px 0 0;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
   }
+
+  #Modeltitle {
+    font-family: 'Gilroy Heavy', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 17px;
+    text-shadow: 2px 2px 0.5px #2c5a83;
+
+  }
+
+  #OfferText {
+    font-size: 15px;
+    /* font-family: 'Arquitecta Office Regular', sans-serif; */
+  
+  }
+
   .topPanel::after {
     border-left: 12px solid transparent;
     border-right: 14px solid transparent;
     border-top: 14px solid #53abfc;
   }
+
   .bottomPanel {
     top: 50%;
     height: 60%;
   }
+
   .input-container input[type="text"],
   .input-container button {
     padding: 8px;
     font-size: 14px;
   }
-  .innerbottomPanel{
+
+  .innerbottomPanel {
     padding-top: 5px;
+    font-size: 13px;
+  }
+  .joinDiscord{
     font-size: 13px;
   }
 }

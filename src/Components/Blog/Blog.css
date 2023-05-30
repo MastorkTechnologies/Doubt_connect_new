@@ -1,6 +1,134 @@
 /* App.css */
 .blog {
     display: flex;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     
   }
+  .sidebar{
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 900px){
+
+    /* .Header{
+        height: 3rem;
+        padding: .2rem .4rem;
+    }
+
+    .Header-options a{
+        font-size: 1rem;
+    }
+
+    .Header-options{
+        gap: 0.8rem;
+    }
+
+    .Logo-1{
+        width: 25%;
+    }
+    .Header-Sign-in{
+        font-size: 0.9rem;
+        padding: .2rem .4rem;
+    } */
+}
+
+
+@media screen and (max-width: 700px){
+  /*
+    .Header{
+        height:2rem;
+        padding: .15rem .3rem;
+    }
+
+    .Header-options a{
+        font-size: 0.6rem;
+    }
+
+    .Header-options{
+        gap: 0.4rem;
+    }
+
+    .Logo-1{
+        width: 25%;
+    }
+    .Header-Sign-in{
+        font-size: 0.66rem;
+        padding: .15rem .3rem;
+    } */
+}
+
+
+
+@media screen and (max-width: 420px){
+
+
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 76%;
+        height: 140px;
+      }
+    /* .Header{
+        padding: 0.4rem 0.6rem;
+        height: 3rem;
+        position: fixed;
+        gap: 0.2rem;
+        align-items: center;
+        z-index: 10;
+    }
+    
+    .Logo-1{
+        display: none;
+    }
+    .logos{
+        width: 10%;
+    }
+    .Logo-2{
+        display: block;
+    }
+
+    .Header-options{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        width: 80vw;
+        height: 100vh;
+        right: 0;
+        align-items: flex-end;
+        justify-content: start;
+        padding: 1rem;
+        gap: 1rem;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        z-index: 12;
+        bottom: 0;
+        padding-top: 4rem;
+    }
+    .Menu-open{
+        transform: translateX(0%);
+    }
+    .Header-options a{
+        color: #1E2330;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        text-align: end;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .Header-menu-button{
+        display: block;
+        width: 1.8rem;
+    }
+
+    .Header-Sign-in{
+        max-width: 40%;
+        font-size: 1rem;
+        padding: .2rem .4rem;
+    } */
+}

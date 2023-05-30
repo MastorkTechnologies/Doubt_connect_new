@@ -27,7 +27,7 @@ function HomeModal({ setModel, showModel }) {
         <div className="bottomPanel">
           {showURl ? (
             <>
-              <p>Join our Discord community for discussions and updates:</p>
+              <p className="joinDiscord">Join our Discord community for discussions and updates:</p>
               <a href={dicordURL} target="_blank" rel="noopener noreferrer">
                 {dicordURL}
               </a>
@@ -39,7 +39,10 @@ function HomeModal({ setModel, showModel }) {
             </div>
           )}
           <div className="innerbottomPanel">
-            <p style={{ color: "#70bafd", fontSize: 12 }}>We never spam 🤜🏼🤛🏼</p>
+            <p style={{ color: "#70bafd", fontSize: 12 }}>
+              We never spam 
+              {/* 🤜🏼🤛🏼 */}
+              </p>
 
             <p
               style={{ color: "#70bafd", fontSize: 12, cursor: "pointer" }}
