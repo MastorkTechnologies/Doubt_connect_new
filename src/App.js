@@ -26,7 +26,7 @@ function App() {
           element={
             <Fragment>
               <Header />
-              <Home />
+              <ForStudents />
               <Footer />
             </Fragment>
           }
@@ -62,11 +62,11 @@ function App() {
           }
         />
         <Route
-          path="/dc-for-students"
+          path="/dc-for-schools"
           element={
             <Fragment>
               <Header />
-              <ForStudents />
+              <Home />
               <Footer />
             </Fragment>
           }
