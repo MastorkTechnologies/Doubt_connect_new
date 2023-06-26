@@ -12,7 +12,6 @@ import home_testi_1_mobile from "../../Assets/home_testi_1_mobile.webp";
 import home_testi_2_mobile from "../../Assets/home_testi_2_mobile.webp";
 import VideoOverlay from "../VideoOverlay/VideoOverlay";
 import axios from "axios";
-import HomeModel from "./HomeModel";
 import {handleButtonClick} from '../../GoogleAnalytics/EventHandling'
 function Home() {
   const form = useRef(null);
@@ -46,6 +45,10 @@ function Home() {
     toggleDropdown();
   }
   function submitFormData() {
+    if (formData.name === "" || formData.school === "" || formData.email === "" || formData.number === "" || formData.role === "") {
+      alert("Please fill all the details");
+      return;
+    }
     axios
       .get(
         `https://ycsaqjbvebcwene2ipny2pn35m0pwopw.lambda-url.ap-south-1.on.aws?type=SCHOOL_REQUEST&full_name=${formData.name}&school_name=${formData.school}&email=${formData.email}&role=${formData.role}&phone_number=${formData.number}`
@@ -82,13 +85,7 @@ function Home() {
     }, 5000);
     return () => clearTimeout(timer);
   }, []);
-
-  const [showModel, setModel] = useState(false);
-  useEffect(() => {
-    const timeout = setTimeout(() => setModel(true), 5000);
-
-    return () => clearTimeout(timeout);
-  }, []);
+;
 
   const BookButton = () =>{
     form.current.scrollIntoView({
@@ -164,7 +161,6 @@ function Home() {
 
           <img src={home}></img>
         </div>
-        <HomeModel setModel={setModel} showModel={showModel} />
 
         <h1 className="Heading Heading-2">
           What's <span>Next ?</span>

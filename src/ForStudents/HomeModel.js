@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HomeModal.css";
-import offer from "../../Assets/Offerlogo.png";
+import offer from "../Assets/Offerlogo.png";
 // AiOutlineCloseCircle
 import { IoIosCloseCircleOutline } from "react-icons/io";
 function HomeModal({ setModel, showModel }) {
@@ -9,6 +9,10 @@ function HomeModal({ setModel, showModel }) {
   const dicordURL = "https://discord.gg/43Cegs9uBf";
   function HandleEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === "") {
+      alert("Enter email");
+      return;
+    }
 
     const isValid = emailRegex.test(email);
 

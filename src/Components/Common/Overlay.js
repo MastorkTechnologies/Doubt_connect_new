@@ -49,9 +49,9 @@ function Overlay({ handleCloseMenu }) {
           onClick={() => {
             window.scrollTo({ top: 0 });
           }}
-          to="/dc-for-students"
+          to="/dc-for-schools"
         >
-          DC For Students
+          DC For Schools
         </Link>
       </div>
     </div>,

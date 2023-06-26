@@ -12,6 +12,7 @@ import forstudents_testi_2 from '../Assets/forstudents_testi_2.webp'
 import forstudents_testi_3 from '../Assets/forstudents_testi_3.webp'
 import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.webp'
 import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.webp'
+import HomeModel from "./HomeModel";
 
 import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
 import { Link } from 'react-router-dom'
@@ -35,6 +36,13 @@ function ForStudents() {
         document.body.style.overflowY = "scroll"
     };
 
+    const [showModel, setModel] = useState(false);
+    useEffect(() => {
+      const timeout = setTimeout(() => setModel(true), 5000);
+  
+      return () => clearTimeout(timeout);
+    }, [])
+
     useEffect(() => {
         portal.style.zIndex = zIndex
     }, [zIndex]);
@@ -45,6 +53,8 @@ function ForStudents() {
             {
                 displayVideoOverlay && <VideoOverlay handleCloseVideoOverlay={handleCloseVideoOverlay} vId={vId}></VideoOverlay>
             }
+            
+            <HomeModel setModel={setModel} showModel={showModel} />
             
             <div className='For-students-how'>
                 <div className='For-students-how-left'>
