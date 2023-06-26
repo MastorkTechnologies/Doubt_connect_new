@@ -10,7 +10,6 @@ export const getBlog = async () => {
 };
 
 export const getSingleBlog = async (id) => {
-  console.log("id id ", id);
   let res = await API.get(`/blogs/blog/${id}`);
   return res;
 };
@@ -19,3 +18,12 @@ export const getCategories = async () => {
   let res = await API.get(`/blogs/categories`);
   return res;
 };
+
+
+
+
+export const setFilterCategory = async (pBody) => {
+  let res = await API.post(`/blogs/filter`, pBody);
+  return res;
+};
+

@@ -48,13 +48,13 @@ function BlogPost() {
 
   return (
     <div className="Sblog-container">
-      <div>
+      {/* <div>
         <img className="Sblog-image" src={blog.cover_image}></img>
-      </div>
+      </div> */}
       <div className="Sblog-info">
         <div className="Sblog-cate">
           <div className="Sblog-date">{formattedDate}</div>
-          <div className="Sblog-category">{blog.category}</div>
+          <div className="Sblog-category">{blog.category?.chapter}</div>
         </div>
         <h2 className="Sblog-title">{blog.title}</h2>
         {/* <p className="Sblog-content">{blog.content}</p> */}
