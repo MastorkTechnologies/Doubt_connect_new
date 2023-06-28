@@ -58,22 +58,26 @@ function Blog() {
   };
 
   const DesktopView = (data) => {
-    setLoading(true)
+    setLoading(true);
+    // const classNumber = parseInt(selectedOption);
+    const classNumber = selectedOption.replace(/\D/g, "");
     const filterdata = {
       filter: {
-        classes: [selectedOption],
+        classes: [classNumber],
         subjects: data,
       },
     };
-
+    console.log("filter", filterdata);
     getBlogsList(filterdata);
   };
 
   const MobileAPICAlling = () => {
-    setLoading(true)
+    setLoading(true);
+    // const classNumber = parseInt(selectedOption);
+    const classNumber = selectedOption.replace(/\D/g, "");
     const filterdata = {
       filter: {
-        classes: [selectedOption],
+        classes: [classNumber],
         subjects: checkedItems,
       },
     };
@@ -87,7 +91,7 @@ function Blog() {
       const res = await api.setFilterCategory(data);
       // setBlogsList(res.data);
       setBlogsList(res.data);
-      setLoading(false)
+      setLoading(false);
       // console.log("Blogs", res.data);
     } catch (error) {
       console.log("Error fetching categories:", error);
