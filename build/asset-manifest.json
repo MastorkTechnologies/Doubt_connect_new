@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a10000a.css",
-    "main.js": "/static/js/main.bbae3f54.js",
+    "main.css": "/static/css/main.bf6aae3c.css",
+    "main.js": "/static/js/main.e3cff5ee.js",
     "static/media/home.svg": "/static/media/home.457cf6d85d749c22fbfce2c2f69517fa.svg",
     "static/media/Offerlogo.png": "/static/media/Offerlogo.01d9ff590b05289216e9.png",
     "static/media/perk2.svg": "/static/media/perk2.21934b5917669ec29bf0779f44a702d9.svg",
@@ -53,11 +53,11 @@
     "static/media/playstore.webp": "/static/media/playstore.a860a8c8e3f0c1c142f9.webp",
     "index.html": "/index.html",
     "static/media/stars.svg": "/static/media/stars.b2bc1fe833544d0f44c6232d4f53821c.svg",
-    "main.1a10000a.css.map": "/static/css/main.1a10000a.css.map",
-    "main.bbae3f54.js.map": "/static/js/main.bbae3f54.js.map"
+    "main.bf6aae3c.css.map": "/static/css/main.bf6aae3c.css.map",
+    "main.e3cff5ee.js.map": "/static/js/main.e3cff5ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a10000a.css",
-    "static/js/main.bbae3f54.js"
+    "static/css/main.bf6aae3c.css",
+    "static/js/main.e3cff5ee.js"
   ]
 }

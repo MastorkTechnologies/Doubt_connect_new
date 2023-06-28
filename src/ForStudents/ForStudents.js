@@ -59,9 +59,9 @@ function ForStudents() {
             <div className='For-students-how'>
                 <div className='For-students-how-left'>
                     <div>
-                        <h1 className='For-students-heading'><span>DoubtConnect</span> a day. Keeps all your<br/><span>Doubts away!</span></h1>
+                        <h1 className='For-students-heading'>Providing solutions for <span>HC Verma</span> to <br/><span>RD Sharma</span>!<br/>We've got it all covered!</h1>
                     </div>
-                    <p>Get your doubts solved now on a 1-1 live session by getting connected with a tutor instantly! (psst.. just within 40 seconds)</p>
+                    <p>DoubtConnect, the leading live doubt solving app! Experience instant doubt solving with expert tutors, one-on-one on a video call in just 60 seconds!</p>
 
                     <Link to='https://forms.gle/YuMS2ajC7TZcAN6d9' target="_blank">Download Now !</Link>
                 </div>
