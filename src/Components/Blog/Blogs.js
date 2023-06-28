@@ -21,13 +21,15 @@ function Blog() {
   const toggleDisplayMode = () => {
     if (window.innerWidth > 1080) {
       setDisplayMode("accordion");
-    } else if (window.innerWidth < 420) {
+    } else if (window.innerWidth < 900) {
       setDisplayMode("dropdown");
     } else {
       setDisplayMode((prevMode) =>
         prevMode === "accordion" ? "dropdown" : "accordion"
       );
     }
+
+    
   };
 
   useEffect(() => {

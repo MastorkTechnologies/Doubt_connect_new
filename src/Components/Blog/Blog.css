@@ -133,6 +133,110 @@ label {
         font-size: 0.9rem;
         padding: .2rem .4rem;
     } */
+    
+    .blog {
+        display: flex;
+        /* margin-top: 6rem; */
+        flex-direction: column;
+        margin-top: 3rem;
+        height: 100vh;
+
+    }
+
+
+    .sidebar {
+        flex-basis: 10%;
+        background-color: #f0f0f0;
+        height: 100%;
+        display: block;
+        /* Remove display: flex */
+
+    }
+
+
+    .options {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        margin-top: 10px;
+
+        /* Center-align the text inside the options */
+    }
+
+
+    .accordion-content {
+        background-color: #f0f0f0;
+        margin-left: 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.9s ease-out;
+        /* Transition the max-height property */
+    }
+
+    .accordion-content.open {
+        max-height: 100%;
+        /* Apply a higher max-height when open */
+    }
+
+    .accordion-content p {
+        font-weight: bold;
+    }
+    .accordion-content select {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        position: absolute; /* Add position relative */
+        top: 90px; /* Adjust the top position */
+        left: 0;
+        z-index: 99999999999999;
+      }
+
+    .accordion-content li {
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: flex;
+        width: fit-content;
+        text-align: left;
+        cursor: pointer;
+        gap: 10px;
+
+    }
+
+    .selected {
+        background-color: #52ACFF;
+        color: white;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: .6em;
+    }
+
+    .option {
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* Add margin between the options */
+    }
+
+    .bloglist {
+        flex-basis: 90%;
+        /* Set the body width to 70% */
+        background-color: white;
+        /* Body background color */
+        height: 100%;
+    }
+
+
 }
 
 
@@ -158,6 +262,111 @@ label {
         font-size: 0.66rem;
         padding: .15rem .3rem;
     } */
+
+    
+    .blog {
+        display: flex;
+        /* margin-top: 6rem; */
+        flex-direction: column;
+        margin-top: 2rem;
+        height: 100vh;
+
+    }
+
+
+    .sidebar {
+        flex-basis: 10%;
+        background-color: #f0f0f0;
+        height: 100%;
+        display: block;
+        /* Remove display: flex */
+
+    }
+
+
+    .options {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        margin-top: 10px;
+
+        /* Center-align the text inside the options */
+    }
+
+
+    .accordion-content {
+        background-color: #f0f0f0;
+        margin-left: 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.9s ease-out;
+        /* Transition the max-height property */
+    }
+
+    .accordion-content.open {
+        max-height: 100%;
+        /* Apply a higher max-height when open */
+    }
+
+    .accordion-content p {
+        font-weight: bold;
+    }
+    .accordion-content select {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        position: absolute; /* Add position relative */
+        top: 90px; /* Adjust the top position */
+        left: 0;
+        z-index: 99999999999999;
+      }
+
+    .accordion-content li {
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: flex;
+        width: fit-content;
+        text-align: left;
+        cursor: pointer;
+        gap: 10px;
+
+    }
+
+    .selected {
+        background-color: #52ACFF;
+        color: white;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: .6em;
+    }
+
+    .option {
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* Add margin between the options */
+    }
+
+    .bloglist {
+        flex-basis: 90%;
+        /* Set the body width to 70% */
+        background-color: white;
+        /* Body background color */
+        height: 100%;
+    }
+
+
 }
 
 
