@@ -5,6 +5,9 @@ import BlogList from "./BlogList";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { MdOutlineManageSearch } from "react-icons/md";
 import * as api from "../../function/axiosReq";
+import { BottomSheet } from 'react-spring-bottom-sheet';
+import 'react-spring-bottom-sheet/dist/style.css';
+
 function Blog() {
   const [BlogsList, setBlogsList] = useState(null);
   const [selectedOption, setSelectedOption] = useState("");
@@ -28,8 +31,6 @@ function Blog() {
         prevMode === "accordion" ? "dropdown" : "accordion"
       );
     }
-
-    
   };
 
   useEffect(() => {
@@ -99,7 +100,10 @@ function Blog() {
       console.log("Error fetching categories:", error);
     }
   };
-
+  const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
+  const openBottomSheet = () => {
+    setIsBottomSheetOpen(true);
+  };
   return (
     <div className="blog">
       <div className="sidebar">
@@ -132,6 +136,7 @@ function Blog() {
               checkedItems={checkedItems}
               handleCheckboxChange={handleCheckboxChange}
               MobileAPICAlling={MobileAPICAlling}
+              isBottomSheetOpen={isBottomSheetOpen}setIsBottomSheetOpen={setIsBottomSheetOpen}
             />
           ) : null}
           <div
@@ -228,7 +233,10 @@ function Blog() {
             <h1> Loading </h1>{" "}
           </div>
         ) : (
+          <>
+          <button onClick={openBottomSheet}>Open Bottom Sheet</button>
           <BlogList Blogs={BlogsList} />
+          </>
         )}
       </div>
     </div>
@@ -241,7 +249,21 @@ function SubjectOPtion({
   checkedItems,
   handleCheckboxChange,
   MobileAPICAlling,
+  isBottomSheetOpen,
+  setIsBottomSheetOpen
 }) {
+  
+
+  const openBottomSheet = () => {
+    setIsBottomSheetOpen(true);
+  };
+
+  const closeBottomSheet = () => {
+    setIsBottomSheetOpen(false);
+  };
+
+  const [open, setOpen] = useState(true);
+
   return (
     <div className={`accordion-content ${openBox ? "open" : ""}`}>
       {displayMode === "accordion" ? (
@@ -302,14 +324,21 @@ function SubjectOPtion({
           </li>
         </ul>
       ) : (
-        <div>
-          <select multiple value={checkedItems} onChange={handleCheckboxChange}>
+        <>
+          {/* <select multiple value={checkedItems} onChange={handleCheckboxChange}>
             <option value="Physics">Physics</option>
             <option value="Chemistry">Chemistry</option>
             <option value="Biology">Biology</option>
             <option value="Mathematics">Mathematics</option>
-          </select>
-        </div>
+          </select> */}
+         <BottomSheet open={open}>
+        <div
+          style={{
+            height: '50vh',
+          }}
+        ></div>
+      </BottomSheet>
+        </>
       )}
       {displayMode === "accordion" ? null : (
         <div onClick={MobileAPICAlling}>

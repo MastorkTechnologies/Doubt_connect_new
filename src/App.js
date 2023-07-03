@@ -12,6 +12,8 @@ import ForStudents from "./ForStudents/ForStudents";
 import Support from "./Components/Home/Support";
 import ReactGA from "react-ga";
 import BlogPost from "./Components/Blog/Blog";
+import Privacy from "./Components/Common/Privacy";
+
 const TRACKING_ID = "G-Z5CXQD446E";
 
 ReactGA.initialize(TRACKING_ID);
@@ -101,7 +103,17 @@ function App() {
             </Fragment>
           }
         />
-
+        <Route
+          path="/privacy"
+          element={
+            <Fragment>
+              <Header />
+              <Privacy />
+              <Footer />
+            </Fragment>
+          }
+        />
+        Privacy
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
