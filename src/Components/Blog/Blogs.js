@@ -3,10 +3,10 @@ import "./Blog.css";
 import Sidebar from "./SideBar";
 import BlogList from "./BlogList";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
-import { MdOutlineManageSearch } from "react-icons/md";
+import { MdOutlineManageSearch, MdOutlineClose } from "react-icons/md";
 import * as api from "../../function/axiosReq";
-import { BottomSheet } from 'react-spring-bottom-sheet';
-import 'react-spring-bottom-sheet/dist/style.css';
+import { BottomSheet } from "react-spring-bottom-sheet";
+import "react-spring-bottom-sheet/dist/style.css";
 
 function Blog() {
   const [BlogsList, setBlogsList] = useState(null);
@@ -16,8 +16,13 @@ function Blog() {
   const [Loading, setLoading] = useState(false);
 
   const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    setOpenBox(true);
+    if(option === selectedOption){
+      setSelectedOption("")
+      setOpenBox(false);
+    }else{
+      setSelectedOption(option);
+      setOpenBox(true);
+    }
     setCheckedItems([]);
   };
 
@@ -48,15 +53,15 @@ function Blog() {
     if (checkedItems.includes(value)) {
       // Uncheck the checkbox and remove it from the checked items
       setCheckedItems(checkedItems.filter((item) => item !== value));
-      if (displayMode === "accordion") {
+      // if (displayMode === "accordion") {
         DesktopView(checkedItems.filter((item) => item !== value));
-      }
+      // }
     } else {
       // Check the checkbox and add it to the checked items
       setCheckedItems([...checkedItems, value]);
-      if (displayMode === "accordion") {
+      // if (displayMode === "accordion") {
         DesktopView([...checkedItems, value]);
-      }
+      // },
     }
   };
 
@@ -110,7 +115,7 @@ function Blog() {
         {/* <Sidebar setBlogCategory={setBlogCategory} /> */}
         <div className="options">
           {displayMode === "accordion" ? (
-            <div className="Non-option">Classes -</div>
+            <div className="Non-option"><span>Classes - </span></div>
           ) : null}
           <div
             className={`option ${selectedOption === "9th" ? "selected" : ""}`}
@@ -136,7 +141,9 @@ function Blog() {
               checkedItems={checkedItems}
               handleCheckboxChange={handleCheckboxChange}
               MobileAPICAlling={MobileAPICAlling}
-              isBottomSheetOpen={isBottomSheetOpen}setIsBottomSheetOpen={setIsBottomSheetOpen}
+              isBottomSheetOpen={isBottomSheetOpen}
+              setIsBottomSheetOpen={setIsBottomSheetOpen}
+              setSelectedOption={setSelectedOption}
             />
           ) : null}
           <div
@@ -234,8 +241,7 @@ function Blog() {
           </div>
         ) : (
           <>
-          <button onClick={openBottomSheet}>Open Bottom Sheet</button>
-          <BlogList Blogs={BlogsList} />
+            <BlogList Blogs={BlogsList} />
           </>
         )}
       </div>
@@ -250,10 +256,9 @@ function SubjectOPtion({
   handleCheckboxChange,
   MobileAPICAlling,
   isBottomSheetOpen,
-  setIsBottomSheetOpen
+  setIsBottomSheetOpen,
+  setSelectedOption
 }) {
-  
-
   const openBottomSheet = () => {
     setIsBottomSheetOpen(true);
   };
@@ -263,6 +268,20 @@ function SubjectOPtion({
   };
 
   const [open, setOpen] = useState(true);
+
+  const [isChecked, setIsChecked] = useState([]);
+ 
+
+  const toggleCheckbox = (event) => {
+    const value = event.target.value;
+    if (isChecked.includes(value)) {
+      setIsChecked(isChecked.filter((item) => item !== value));
+    } else {
+      setIsChecked([...isChecked, value]);
+    }
+    
+  };
+
 
   return (
     <div className={`accordion-content ${openBox ? "open" : ""}`}>
@@ -325,25 +344,66 @@ function SubjectOPtion({
         </ul>
       ) : (
         <>
-          {/* <select multiple value={checkedItems} onChange={handleCheckboxChange}>
-            <option value="Physics">Physics</option>
-            <option value="Chemistry">Chemistry</option>
-            <option value="Biology">Biology</option>
-            <option value="Mathematics">Mathematics</option>
-          </select> */}
-         <BottomSheet open={open}>
-        <div
-          style={{
-            height: '50vh',
-          }}
-        ></div>
-      </BottomSheet>
+          <div className={`bottom-sheet open`}>
+            <div className="top-icons"> 
+            <MdOutlineManageSearch
+                size={28}
+                color="#f1f1f1"
+              />
+            <div  onClick={() => setSelectedOption("")}>
+              <MdOutlineClose
+                size={28}
+                color="black"
+              />
+              </div> 
+            </div>
+            <label className="checkbox-container">
+              <input
+                type="checkbox"
+                value="Physics"
+                checked={checkedItems.includes("Physics")}
+                onChange={handleCheckboxChange}
+              />
+              <span className="checkmark"></span>
+              <span className="checkbox-label">Physics</span>
+
+            </label>
+            <label className="checkbox-container">
+              <input
+                type="checkbox"
+                value="Chemistry"
+                checked={checkedItems.includes("Chemistry")}
+                onChange={handleCheckboxChange}
+              />
+              <span className="checkmark"></span>
+              <span className="checkbox-label">Chemistry</span>
+              
+            </label>
+            <label className="checkbox-container">
+              <input
+                type="checkbox"
+                value="Biology"
+                checked={checkedItems.includes("Biology")}
+                onChange={handleCheckboxChange}
+              />
+              <span className="checkmark"></span>
+              <span className="checkbox-label">Biology</span>
+              
+            </label>
+            <label className="checkbox-container">
+              <input
+                type="checkbox"
+                value="Mathematics"
+                checked={checkedItems.includes("Mathematics")}
+                onChange={handleCheckboxChange}
+              />
+              <span className="checkmark"></span>
+              <span className="checkbox-label">Mathematics</span>
+              
+            </label>
+          
+          </div>
         </>
-      )}
-      {displayMode === "accordion" ? null : (
-        <div onClick={MobileAPICAlling}>
-          <MdOutlineManageSearch size={29} color="black" />
-        </div>
       )}
     </div>
   );
