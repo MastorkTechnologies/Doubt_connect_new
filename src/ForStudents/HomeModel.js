@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./HomeModal.css";
 import offer from "../Assets/Offerlogo.png";
 // AiOutlineCloseCircle
+import axios from "axios";
+import { handleGoogleAnalysis } from "../GoogleAnalytics/EventHandling";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 function HomeModal({ setModel, showModel }) {
   const [email, setEmail] = useState("");
@@ -10,21 +12,33 @@ function HomeModal({ setModel, showModel }) {
   function HandleEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === "") {
-      alert("Enter email");
+      alert("Enter email or phone no");
       return;
     }
 
     const isValid = emailRegex.test(email);
 
-    if (isValid) {
-      setURL(true);
-    } else {
-      alert("Enter valid email");
-    }
+    submitFormData();
   }
   const changeEmail = (event) => {
     setEmail(event.target.value);
   };
+
+  function submitFormData() {
+    axios
+      .get(
+        `https://ycsaqjbvebcwene2ipny2pn35m0pwopw.lambda-url.ap-south-1.on.aws?type=SUPPORT&email=${email}`
+      )
+      .then((res) => {
+        handleGoogleAnalysis("Popup", "Submit", "email/phone",email);
+        console.log(alert("Message sent. We will contact soon"));
+        setURL(true)
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Failed to send the message");
+      });
+  }
   return showModel ? (
     <div className="modal-container">
       <div className="modal-content">

@@ -13,7 +13,7 @@ import forstudents_testi_3 from '../Assets/forstudents_testi_3.webp'
 import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.webp'
 import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.webp'
 import HomeModel from "./HomeModel";
-
+import axios from 'axios'
 import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
 import { Link } from 'react-router-dom'
 
@@ -46,6 +46,7 @@ function ForStudents() {
     useEffect(() => {
         portal.style.zIndex = zIndex
     }, [zIndex]);
+    
     
     return (
         <div className='ForStudents'>

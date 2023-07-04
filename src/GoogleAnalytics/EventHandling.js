@@ -1,9 +1,10 @@
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 
-export const handleButtonClick = (label) => {
-    ReactGA.event({
-      category: 'Button',
-      action: 'Click',
-      label: label,
-    });
-  };
+export const handleGoogleAnalysis = (category, action, label, value = "") => {
+  ReactGA.event({
+    category: category,
+    action: action,
+    label: label,
+    value: value,
+  });
+};

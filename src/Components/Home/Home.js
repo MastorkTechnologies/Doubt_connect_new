@@ -12,7 +12,7 @@ import home_testi_1_mobile from "../../Assets/home_testi_1_mobile.webp";
 import home_testi_2_mobile from "../../Assets/home_testi_2_mobile.webp";
 import VideoOverlay from "../VideoOverlay/VideoOverlay";
 import axios from "axios";
-import {handleButtonClick} from '../../GoogleAnalytics/EventHandling'
+import {handleGoogleAnalysis} from '../../GoogleAnalytics/EventHandling'
 function Home() {
   const form = useRef(null);
   const portal = document.getElementById("portal-2");
@@ -93,7 +93,7 @@ function Home() {
       block: "center",
       inline: "nearest",
     })
-    handleButtonClick("Book your free demo")
+    handleGoogleAnalysis('Button','Click', "Book your free demo")
   }
 
 
