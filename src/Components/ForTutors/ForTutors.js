@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Slider from './Slider'
 import './ForTutors.css'
-import fortutors from '../../Assets/fortutors.png'
+import fortutors from '../../Assets/fortutors.webp'
 import perk1 from '../../Assets/perk1.svg'
 import perk2 from '../../Assets/perk2.svg'
 import perk3 from '../../Assets/perk3.svg'

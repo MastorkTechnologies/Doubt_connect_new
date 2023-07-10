@@ -10,6 +10,8 @@
     gap: 4rem;
     color: #C1C1C1;
     justify-content: space-between;
+    position: sticky;
+    z-index: 999999;
 }
 .Mobile-footer{
     display: none;
@@ -91,10 +93,10 @@
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 920px){
 
     .Footer{
-        height: 16rem;
+        height: fit-content;
         padding: 0.6rem 1.6rem;
     }
     .Footer-left{
@@ -129,11 +131,14 @@
 @media screen and (max-width: 700px){
 
     .Footer{
-        height: 14rem;
+        height: fit-content;
         padding: 0.6rem 1.6rem;
+        flex-direction: column;
+        align-items: center;
     }
     .Footer-left{
-        gap: 1rem;
+        width: 90%;
+        justify-content: space-between;
     }
     .Footer h2{
         font-size: 1.1rem;
@@ -154,7 +159,8 @@
 
 
     .Footer-right{
-        gap: 1rem;
+        width: 90%;
+        justify-content: space-between;
     }
     .Footer-right p,.Footer-right a{
         font-size: .8rem;
@@ -162,7 +168,7 @@
 }
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .Footer{
         display: none;
     }

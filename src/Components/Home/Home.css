@@ -54,30 +54,25 @@
 
 .whats-next{
     display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-columns: minmax(10%,1fr) auto  minmax(10%,1fr) auto minmax(10%,1fr);
     grid-template-rows: 1fr .2fr;
     align-items: center;
     justify-items: center;
     width: 90%;
     text-align: center;
-    row-gap: 2rem;
+    row-gap: 3rem;
     margin-bottom: 3rem;
+
+    column-gap: 1rem;
 }
-.whats-next div{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .whats-next img{
-    height: 70%;
-    width: fit-content;
+    max-width: 100%;
+    width: 85%;
+    height: auto;
 }
 .whats-next p{
-    width: fit-content;
-    height: fit-content;
+    text-align: center;
     color:#1D3146;
     font-size: 1.3rem;
     font-weight: 600;
@@ -101,13 +96,20 @@
     display: none;
 }
 
+.whats-small{
+    display: none;
+}
+.whats-big{
+    display: unset;
+}
+
 
 
 .Help-section{
     width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,minmax(10%,1fr));
+
     row-gap: 5rem;
     justify-items: center;
     margin-bottom: 4rem;
@@ -169,39 +171,43 @@
 
 
 .testimonials{
-    width: 88%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.6rem;
 }
 .testimonial{
     display: flex;
-    gap: 2rem;
-    height: 20rem;
-    align-items: center;
+    gap: 1.6rem;
     justify-content: center;
+
 }
 .testimonial span{
     color: #52ACFF;
 }
 .testimonial-comment{
-    width: 40%;
-    height: 100%;
+    width: 42%;
+    max-height: 100%;
     
     position: relative;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px #C9CDD4;
 
-    padding: 4rem;
+    /* padding: 4rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 1rem;
 }
 .testimonial h4{
-    position: absolute;
     bottom: 16%;
     left: 6%;
 }
 .testimonial h5{
-    position: absolute;
     bottom: 10%;
     left: 6%;
     color: #979797;
@@ -211,9 +217,17 @@
     font-weight: 600;
 }
 
+.testimonial-info{
+    padding-bottom: 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
 .testimonial-img-container{
+    display: flex;
     width: 45%;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0px 0px 14px #969798;
@@ -249,15 +263,16 @@
     filter: brightness(0.8);
 }
 .quote{
-    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 2rem;
     font-size: 4rem;
     color: #52ACFF;
-    top: 10%;
-    left: 6%;
 }
 
 .testimonial-big{
     display: unset;
+    width: 80%;
 }
 .testimonial-small{
     display: none;
@@ -267,8 +282,8 @@
 .fill-details{
     display: flex;
     align-items: center;
-    width: 88%;
-    gap: 4rem;
+    width: 85%;
+    justify-content: space-between;
     position: relative;
     box-shadow: 0px 0px 10px #C9CDD4;
     padding: 2.2rem 3rem;
@@ -277,9 +292,10 @@
     margin-bottom: 3rem;
 }
 .fill-details-left{
-    width: 60%;
+    width: 52%;
+    max-width: 55%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,minmax(10%,1fr));
     gap: 2rem;
 
 }
@@ -291,7 +307,7 @@
     color: #52ACFF;
 }
 .fill-details img{
-    width: 40%;
+    width: 45%;
 }
 .fill-input-container{
     border: 2px double #C9CDD4;
@@ -305,6 +321,8 @@
     outline: none;
     border: none;
     color: #686868;
+
+    width: 100%;
 
     font-size: 1rem;
 }
@@ -362,14 +380,15 @@
 }
 
 .fill-details-left button{
-    height: 4rem;
-    width: 50%;
+    width: fit-content;
     outline: none;
     border: none;
     background-color: #52ACFF;
     color: white;
     font-size: 1rem;
     border-radius: .6rem;
+
+    padding: 1rem 1.4rem;
 }
 
 
@@ -547,9 +566,11 @@
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 920px){
     .Home{
-        margin: 3rem .5rem;
+        margin: 0rem .5rem;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
         gap: 4rem;
     }
     .Heading{
@@ -559,6 +580,7 @@
     .Home-intro{
         width: 90%;
         gap: 1rem;
+        margin-bottom: 2rem;
     }
     .Home-intro-left{
         gap: 1.5rem;
@@ -567,7 +589,7 @@
         font-size: .9rem;
     }
     .Home-intro-left button{
-        padding: .6rem;
+        padding: .6rem 1rem;
         font-size: 1rem;
     }
     .Home-intro-left a{
@@ -578,10 +600,27 @@
         width: 70%;
     }
 
-
+    .whats-next{
+        width: 90%;
+        row-gap: 1.6rem;
+        column-gap: .4rem;
+    }
+    .whats-next p{
+        font-size: 1rem;
+    }
+    .whats-next img{
+        width: 90%;
+    }
+    .whats-next svg{
+        width: 2rem;
+    }
+    .whats-next button{
+        padding: .6rem 1rem;
+        font-size: 1rem;
+    }
 
     .Help-section{
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         row-gap: 3rem;
     }
     .Help-container{
@@ -597,6 +636,10 @@
     }
     .Help-container-para{
         font-size: .7rem;
+    }
+    .Help-section button{
+        padding: .6rem 1rem;
+        font-size: 1rem;
     }
 
 
@@ -653,7 +696,7 @@
         width: 90%;
     }
     .--2{
-        bottom: 2%;
+        top: -8%;
         left: -37%;
     }
     .--8{
@@ -671,18 +714,119 @@
     .Metrics p{
         font-size: .8rem;
     }
+
+
+
+    .quote{
+        font-size: 3rem;
+    }
+    .testimonials{
+        gap: 1rem;
+    }
+    .testimonial{
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .testimonial p{
+        font-size: .8rem;
+    }
+    .testimonial-info{
+        padding-bottom: .6rem;
+    }
+    .testimonial-info h4{
+        font-size: .9rem;
+    }
+    .testimonial-info h5{
+        font-size: .8rem;
+    }
+    .testimonial-comment{
+        gap: .8rem;
+        width: 45%;
+    }
+    .testimonial-img-container{
+        width: 55%;
+    }
+    
+    
+.fill-details{
+    width: 90%;
+    gap: 2rem;
+    padding: 1rem 1.8rem;
+
+    margin-bottom: 3rem;
 }
+.fill-details-left{
+    gap: 1rem;
+    width: 60%;
+}
+
+.fill-details img{
+    width: 40%;
+}
+.fill-input-container{
+    padding: .6rem;
+    border-radius: .6rem;
+    display: flex;
+    gap: 1rem;
+}
+.fill-input-container input{
+    width: 100%;
+    font-size: .8rem;
+}
+.fill-input-container div{
+    gap: .4rem;
+}
+.fill-input-container img{
+    width: 1rem;
+}
+.fill-input-container p{
+    font-size: .8rem;
+}
+.dropdown-header{
+    padding: .6rem;
+    width: 48%;
+    font-size: .8rem;
+}
+.dropdown-header ul{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    bottom: 2%;
+    left: 3.7%;
+    list-style: none;
+    padding: 1rem;
+    border-radius: .6rem;
+    width: 25.5%;
+}
+
+.fill-details-left li{
+    cursor: pointer;
+}
+
+.fill-details-left button{
+    font-size: .9rem;
+    padding: .6rem 1rem;
+}
+
+}
+
 
 
 @media screen and (max-width: 700px){
     .Home{
         margin: 1.2rem .4rem;
+        gap: 3rem;
     }
     .Heading{
         font-size: 1.6rem;
         line-height: 2rem;
     }
-
+    .Home-intro{
+        width: 95%;
+        height: 65vh;
+        gap: .2rem;
+        margin-bottom: 0rem;
+    }
     .Home-intro-left p{
         font-size: .7rem;
     }
@@ -691,18 +835,39 @@
         font-size: .8rem;
     }
     .Home-intro-left button{
-        padding: .4rem;
+        padding: .4rem .6rem;
         font-size: .8rem;
     }
+    
     .Home-intro img{
-        /* width: 60%; */
+        max-width: 70%;
+        width: 60%;
     }
 
+
+    .whats-next{
+        width: 95%;
+        row-gap: 1.6rem;
+        column-gap: .4rem;
+    }
+    .whats-next p{
+        font-size: .66rem;
+    }
+    .whats-next img{
+        width: 95%;
+    }
+    .whats-next svg{
+        width: 1.5rem;
+    }
+    .whats-next button{
+        padding: .4rem .6rem;
+        font-size: .8rem;
+    }
 
     
     .Help-section{
-        margin-bottom: 8rem;
-        width: 80%;
+        margin-bottom: 4rem;
+        width: 85%;
         row-gap: 1.5rem;
         gap: 1rem;
         row-gap: 2rem;
@@ -721,6 +886,10 @@
     .Help-container svg{
         height: 1.6rem;
         width: 1.6rem;    
+    }
+    .Help-section button{
+        padding: .4rem .6rem;
+        font-size: .8rem;
     }
 
 
@@ -851,10 +1020,100 @@
     .Metrics p{
         font-size: .6rem;
     }
+
+
+
+    .testimonial{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .quote{
+        font-size: 2rem;
+    }
+    .testimonials{
+        gap: .8rem;
+    }
+    .testimonial{
+        gap: .8rem;
+        justify-content: space-between;
+    }
+    .testimonial p{
+        font-size: .7rem;
+    }
+    .testimonial-info{
+        padding-bottom: .6rem;
+    }
+    .testimonial-info h4{
+        font-size: .8rem;
+    }
+    .testimonial-info h5{
+        font-size: .7rem;
+    }
+    .testimonial-comment{
+        gap: .5rem;
+        padding: 4% 0rem;
+        width: 70%;
+    }
+    .testimonial-img-container{
+        width: 70%;
+    }
+
+    .fill-details{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;  
+        padding: 0;
+    }
+    .fill-details-left{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1.6rem;
+    }
+    .fill-details-left h3{
+        font-size: 0.9rem;
+    }
+    .fill-input-container{
+        padding: 0.6rem;
+        overflow: hidden;
+    }
+    .fill-input-container input{
+        font-size: 0.8rem;
+    }
+    .fill-input-container img{
+        width: 1.8rem;
+    }
+    .fill-input-container p{
+        font-size: 0.8rem;
+    }
+
+    .fill-details img{
+        width: 100%;
+        display: none;
+    }
+
+    .dropdown-header{
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    .dropdown-header ul{
+        width: 60%;
+        bottom: -16%;
+        left: 20%;   
+    }
+
+    .fill-details-left button{
+        width: fit-content;
+        font-size: 0.8rem;
+        align-self: center;
+    }
+
 }
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .Home{
         margin: 3rem 1rem;
         gap: 3rem;
@@ -864,7 +1123,8 @@
         gap:2.4rem;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
+        height: fit-content;
     }
     .Home-intro-left{
         width: 100%;
@@ -891,8 +1151,9 @@
         display: none;
     }
     .Home-intro img{
-        width: 110%;
-        height: 110%;
+        max-width: 100%;
+        width: 100%;
+        min-width: 90%;
     }
     .Heading-2{
         font-size: 1.5rem;
@@ -927,6 +1188,13 @@
         display: unset;
     }
 
+    .whats-small{
+        display: unset;
+    }
+    .whats-big{
+        display: none;
+    }
+
     .Help-section{
         width: 100%;
         margin-bottom: 4rem;
@@ -958,7 +1226,7 @@
     }
 
     .Tdown{
-        transform: translateY(-50%);
+        transform: translateY(0%);
     }
 
 
@@ -1044,6 +1312,7 @@
     }
     .testimonial{
         display: flex;
+        flex-direction: row;
         gap: .6rem;
         height: 10rem;
         align-items: center;
@@ -1055,16 +1324,9 @@
     .testimonial-comment{
         width: 50%;
         height: 100%;
-        
         position: relative;
         border-radius: 1rem;
-        box-shadow: 0px 0px 10px #C9CDD4;
-    
-        padding: 1rem;
-        justify-content: center;
-
-        display: flex;
-        flex-direction: column;
+        gap: .2rem;
     }
     .testimonial h4{
         margin-top: .3rem;
@@ -1082,6 +1344,9 @@
         margin-bottom: .2rem;
     }
     
+    .testimonial-info{
+        padding-bottom: .2rem;
+    }
     .testimonial img{
         width: 100%;
         height: 100%;
@@ -1098,9 +1363,7 @@
     }
     .quote{
         display: none;
-        position: unset;
-        font-size: .2rem;
-        color: #52ACFF;
+        font-size: .4rem;
     } 
 
     .testimonial-big{
@@ -1108,6 +1371,7 @@
     }
     .testimonial-small{
         display: flex;
+        width: 80%;
     }
 
 
@@ -1151,13 +1415,12 @@
         font-size: 0.8rem;
     }
     .dropdown-header ul{
-        width: 90%;
-        bottom: -16%;
-        left: 5%;   
+        width: 60%;
+        bottom: -14%;
+        left: 20%;   
     }
 
     .fill-details-left button{
-        width: 45%;
         height: 3rem;
         font-size: 0.8rem;
         align-self: center;

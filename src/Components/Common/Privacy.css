@@ -1,0 +1,158 @@
+.Privacy p{
+    color: #000000 !important;
+}
+
+.Privacy li {
+    margin-left: 20px !important;
+}
+
+.Privacy{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 7rem 0rem;
+}
+
+
+.Privacy-container{
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    gap: 8rem;
+    align-items: center;    
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+}
+.Privacy-container-1{
+    width: 80%;
+    transform: translateY(-14%);
+}
+.Privacy-container img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+.Privacy-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Privacy-heading{
+    line-height: 4rem;
+    font-size: 3rem;
+}
+.Privacy h1 span{
+    color: #52ACFF;
+    font-size: 2.8rem;
+}
+
+.founders{
+    margin: 4rem 0rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.founders img{
+    width: 84%;
+}
+.founders div{
+    display: flex;
+    width: 84%;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 1rem;
+}
+.founders div p a{
+    /* color: #3D3D3D; */
+    font-weight: 600;
+}
+.small-img{
+    display: none;
+}
+
+
+@media screen and (max-width: 450px){
+    
+    .Privacy{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 4rem 0rem;
+    }
+    
+    
+    .Privacy-container{
+        width: 90%;
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+    .Privacy-container p{
+        font-size: 0.8rem;
+    }
+    .Privacy-container-1{
+        width: 90%;
+        transform: translateY(0%);
+        margin-bottom: 1rem;
+    }
+    .Privacy-container img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .Privacy-container div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .Privacy-container div p{
+        text-align: center;
+    }
+    
+    .Privacy-heading{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+    .Privacy h1 span{
+        font-size: 1.8rem;
+    }
+
+    .small-img{
+        display: unset;
+    }
+
+    .big-img{
+        display: none;
+    }
+    
+    .founders img{
+        width: 100%;
+    }
+    .founders div{
+        display: flex;
+        width: 100%;
+        gap: 0.4rem;
+        text-align: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .founders div p{
+        font-size: 0.5rem;
+    }
+    .founders div p a{
+        color: #3D3D3D;
+        font-weight: 600;
+        font-size: 0.6rem;
+    }   
+}

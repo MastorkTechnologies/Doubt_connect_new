@@ -27,7 +27,7 @@
     position: absolute;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .overlay-iframe{
         height: 28%;
         width: 90%;

@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
-import achievement1 from '../../Assets/achievements1.png'
-import achievements2 from '../../Assets/achievements2.png'
+import achievement1 from '../../Assets/achievements1.webp'
+import achievements2 from '../../Assets/achievements2.webp'
 import './Achievements.css'
 
 
@@ -21,7 +21,7 @@ function Achievements() {
         </div>
 
         <div className='Achievements-container'>
-                <h1 className='Achievements-heading'>Winners at <br/><span>BITS Pilani's APOGEE 2022</span></h1>
+                <h1 className='Achievements-heading'>Runners Up at <br/><span>EOGSEA, Mumbai 2023</span></h1>
                 <img src={achievements2} className="achievements"></img>
         </div>
     </div>

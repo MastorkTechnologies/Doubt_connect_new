@@ -4,9 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./slider.css";
 
 import VideoOverlay from "../VideoOverlay/VideoOverlay";
-import fortutors_1 from '../../Assets/fortutors_1.png'
-import fortutors_2 from '../../Assets/fortutors_2.png'
-import fortutors_3 from '../../Assets/fortutors_3.png'
+import fortutors_1 from '../../Assets/fortutors_1.webp'
+import fortutors_2 from '../../Assets/fortutors_2.webp'
+import fortutors_3 from '../../Assets/fortutors_3.webp'
 
 
 const Slider = () => {

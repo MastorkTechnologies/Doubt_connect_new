@@ -6,13 +6,14 @@ import how3 from '../Assets/step3.webp'
 import mobile from '../Assets/mobile.png'
 import playstore from '../Assets/playstore.png'
 import stars from '../Assets/stars.svg' 
-import forstudents_testi_1 from '../Assets/forstudents_testi_1.png'
-import forstudents_testi_2_mobile from '../Assets/forstudents_testi_2_mobile.png'
-import forstudents_testi_2 from '../Assets/forstudents_testi_2.png'
-import forstudents_testi_3 from '../Assets/forstudents_testi_3.png'
-import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.png'
-import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.png'
-
+import forstudents_testi_1 from '../Assets/forstudents_testi_1.webp'
+import forstudents_testi_2_mobile from '../Assets/forstudents_testi_2_mobile.webp'
+import forstudents_testi_2 from '../Assets/forstudents_testi_2.webp'
+import forstudents_testi_3 from '../Assets/forstudents_testi_3.webp'
+import forstudents_testi_3_mobile from '../Assets/forstudents_testi_3_mobile.webp'
+import forstudents_testi_4_mobile from '../Assets/forstudents_testi_4_mobile.webp'
+import HomeModel from "./HomeModel";
+import axios from 'axios'
 import VideoOverlay from '../Components/VideoOverlay/VideoOverlay'
 import { Link } from 'react-router-dom'
 
@@ -35,9 +36,17 @@ function ForStudents() {
         document.body.style.overflowY = "scroll"
     };
 
+    const [showModel, setModel] = useState(false);
+    useEffect(() => {
+      const timeout = setTimeout(() => setModel(true), 5000);
+  
+      return () => clearTimeout(timeout);
+    }, [])
+
     useEffect(() => {
         portal.style.zIndex = zIndex
     }, [zIndex]);
+    
     
     return (
         <div className='ForStudents'>
@@ -46,12 +55,14 @@ function ForStudents() {
                 displayVideoOverlay && <VideoOverlay handleCloseVideoOverlay={handleCloseVideoOverlay} vId={vId}></VideoOverlay>
             }
             
+            <HomeModel setModel={setModel} showModel={showModel} />
+            
             <div className='For-students-how'>
                 <div className='For-students-how-left'>
                     <div>
-                        <h1 className='For-students-heading'><span>DoubtConnect</span> a day. Keeps all your<br/><span>Doubts away!</span></h1>
+                        <h1 className='For-students-heading'>Providing solutions for <span>HC Verma</span> to <br/><span>RD Sharma</span>!<br/>We've got it all covered!</h1>
                     </div>
-                    <p>Get your doubts solved now on a 1-1 live session by getting connected with a tutor instantly! (psst.. just within 40 seconds)</p>
+                    <p>DoubtConnect, the leading live doubt solving app! Experience instant doubt solving with expert tutors, one-on-one on a video call in just 60 seconds!</p>
 
                     <Link to='https://forms.gle/YuMS2ajC7TZcAN6d9' target="_blank">Download Now !</Link>
                 </div>
@@ -203,11 +214,14 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         It was wonderful. His instruction was simple to understand, and the teacher was extremely kind. I would recommend this app to all family and friends as well.
                         </p>
-                        <h4 className='testimonial-big'>Hemansh Mohta</h4>
-                        <h5 className='testimonial-big'>12th Std Student</h5>
-                        
-                        <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
-                        <h5 className='testimonial-small'>10th Std Student</h5>
+
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Hemansh Mohta</h4>
+                            <h5 className='testimonial-big'>12th Std Student</h5>
+                            
+                            <h4 className='testimonial-small'>Swarnmukhi Sharma</h4>
+                            <h5 className='testimonial-small'>10th Std Student</h5>
+                        </div>
                     </div>
                     <div className='testimonial-img-container'>
                         <img className='testimonial-big' src={forstudents_testi_2}></img>
@@ -239,9 +253,11 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         It was a wonderful and easy session. The instructor thoroughly discussed the subject and answered all my questions about it.
                         </p>
-                        <h4 className='testimonial-big'>Amani Agarwal</h4>
-                        <h4 className='testimonial-small'>Taif Ali</h4>
-                        <h5>JEE aspirant</h5>
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Amani Agarwal</h4>
+                            <h4 className='testimonial-small'>Taif Ali</h4>
+                            <h5>JEE aspirant</h5>
+                        </div>
                     </div>
                 </div>
                 <div className='testimonial' style={{alignItems:"unset"}}>
@@ -272,9 +288,12 @@ function ForStudents() {
                         <p className='testimonial-small'>
                         I had a doubt with algebra . My friend had suggested this app.... It proved to be really helpful.
                         </p>
-                        <h4 className='testimonial-big'>Samiyah Naaz</h4>
-                        <h4 className='testimonial-small'>Samiyah Naaz</h4>
-                        <h5>JEE Aspirant</h5>
+
+                        <div className='testimonial-info'>
+                            <h4 className='testimonial-big'>Samiyah Naaz</h4>
+                            <h4 className='testimonial-small'>Samiyah Naaz</h4>
+                            <h5>JEE Aspirant</h5>
+                        </div>
                     </div>
                 </div>
             </div>

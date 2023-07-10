@@ -5,7 +5,7 @@ import img1 from '../../Assets/footer_logo_1.svg'
 import img2 from '../../Assets/footer_logo_2.svg'
 import img3 from '../../Assets/footer_logo_3.svg'
 import img4 from '../../Assets/footer_logo_4.svg'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.webp'
 
 function Footer() {
 
@@ -67,7 +67,7 @@ function Footer() {
                         <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/about-us">About us</Link>
                         <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/achievements">Our Achievements</Link>
                         <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/support">Support</Link>
-                        <p>Privacy Policy</p>
+                        <Link onClick={()=>{window.scrollTo({top: 0, behavior: 'smooth'})}} to="/privacy">Privacy Policy</Link>
                         <p>Terms & Conditions</p>
                     </div>
                 </div>

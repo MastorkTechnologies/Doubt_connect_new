@@ -15,6 +15,14 @@ button{
     z-index: 11;
     
 }
+.wrapper {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 1rem;
+
+  }
+  
+
 .logos{
     width: 18%;
     display: flex;
@@ -46,6 +54,12 @@ button{
 }
 
 .Header-Sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
     min-width: fit-content;
     font-size: 1.1rem;
     color: #52ACFF;
@@ -54,6 +68,9 @@ button{
     border: none;
     border-radius: 2rem;
     padding: .4rem .6rem;
+
+    
+
 }
 
 .Logo-2{
