@@ -1,21 +1,23 @@
-import React, { Fragment, useState, useRef, useEffect } from "react";
-import "./Home.css";
-import home from "../../Assets/home.svg";
-import flag from "../../Assets/flag.svg";
-import whats1 from "../../Assets/whats1.webp";
-import whats2 from "../../Assets/whats2.webp";
-import whats3 from "../../Assets/whats3.webp";
-import fill_details from "../../Assets/fill_details.webp";
-import home_testi_1 from "../../Assets/home_testi_1.webp";
-import home_testi_2 from "../../Assets/home_testi_2.webp";
-import home_testi_1_mobile from "../../Assets/home_testi_1_mobile.webp";
-import home_testi_2_mobile from "../../Assets/home_testi_2_mobile.webp";
-import VideoOverlay from "../VideoOverlay/VideoOverlay";
-import axios from "axios";
+import React, { Fragment, useState, useRef, useEffect} from 'react'
+import './Home.css'
+import home from '../../Assets/home.webp'
+import flag from '../../Assets/flag.svg'
+import whats1 from '../../Assets/whats1.png'
+import whats2 from '../../Assets/whats2.png'
+import whats3 from '../../Assets/whats3.png'
+import fill_details from '../../Assets/fill_details.png'
+import home_testi_1 from '../../Assets/home_testi_1.png'
+import home_testi_2 from '../../Assets/home_testi_2.png'
+import home_testi_1_mobile from '../../Assets/home_testi_1_mobile.png'
+import home_testi_2_mobile from '../../Assets/home_testi_2_mobile.png'
+import VideoOverlay from '../VideoOverlay/VideoOverlay'
+import axios from 'axios'
 import {handleGoogleAnalysis} from '../../GoogleAnalytics/EventHandling'
-function Home() {
+
+function Home() {    
+
   const form = useRef(null);
-  const portal = document.getElementById("portal-2");
+  const portal = document.getElementById('portal-2')
 
   const options = [
     { value: "teacher", label: "Teacher" },
@@ -848,10 +850,7 @@ function Home() {
           </div>
         </div>
 
-        <h1 className="Heading Heading-2 heading-big">
-          Learning aid for <span>students</span>, teaching aid for{" "}
-          <span>teachers</span> & tracking aid for <span>schools</span>
-        </h1>
+            <b><span className='Heading Heading-2 heading-big'>Learning aid for <span>students</span>, teaching aid for <span>teachers</span> & tracking aid for <span>schools</span></span></b>
 
         <div ref={form} className="fill-details">
           <div className="fill-details-left">

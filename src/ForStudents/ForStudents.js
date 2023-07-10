@@ -1,10 +1,10 @@
 import React,{useEffect,useState} from 'react'
 import './ForStudents.css'
-import how1 from '../Assets/how1.webp'
-import how2 from '../Assets/how2.webp'
-import how3 from '../Assets/how3.webp'
-import mobile from '../Assets/mobile.webp'
-import playstore from '../Assets/playstore.webp'
+import how1 from '../Assets/step1.webp'
+import how2 from '../Assets/step2.webp'
+import how3 from '../Assets/step3.webp'
+import mobile from '../Assets/mobile.png'
+import playstore from '../Assets/playstore.png'
 import stars from '../Assets/stars.svg' 
 import forstudents_testi_1 from '../Assets/forstudents_testi_1.webp'
 import forstudents_testi_2_mobile from '../Assets/forstudents_testi_2_mobile.webp'
@@ -77,7 +77,7 @@ function ForStudents() {
                 </div>
             </div>
 
-            <h1 className='For-students-heading'>How <span>DoubtConnect</span> works?</h1>
+            <b><span className='For-students-heading'>How <span>DoubtConnect</span> works?</span></b>
             <div className="how-we-work">
                 <div>
                     <img src={how1}></img>
@@ -115,7 +115,7 @@ function ForStudents() {
             </div>
 
 
-            <h1 className='For-students-heading'>Our <span>Features</span></h1>
+            <b><span className='For-students-heading'>Our <span>Features</span></span></b>
             <div className='For-student-steps'>
                 
                 <div className='For-student-step' style={{backgroundColor:"#F7F0E7"}}>
@@ -186,24 +186,24 @@ function ForStudents() {
             </div>
 
 
-            <h1 className='For-students-heading'>Our <span>Metrics</span></h1>
+            <b><span className='For-students-heading'>Our <span>Metrics</span></span></b>
             <div className='Metrics'>
                 <div>
-                    <h1>20000+</h1>
+                    <b><span class="Heading Heading-2"><span>20000+</span></span></b>
                     <p>Users have used the platform to solve their doubts since the launch</p>
                 </div>
                 <div>
-                    <h1>4.8/5</h1>
+                    <b><span class="Heading Heading-2"><span>4.8/5</span></span></b>
                     <p>The avg rating given to every session by a student</p>
                 </div>
                 <div>
-                    <h1>100,000</h1>
+                    <b><span class="Heading Heading-2"><span>100,000</span></span></b>
                     <p>minutes of learning conducted with over <span style={{color:"black",fontWeight:"600"}}>60,000</span> doubts solved</p>
                 </div>
             </div>
 
 
-            <h1 className='For-students-heading'>What do our <span>Users</span> say ?</h1>
+            <b><span className='For-students-heading'>What do our <span>Users</span> say ?</span></b>
             <div className='testimonials'>
                 <div className='testimonial'>
                     <div className='testimonial-comment'>
@@ -301,7 +301,7 @@ function ForStudents() {
 
             <div className='like-footer'>
                 <div>
-                    <h1>Still here? Looks like you definitely have some doubts.<br/><span>Download the app now.</span></h1>
+                    <b><span class="Heading Heading-2"><span style="color:black; font-size: 2.3rem;">Still here? Looks like you definitely have some doubts.<span><br/><span>Download the app now.</span></span></span></span></b>
                     <img src={playstore}></img>
                 </div>
                 <img className='mobile-app' src={mobile}></img>
